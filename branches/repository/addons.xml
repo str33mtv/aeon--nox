@@ -2,7 +2,7 @@
 <addons>
 <addon
   id="skin.aeon.nox"
-  version="0.4"
+  version="0.5"
   name="Aeon Nox"
   provider-name="Big_Noid">
   <requires>
