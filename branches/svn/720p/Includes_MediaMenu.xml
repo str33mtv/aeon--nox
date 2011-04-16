@@ -116,20 +116,6 @@
       <visible>!Window.IsActive(Addonbrowser)</visible>
     </control>
   </include>
-  <include name="VideoLibraryButtons_Left">
-    <control type="radiobutton" id="99">
-      <description>Library button</description>
-      <label>$LOCALIZE[29800]</label>
-      <onclick>ReplaceWindow(VideoFiles)</onclick>
-      <selected>Window.IsVisible(VideoLibrary)</selected>
-      <include>Objects_MediaMenuButton</include>
-      <radiowidth>65</radiowidth>
-      <radioheight>65</radioheight>
-      <radioposx>125</radioposx>
-      <onup>SetFocus(4)</onup>
-      <visible>Window.IsActive(VideoLibrary)</visible>
-    </control>
-  </include>
   <include name="VideoLibraryButtons_Right">
     <control type="radiobutton" id="103">
       <description>Library button</description>
@@ -238,19 +224,6 @@
       <radiowidth>65</radiowidth>
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
-    </control>
-  </include>
-  <include name="VideoFilesButtons">
-    <control type="radiobutton" id="101">
-      <description>Library button</description>
-      <label>$LOCALIZE[29800]</label>
-      <onclick>ReplaceWindow(VideoLibrary)</onclick>
-      <selected>Window.IsVisible(VideoLibrary)</selected>
-      <include>Objects_MediaMenuButton</include>
-      <radiowidth>65</radiowidth>
-      <radioheight>65</radioheight>
-      <radioposx>125</radioposx>
-      <visible>Window.IsActive(VideoFiles)</visible>
     </control>
   </include>
   <include name="MusicFilesButtons">
@@ -517,8 +490,6 @@
           <visible>!Window.IsActive(2600)</visible>
         </control>
         <include condition="Window.IsActive(AddonBrowser)">AddonBrowserButtons</include>
-        <include condition="Window.IsActive(VideoLibrary)">VideoLibraryButtons_Left</include>
-        <include condition="Window.IsActive(VideoFiles)">VideoFilesButtons</include>
         <include condition="Window.IsActive(MusicLibrary)">MusicLibraryButtons_Left</include>
         <include condition="Window.IsActive(MusicFiles)">MusicFilesButtons</include>
         <include condition="!Window.IsActive(AddonBrowser)">StandardButtons</include>
