@@ -279,6 +279,7 @@
               <visible>Container(9000).HasFocus(2)</visible>
             </item>-->
             <!--Music-->
+          
             <include condition="Skin.HasSetting(HomeMusicPlaylist1)">CustomSubMusic1</include>
             <include condition="Skin.HasSetting(HomeMusicPlaylist2)">CustomSubMusic2</include>
             <include condition="Skin.HasSetting(HomeMusicPlaylist3)">CustomSubMusic3</include>
@@ -294,6 +295,12 @@
             <item id="90112">
               <label>132</label>
               <onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+              <visible>Library.HasContent(Music)</visible>
+              <visible>Container(9000).HasFocus(3)</visible>
+            </item>
+            <item id="90110">
+              <label>ROOT</label>
+              <onclick>ActivateWindow(MusicLibrary,root)</onclick>
               <visible>Library.HasContent(Music)</visible>
               <visible>Container(9000).HasFocus(3)</visible>
             </item>
@@ -379,54 +386,12 @@
               <visible>Container(9000).HasFocus(5)</visible>
             </item>
             <!--Custom-->
-            <item id="90151">
-              <description>Button1</description>
-              <label>$INFO[Skin.String(HomeScriptButton1_label)]</label>
-              <onclick>Setfocus(9000)</onclick>
-              <onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton1_Path)])</onclick>
-              <visible>Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))</visible>
-              <visible>Container(9000).HasFocus(1) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
-            </item>
-            <item id="90152">
-              <description>Button2</description>
-              <label>$INFO[Skin.String(HomeScriptButton2_label)]</label>
-              <onclick>Setfocus(9000)</onclick>
-              <onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton2_Path)])</onclick>
-              <visible>Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))</visible>
-              <visible>Container(9000).HasFocus(1) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
-            </item>
-            <item id="90153">
-              <description>Button3</description>
-              <label>$INFO[Skin.String(HomeScriptButton3_label)]</label>
-              <onclick>Setfocus(9000)</onclick>
-              <onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton3_Path)])</onclick>
-              <visible>Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))</visible>
-              <visible>Container(9000).HasFocus(1) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
-            </item>
-            <item id="90154">
-              <description>Button4</description>
-              <label>$INFO[Skin.String(HomeScriptButton4_label)]</label>
-              <onclick>Setfocus(9000)</onclick>
-              <onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton4_Path)])</onclick>
-              <visible>Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))</visible>
-              <visible>Container(9000).HasFocus(1) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
-            </item>
-            <item id="90155">
-              <description>Button5</description>
-              <label>$INFO[Skin.String(HomeScriptButton5_label)]</label>
-              <onclick>Setfocus(9000)</onclick>
-              <onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton5_Path)])</onclick>
-              <visible>Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))</visible>
-              <visible>Container(9000).HasFocus(1) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
-            </item>
-            <item id="90156">
-              <description>Button6</description>
-              <label>$INFO[Skin.String(HomeScriptButton6_label)]</label>
-              <onclick>Setfocus(9000)</onclick>
-              <onclick>XBMC.RunScript($INFO[Skin.String(HomeScriptButton6_Path)])</onclick>
-              <visible>Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))</visible>
-              <visible>Container(9000).HasFocus(1) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]</visible>
-            </item>
+            <include condition="Skin.HasSetting(HomeScriptButton1)">CustomSubProgram1</include>
+            <include condition="Skin.HasSetting(HomeScriptButton2)">CustomSubProgram2</include>
+            <include condition="Skin.HasSetting(HomeScriptButton3)">CustomSubProgram3</include>
+            <include condition="Skin.HasSetting(HomeScriptButton4)">CustomSubProgram4</include>
+            <include condition="Skin.HasSetting(HomeScriptButton5)">CustomSubProgram5</include>
+            <include condition="Skin.HasSetting(HomeScriptButton6)">CustomSubProgram6</include>
             <!--Movies-->
             <include condition="Skin.HasSetting(HomeMoviePlaylist1)">CustomSubMovies1</include>
             <include condition="Skin.HasSetting(HomeMoviePlaylist2)">CustomSubMovies2</include>
@@ -434,6 +399,11 @@
             <include condition="Skin.HasSetting(HomeMenuSubMoviesFavourite1)">CustomSubMovies4</include>
             <include condition="Skin.HasSetting(HomeMenuSubMoviesFavourite2)">CustomSubMovies5</include>
             <include condition="Skin.HasSetting(HomeMenuSubMoviesFavourite3)">CustomSubMovies6</include>
+            <item id="90169">
+              <label>CINEMA</label>
+              <include>MovieTitlesCinExp</include>
+              <visible>Container(9000).HasFocus(10)</visible>
+            </item>
             <item id="90168">
               <label>$LOCALIZE[31162]</label>
               <onclick>XBMC.ActivateWindow(MyVideoLibrary, plugin://plugin.video.apple.movie.trailers.lite/addon.py,return)</onclick>
@@ -629,7 +599,14 @@
             <onclick>ActivateWindow(Music)</onclick>
             <icon>special://skin/backgrounds/music.jpg</icon>
             <thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
-            <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+            <visible>!Skin.HasSetting(HomeMenuNoMusicButton) + !Library.HasContent(Music)</visible>
+          </item>
+          <item id="3">
+            <label>2</label>
+            <onclick>ActivateWindow(musiclibrary,albums,return)</onclick>
+            <icon>special://skin/backgrounds/music.jpg</icon>
+            <thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
+            <visible>!Skin.HasSetting(HomeMenuNoMusicButton) + Library.HasContent(Music)</visible>
           </item>
           <item id="10">
             <label>20342</label>
@@ -656,19 +633,11 @@
           <include condition="Skin.HasSetting(HomeMenuFavourite6)">CustomMainFav6</include>
           <item id="2">
             <label>3</label>
-            <onclick>ActivateWindow(Videos)</onclick>
+            <onclick>ActivateWindow(VideoLibrary,Files)</onclick>
             <icon>special://skin/backgrounds/videos.jpg</icon>
             <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
-            <visible>!Skin.HasSetting(HomeMenuNoVideosButton) + ![Skin.HasSetting(HomeMenuNoMoviesButton) + Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
+            <visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
           </item>
-          <item id="2">
-            <label>3</label>
-            <onclick>ActivateWindow(VideoFiles)</onclick>
-            <icon>special://skin/backgrounds/videos.jpg</icon>
-            <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
-            <visible>!Skin.HasSetting(HomeMenuNoVideosButton) + [Skin.HasSetting(HomeMenuNoMoviesButton) + Skin.HasSetting(HomeMenuNoTVShowsButton)]</visible>
-          </item>
-
           <item id="1">
             <label>0</label>
             <onclick>ActivateWindow(Programs,Addons,return)</onclick>
@@ -729,6 +698,8 @@
           </item>
         </content>
       </control>
+      <include>Furniture_ClassicHomeGradient</include>
+
     </control>
 
 
