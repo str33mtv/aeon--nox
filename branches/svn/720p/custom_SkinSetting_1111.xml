@@ -109,7 +109,7 @@
               <posy>237</posy>
               <width>840</width>
               <height>42</height>
-              <texture>osd/osd_back.png</texture>
+              <texture background="true">osd/osd_back.png</texture>
             </control>
           </control>
           <control type="image">
@@ -2230,7 +2230,14 @@
               </item>
             </content>
           </control>
-
+          <control type="image">
+            <posx>74</posx>
+            <posy>152</posy>
+            <width>840</width>
+            <height>60</height>
+            <texture background="true">home/homemenu_gradient.png</texture>
+            <colordiffuse>d0FFFFFF</colordiffuse>
+          </control>
           <control type="group">
             <posx>210</posx>
             <posy>430</posy>
