@@ -94,7 +94,7 @@
         <textcolor>white2</textcolor>
         <scroll>false</scroll>
         <align>left</align>
-        <visible>!Container.Content(tvshows)+!Container.Content(seasons)+!Container.Content(episodes)+!Container.Content(musicvideos)</visible>
+        <visible>!Container.Content(tvshows)+!Container.Content(seasons)+!Container.Content(episodes)+!Container.Content(musicvideos)+!substring(Container.FolderPath,videodb://4)</visible>
       </control>
       <control type="label">
         <posx>0</posx>
