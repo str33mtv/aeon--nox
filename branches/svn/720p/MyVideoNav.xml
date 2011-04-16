@@ -35,7 +35,7 @@
         <fadetime>FanartCrossfadeTime</fadetime>
         <include condition="Skin.HasSetting(animatedbg)">Animation_Background</include>
         <visible>!Skin.HasSetting(VideoLibraryMovieFanart)</visible>
-        <visible>!Container.Content(TVShows) + ![Container.Content(Episodes) + stringcompare(Container.FolderPath,videodb://5/)]</visible>
+        <visible>Container.Content(movies)</visible>
       </control>
       <control type="image">
         <posx>0</posx>
@@ -55,7 +55,7 @@
         <width>1280</width>
         <height>720</height>
         <info>Fanart.Image</info>
-        <texture background="true" fallback="special://skin/backgrounds/curtains.jpg">$INFO[Fanart.Image]</texture>
+        <texture background="true">$INFO[Fanart.Image]</texture>
         <include>backgroundfade</include>
         <include condition="Skin.HasSetting(animatedbg)">Animation_Background</include>
         <fadetime>FanartCrossfadeTime</fadetime>
