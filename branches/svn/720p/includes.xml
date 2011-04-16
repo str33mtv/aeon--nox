@@ -172,7 +172,6 @@
       <fadetime>1000</fadetime>
       <visible>![Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))]</visible>
       <include condition="Skin.HasSetting(animatedbg)">Animation_Background</include>
-      <include>Animation_OpenCloseZoom</include>
     </control>
     <control type="multiimage">
       <posx>0</posx>
@@ -186,7 +185,6 @@
       <visible>Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))</visible>
       <animation effect="fade" time="200">WindowClose</animation>
       <include condition="Skin.HasSetting(animatedbg)">Animation_Background</include>
-      <include>Animation_OpenCloseZoom</include>
     </control>
   </include>
   <include name="CommonSettingsBackground">
