@@ -46,68 +46,7 @@
           <control type="image">
             <width>100</width>
             <height>20</height>
-            <texture>stars/0.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),0,left)</visible>
-          </control>
-          <control type="image">
-            <width>100</width>
-            <height>20</height>
-            <texture>stars/1.0.png</texture>
-            <visible>[SubString(Container(8000).ListItem.Property(Rating),1,left) + !SubString(Container(8000).ListItem.Property(Rating),10,left)]</visible>
-          </control>
-          <control type="image">
-            <width>100</width>
-            <height>20</height>
-            <texture>stars/2.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),2,left)</visible>
-          </control>
-          <control type="image">
-            <width>100</width>
-            <height>20</height>
-            <texture>Star_Rating3.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),3,left)</visible>
-          </control>
-          <control type="image">
-            <width>100</width>
-            <height>20</height>
-            <texture>stars/4.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),4,left)</visible>
-          </control>
-          <control type="image">
-            <width>100</width>
-            <height>20</height>
-            <texture>stars/5.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),5,left)</visible>
-          </control>
-          <control type="image">
-            <width>100</width>
-            <height>20</height>
-            <texture>stars/6.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),6,left)</visible>
-          </control>
-          <control type="image">
-            <width>100</width>
-            <height>20</height>
-            <texture>stars/7.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),7,left)</visible>
-          </control>
-          <control type="image">
-            <width>100</width>
-            <height>20</height>
-            <texture>stars/8.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),8,left)</visible>
-          </control>
-          <control type="image">
-            <width>100</width>
-            <height>20</height>
-            <texture>stars/9.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),9,left)</visible>
-          </control>
-          <control type="image">
-            <width>100</width>
-            <height>20</height>
-            <texture>stars/10.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),10,left)</visible>
+            <texture>$INFO[Container(8000).ListItem.Property(Rating),stars/,.png]</texture>
           </control>
         </control>
         <control type="image">
@@ -193,8 +132,18 @@
             <height>25</height>
             <aligny>left</aligny>
             <posy>37</posy>
-            <textcolor>grey</textcolor>
-            <label>$LOCALIZE[345]: [COLOR=ccffffff]$INFO[Container(8000).ListItem.Property(Year)][/COLOR]</label>
+            <textcolor>ccffffff</textcolor>
+            <label>$INFO[Container(8000).ListItem.Property(Year),[COLOR=grey]$LOCALIZE[345]: [/COLOR]]</label>
+            <font>Font_Reg18</font>
+          </control>
+          <control type="label">
+            <posx>160</posx>
+            <width>533</width>
+            <height>25</height>
+            <aligny>left</aligny>
+            <posy>37</posy>
+            <textcolor>ccffffff</textcolor>
+            <label>$INFO[Container(8000).ListItem.Property(Rating),[COLOR=grey]$LOCALIZE[368]: [/COLOR]]</label>
             <font>Font_Reg18</font>
           </control>
           <control type="label">
@@ -203,8 +152,8 @@
             <height>25</height>
             <aligny>left</aligny>
             <posy>55</posy>
-            <textcolor>grey</textcolor>
-            <label>$LOCALIZE[2050]: [COLOR=ccffffff]$INFO[Container(8000).ListItem.Property(RunningTime)] $LOCALIZE[12391][/COLOR]</label>
+            <textcolor>ccffffff</textcolor>
+            <label>$INFO[Container(8000).ListItem.Property(RunningTime),[COLOR=grey]$LOCALIZE[2050]: [/COLOR], $LOCALIZE[12391]]</label>
             <font>Font_Reg18</font>
           </control>
           <control type="textbox">
@@ -279,70 +228,9 @@
           <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
           <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
           <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/0.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),0,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/1.0.png</texture>
-            <visible>[SubString(Container(8000).ListItem.Property(Rating),1,left) + !SubString(Container(8000).ListItem.Property(Rating),10,left)]</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/2.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),2,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>Star_Rating3.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),3,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/4.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),4,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/5.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),5,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/6.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),6,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/7.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),7,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/8.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),8,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/9.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),9,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/10.0.png</texture>
-            <visible>SubString(Container(8000).ListItem.Property(Rating),10,left)</visible>
+            <width>100</width>
+            <height>20</height>
+            <texture>$INFO[Container(8000).ListItem.Property(Rating),stars/,.png]</texture>
           </control>
         </control>
         <control type="list" id="8000">
@@ -351,7 +239,7 @@
           <width>300</width>
           <height>292</height>
           <onleft>9000</onleft>
-          <onright>XBMC.RunScript(script.recentlyadded,limit=8&amp;albums=False&amp;unplayed=True&amp;totals=True)</onright>
+          <onright>8000</onright>
           <onup>8000</onup>
           <ondown>8000</ondown>
           <viewtype label="535">list</viewtype>
@@ -405,6 +293,7 @@
           </focusedlayout>
           <content>
             <item id="1">
+              <label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
               <label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
               <label2>$INFO[Window.Property(LatestMovie.1.Plot)]</label2>
               <onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
@@ -1218,70 +1107,9 @@
           <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
           <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
           <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/0.0.png</texture>
-            <visible>SubString(Container(8001).ListItem.Property(Rating),0,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/1.0.png</texture>
-            <visible>[SubString(Container(8001).ListItem.Property(Rating),1,left) + !SubString(Container(8000).ListItem.Property(Rating),10,left)]</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/2.0.png</texture>
-            <visible>SubString(Container(8001).ListItem.Property(Rating),2,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>Star_Rating3.png</texture>
-            <visible>SubString(Container(8001).ListItem.Property(Rating),3,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/4.0.png</texture>
-            <visible>SubString(Container(8001).ListItem.Property(Rating),4,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/5.0.png</texture>
-            <visible>SubString(Container(8001).ListItem.Property(Rating),5,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/6.0.png</texture>
-            <visible>SubString(Container(8001).ListItem.Property(Rating),6,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/7.0.png</texture>
-            <visible>SubString(Container(8001).ListItem.Property(Rating),7,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/8.0.png</texture>
-            <visible>SubString(Container(8001).ListItem.Property(Rating),8,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/9.0.png</texture>
-            <visible>SubString(Container(8001).ListItem.Property(Rating),9,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/10.0.png</texture>
-            <visible>SubString(Container(8001).ListItem.Property(Rating),10,left)</visible>
+            <width>100</width>
+            <height>20</height>
+            <texture>$INFO[Container(8001).ListItem.Property(Rating),stars/,.png]</texture>
           </control>
         </control>
         <control type="list" id="8001">
@@ -1290,7 +1118,7 @@
           <width>300</width>
           <height>292</height>
           <onleft>9000</onleft>
-          <onright>XBMC.RunScript(script.recentlyadded,limit=8&amp;albums=False&amp;unplayed=True&amp;totals=True)</onright>
+          <onright>8001</onright>
           <onup>8001</onup>
           <ondown>8001</ondown>
           <viewtype label="535">list</viewtype>
@@ -2470,70 +2298,9 @@
           <animation effect="fade" start="0" end="100" time="600">WindowOpen</animation>
           <animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
           <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/0.0.png</texture>
-            <visible>SubString(Container(8002).ListItem.Property(Rating),0,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/1.0.png</texture>
-            <visible>[SubString(Container(8002).ListItem.Property(Rating),1,left) + !SubString(Container(8000).ListItem.Property(Rating),10,left)]</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/2.0.png</texture>
-            <visible>SubString(Container(8002).ListItem.Property(Rating),2,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>Star_Rating3.png</texture>
-            <visible>SubString(Container(8002).ListItem.Property(Rating),3,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/4.0.png</texture>
-            <visible>SubString(Container(8002).ListItem.Property(Rating),4,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/5.0.png</texture>
-            <visible>SubString(Container(8002).ListItem.Property(Rating),5,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/6.0.png</texture>
-            <visible>SubString(Container(8002).ListItem.Property(Rating),6,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/7.0.png</texture>
-            <visible>SubString(Container(8002).ListItem.Property(Rating),7,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/8.0.png</texture>
-            <visible>SubString(Container(8002).ListItem.Property(Rating),8,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/9.0.png</texture>
-            <visible>SubString(Container(8002).ListItem.Property(Rating),9,left)</visible>
-          </control>
-          <control type="image">
-            <width>120</width>
-            <height>24</height>
-            <texture>stars/10.0.png</texture>
-            <visible>SubString(Container(8002).ListItem.Property(Rating),10,left)</visible>
+            <width>100</width>
+            <height>20</height>
+            <texture>$INFO[Container(8002).ListItem.Property(Rating),stars/,.png]</texture>
           </control>
         </control>
         <control type="list" id="8002">
@@ -2542,7 +2309,7 @@
           <width>300</width>
           <height>292</height>
           <onleft>9000</onleft>
-          <onright>XBMC.RunScript(script.recentlyadded,limit=8&amp;albums=False&amp;unplayed=True&amp;totals=True)</onright>
+          <onright>8002</onright>
           <onup>8002</onup>
           <ondown>8002</ondown>
           <viewtype label="535">list</viewtype>

@@ -1,15 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.aeon.nox"
-  version="0.9.9"
+  version="2.0.0"
   name="Aeon Nox"
   provider-name="Big_Noid">
   <requires>
     <import addon="xbmc.gui" version="2.11"/>
-    <import addon="script.recentlyadded" version="1.0.4"/>
-    <import addon="script.favourites" version="1.0.3"/>
+    <import addon="script.favourites" version="1.0.6"/>
     <import addon="script.logo-downloader" version="2.1.3"/>
-    <import addon="script.randomitems" version="1.0.2"/>
+    <import addon="script.randomitems" version="1.0.11"/>
     <import addon="script.tv.show.next.aired" version="2.1.2"/>
   </requires>
   <extension
