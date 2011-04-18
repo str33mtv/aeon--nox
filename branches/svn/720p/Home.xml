@@ -629,7 +629,7 @@
             <onclick>ActivateWindow(VideoLibrary,Files)</onclick>
             <icon>special://skin/backgrounds/videos.jpg</icon>
             <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
-            <visible>!Skin.HasSetting(HomeMenuNoVideosButton)+Skin.HasSetting(HomeMenuNoTVShowsButton)+Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
+            <visible>!Skin.HasSetting(HomeMenuNoVideosButton)+[Skin.HasSetting(HomeMenuNoTVShowsButton)|Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
           </item>
           <item id="2">
             <label>3</label>
