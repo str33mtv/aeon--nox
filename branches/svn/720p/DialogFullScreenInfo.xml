@@ -420,8 +420,8 @@
       <height>25</height>
       <align>center</align>
       <font>Font_Info</font>
-      <textcolor>60FFFFFF</textcolor>
-      <label>$LOCALIZE[20359] $LOCALIZE[563]: [COLOR d0ffffff]$INFO[VideoPlayer.Rating][/COLOR]</label>
+      <textcolor>d0ffffff</textcolor>
+      <label>$INFO[VideoPlayer.Rating,[COLOR 60FFFFFF]$LOCALIZE[20359] $LOCALIZE[563]: [/COLOR]]</label>
       <scroll>true</scroll>
       <visible>VideoPlayer.Content(episodes)</visible>
     </control>
@@ -432,8 +432,8 @@
       <height>25</height>
       <align>center</align>
       <font>Font_Info</font>
-      <textcolor>60FFFFFF</textcolor>
-      <label>$LOCALIZE[20416]: [COLOR d0ffffff]$INFO[VideoPlayer.premiered][/COLOR]</label>
+      <textcolor>d0ffffff</textcolor>
+      <label>$INFO[VideoPlayer.premiered,[COLOR 60FFFFFF]$LOCALIZE[20416]: [/COLOR]]</label>
       <scroll>true</scroll>
       <visible>VideoPlayer.Content(episodes)</visible>
     </control>
