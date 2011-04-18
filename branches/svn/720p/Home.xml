@@ -251,26 +251,19 @@
               <visible>Container(9000).HasFocus(2)</visible>
             </item>
             <item id="90104">
-              <label>744</label>
-              <onclick>ActivateWindow(VideoFiles)</onclick>
+              <label>31294</label>
+              <onclick>ActivateWindow(VideoLibrary,root)</onclick>
               <visible>Container(9000).HasFocus(2)</visible>
             </item>
-            <item id="90105">
+            <!--<item id="90105">
               <label>14022</label>
               <onclick>ActivateWindow(VideoLibrary)</onclick>
               <visible>Library.HasContent(Video)</visible>
               <visible>Container(9000).HasFocus(2)</visible>
-            </item>
+            </item>-->
             <item id="90106">
               <label>24001</label>
               <onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
-              <visible>Library.HasContent(Video)</visible>
-              <visible>Container(9000).HasFocus(2)</visible>
-            </item>
-            <item id="90107">
-              <label>24001</label>
-              <onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
-              <visible>!Library.HasContent(Video)</visible>
               <visible>Container(9000).HasFocus(2)</visible>
             </item>
             <!--<item id="90108">
@@ -299,7 +292,7 @@
               <visible>Container(9000).HasFocus(3)</visible>
             </item>
             <item id="90110">
-              <label>ROOT</label>
+              <label>31294</label>
               <onclick>ActivateWindow(MusicLibrary,root)</onclick>
               <visible>Library.HasContent(Music)</visible>
               <visible>Container(9000).HasFocus(3)</visible>
@@ -636,7 +629,14 @@
             <onclick>ActivateWindow(VideoLibrary,Files)</onclick>
             <icon>special://skin/backgrounds/videos.jpg</icon>
             <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
-            <visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
+            <visible>!Skin.HasSetting(HomeMenuNoVideosButton)+Skin.HasSetting(HomeMenuNoTVShowsButton)+Skin.HasSetting(HomeMenuNoMoviesButton)</visible>
+          </item>
+          <item id="2">
+            <label>3</label>
+            <onclick>ActivateWindow(Videos)</onclick>
+            <icon>special://skin/backgrounds/videos.jpg</icon>
+            <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
+            <visible>!Skin.HasSetting(HomeMenuNoVideosButton)+![Skin.HasSetting(HomeMenuNoTVShowsButton)|Skin.HasSetting(HomeMenuNoMoviesButton)]</visible>
           </item>
           <item id="1">
             <label>0</label>
