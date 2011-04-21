@@ -1,6 +1,6 @@
 <includes>
   <include name="contents501list">
-    <visible>[Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Window.IsVisible(VideoFiles) | Window.IsActive(1)]+!stringcompare(Container.FolderPath,addons://sources/video/)</visible>
+    <visible>[Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Window.IsVisible(VideoFiles) | Window.IsActive(programs)]+!stringcompare(Container.FolderPath,addons://sources/video/)</visible>
     <visible>!Container.Content(LiveTV)</visible>
     <posx>-83</posx>
     <posy>380</posy>

@@ -8,7 +8,7 @@
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
       <label>191</label>
-      <visible>Window.IsActive(500)</visible>
+      <visible>Window.IsActive(musicplaylist)</visible>
     </control>
     <control type="button" id="26">
       <description>Repeat button</description>
@@ -17,7 +17,7 @@
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
       <label>-</label>
-      <visible>Window.IsActive(500)</visible>
+      <visible>Window.IsActive(musicplaylist)</visible>
     </control>
     <control type="button" id="21">
       <description>Save button</description>
@@ -26,7 +26,7 @@
       <radiowidth>65</radiowidth>
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
-      <visible>Window.IsActive(500)</visible>
+      <visible>Window.IsActive(musicplaylist)</visible>
     </control>
     <control type="button" id="22">
       <description>Clear button</description>
@@ -36,7 +36,7 @@
       <radiowidth>65</radiowidth>
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
-      <visible>Window.IsActive(500)</visible>
+      <visible>Window.IsActive(musicplaylist)</visible>
     </control>
   </include>
   <include name="VideoPlaylistButtons">
@@ -45,21 +45,21 @@
       <textwidth>170</textwidth>
       <include>Objects_MediaMenuButton2</include>
       <label>191</label>
-      <visible>Window.IsActive(28)</visible>
+      <visible>Window.IsActive(videoplaylist)</visible>
     </control>
     <control type="button" id="26">
       <description>Repeat button</description>
       <label>$LOCALIZE[486]</label>
       <textwidth>170</textwidth>
       <include>Objects_MediaMenuButton2</include>
-      <visible>Window.IsActive(28)</visible>
+      <visible>Window.IsActive(videoplaylist)</visible>
     </control>
     <control type="button" id="21">
       <description>Save button</description>
       <label>190</label>
       <textwidth>170</textwidth>
       <include>Objects_MediaMenuButton2</include>
-      <visible>Window.IsActive(28)</visible>
+      <visible>Window.IsActive(videoplaylist)</visible>
     </control>
     <control type="button" id="22">
       <description>Clear button</description>
@@ -67,7 +67,7 @@
       <onclick>ReplaceWindow(video)</onclick>
       <textwidth>170</textwidth>
       <include>Objects_MediaMenuButton2</include>
-      <visible>Window.IsActive(28)</visible>
+      <visible>Window.IsActive(videoplaylist)</visible>
     </control>
   </include>
   <include name="AddonBrowserButtons">
@@ -311,7 +311,7 @@
         </control>
       </control>
       <control type="group">
-        <visible>Window.IsActive(25)|Window.IsActive(24)</visible>
+        <visible>Window.IsActive(videolibrary)|Window.IsActive(24)</visible>
         <visible allowhiddenfocus="true">ControlGroup(9003).HasFocus|ControlGroup(9010).HasFocus</visible>
         <control type="image">
           <posx>49</posx>
@@ -340,7 +340,7 @@
           <textcolor>d0FFFFFF</textcolor>
           <align>left</align>
           <aligny>center</aligny>
-          <visible>Window.IsActive(25)+Container.Content(movies)</visible>
+          <visible>Window.IsActive(videolibrary)+Container.Content(movies)</visible>
         </control>
         <control type="label">
           <posx>111</posx>
@@ -351,7 +351,7 @@
           <textcolor>d0FFFFFF</textcolor>
           <align>left</align>
           <aligny>center</aligny>
-          <visible>Window.IsActive(25)+Container.Content(tvshows)</visible>
+          <visible>Window.IsActive(videolibrary)+Container.Content(tvshows)</visible>
         </control>
         <control type="label">
           <posx>111</posx>
@@ -362,7 +362,7 @@
           <textcolor>d0FFFFFF</textcolor>
           <align>left</align>
           <aligny>center</aligny>
-          <visible>Window.IsActive(25)+Container.Content(seasons)</visible>
+          <visible>Window.IsActive(videolibrary)+Container.Content(seasons)</visible>
         </control>
         <control type="label">
           <posx>111</posx>
@@ -373,7 +373,7 @@
           <textcolor>d0FFFFFF</textcolor>
           <align>left</align>
           <aligny>center</aligny>
-          <visible>Window.IsActive(25)+Container.Content(episodes)+!SubString(ListItem.Episode,S)</visible>
+          <visible>Window.IsActive(videolibrary)+Container.Content(episodes)+!SubString(ListItem.Episode,S)</visible>
         </control>
         <control type="label">
           <posx>111</posx>
@@ -384,11 +384,11 @@
           <textcolor>d0FFFFFF</textcolor>
           <align>left</align>
           <aligny>center</aligny>
-          <visible>Window.IsActive(25)+Container.Content(episodes)+SubString(ListItem.Episode,S)</visible>
+          <visible>Window.IsActive(videolibrary)+Container.Content(episodes)+SubString(ListItem.Episode,S)</visible>
         </control>
       </control>
       <control type="group">
-        <visible>Window.IsActive(502)</visible>
+        <visible>Window.IsActive(musiclibrary)</visible>
         <visible allowhiddenfocus="true">ControlGroup(9003).HasFocus|ControlGroup(9010).HasFocus</visible>
 
         <control type="image">
@@ -516,7 +516,7 @@
           <radioposx>125</radioposx>
           <include>Objects_MediaMenuButton2</include>
           <label>20367</label>
-          <visible>Window.IsActive(25)</visible>
+          <visible>Window.IsActive(videolibrary)</visible>
         </control>
         <control type="radiobutton" id="17">
           <description>Flatten</description>
@@ -538,9 +538,9 @@
           <selected>system.ismaster</selected>
           <visible>system.haslocks</visible>
         </control>
-        <include condition="Window.IsActive(500)">MusicPlaylistButtons</include>
-        <include condition="Window.IsActive(28)">VideoPlaylistButtons</include>
-        <include condition="Window.IsActive(1)">ProgramButtons</include>
+        <include condition="Window.IsActive(musicplaylist)">MusicPlaylistButtons</include>
+        <include condition="Window.IsActive(videoplaylist)">VideoPlaylistButtons</include>
+        <include condition="Window.IsActive(programs)">ProgramButtons</include>
         <control type="radiobutton" id="606">
           <description>Toggle Fanart</description>
           <radiowidth>65</radiowidth>
@@ -1015,7 +1015,7 @@
           <onclick>Skin.ToggleSetting(smallmusicwall)</onclick>
           <onclick>XBMC.ReloadSkin()</onclick>
           <selected>Skin.HasSetting(smallmusicwall)</selected>
-          <visible>Control.IsVisible(500)+[Container.Content(albums)|Container.Content(songs)]+!Skin.HasSetting(hideoptions)</visible>
+          <visible>Control.IsVisible(500)+[Container.Content(albums)|Container.Content(songs)|Container.Content(addons)]+!Skin.HasSetting(hideoptions)</visible>
           <radiowidth>65</radiowidth>
           <radioheight>65</radioheight>
           <radioposx>125</radioposx>
