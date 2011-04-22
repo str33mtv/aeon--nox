@@ -1002,7 +1002,7 @@
           <onclick>Skin.ToggleSetting(smallmoviewall)</onclick>
           <onclick>XBMC.ReloadSkin()</onclick>
           <selected>Skin.HasSetting(smallmoviewall)</selected>
-          <visible>Control.IsVisible(500)+[Container.Content(movies)|Container.Content(seasons)|Container.Content(tvshows)|Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
+          <visible>Control.IsVisible(560)+[Container.Content(movies)|Container.Content(seasons)|Container.Content(tvshows)|Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
           <radiowidth>65</radiowidth>
           <radioheight>65</radioheight>
           <radioposx>125</radioposx>
@@ -1027,7 +1027,7 @@
           <label>$LOCALIZE[20445]</label>
           <onclick>Skin.ToggleSetting(transparentwall)</onclick>
           <selected>Skin.HasSetting(transparentwall)</selected>
-          <visible>Control.IsVisible(500)+!Skin.HasSetting(hideoptions)</visible>
+          <visible>[Control.IsVisible(500)|Control.IsVisible(560)]+!Skin.HasSetting(hideoptions)</visible>
           <radiowidth>65</radiowidth>
           <radioheight>65</radioheight>
           <radioposx>125</radioposx>
