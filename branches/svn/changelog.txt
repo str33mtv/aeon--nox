@@ -1,3 +1,0 @@
-[B]2.0.0[/B]
-- Branched off eden-pre branch.
-- Incorparated changes made to skinning engine.
