@@ -14,7 +14,7 @@
 - Added Fullscreen Info toggle (press "Select" when info is shown on fullscreen video)
 - Updated French language strings - thx Rififi77
 - Fixed playlist visibility
-- Added warning to "Enable Background Effect" setting (Can increase CPU usage if VSync is set to "Always enabled")
+- Added warning to "Enable Background Effect" setting (Can increase CPU usage)
 
 [B]1.1.0[/B]
 - Fixed "new" flag for small movie wall.
