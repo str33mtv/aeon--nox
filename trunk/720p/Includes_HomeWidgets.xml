@@ -20,6 +20,7 @@
             <align>left</align>
             <textcolor>a9000000</textcolor>
             <label>$INFO[Container(8003).ListItem.Property(Plot)]</label>
+            <textoffsetx>60</textoffsetx>
             <scroll>true</scroll>
             <scrollout>true</scrollout>
             <scrollspeed>50</scrollspeed>
@@ -289,6 +290,7 @@
             <align>left</align>
             <textcolor>a9000000</textcolor>
             <label>$INFO[Container(8003).ListItem.Property(Plot)]</label>
+            <textoffsetx>60</textoffsetx>
             <scroll>true</scroll>
             <scrollout>true</scrollout>
             <scrollspeed>50</scrollspeed>
