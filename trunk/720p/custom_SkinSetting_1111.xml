@@ -319,6 +319,7 @@
             <include>Default_SettingRadioButton</include>
             <onclick>Skin.ToggleSetting(tv_theme)</onclick>
             <selected>Skin.HasSetting(tv_theme)</selected>
+            <enable>System.HasAddon(script.tvtunes)</enable>
           </control>
           <control type="radiobutton" id="279">
             <label>31242</label>
