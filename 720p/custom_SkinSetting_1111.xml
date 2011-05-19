@@ -825,6 +825,20 @@
             <onclick>Skin.ToggleSetting(HomeMenuNoShutdownButton)</onclick>
             <selected>Skin.HasSetting(HomeMenuNoShutdownButton)</selected>
           </control>
+          <control type="radiobutton" id="419">
+            <description>Hide Settings Button</description>
+            <include>Default_SettingRadioButton</include>
+            <label>$LOCALIZE[31111] - $LOCALIZE[13000]</label>
+            <onclick>Skin.ToggleSetting(HomeMenuNoSettingsButton)</onclick>
+            <selected>Skin.HasSetting(HomeMenuNoSettingsButton)</selected>
+          </control>
+          <control type="radiobutton" id="504">
+            <description>Hide Disc Button</description>
+            <include>Default_SettingRadioButton</include>
+            <label>$LOCALIZE[31111] - $LOCALIZE[341]</label>
+            <onclick>Skin.ToggleSetting(HomeMenuNoDiscButton)</onclick>
+            <selected>Skin.HasSetting(HomeMenuNoDiscButton)</selected>
+          </control>
         </control>
         <control type="scrollbar" id="60">
           <posx>1250</posx>
