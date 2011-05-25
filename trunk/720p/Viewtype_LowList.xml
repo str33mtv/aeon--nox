@@ -758,8 +758,8 @@
           <posy>-87</posy>
           <width>266</width>
           <height>400</height>
-          <aspectratio scalediffuse="false">stretch</aspectratio>
-          <texture background="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/movieposter_mask.png">$INFO[ListItem.Icon]</texture>
+          <aspectratio scalediffuse="false">scale</aspectratio>
+          <texture background="true" diffuse="thumbs/movieposter_mask.png">$INFO[ListItem.Icon]</texture>
           <fadetime>400</fadetime>
           <visible>[Skin.HasSetting(TVShowsUsePosters)+Container.Content(tvshows)]|Container.Content(movies)|Container.Content(seasons)</visible>
         </control>
@@ -791,8 +791,8 @@
           <posy>315</posy>
           <width>266</width>
           <height>400</height>
-          <aspectratio scalediffuse="false">stretch</aspectratio>
-          <texture background="true" flipy="true" fallback="DefaultVideoBigPoster.png" diffuse="thumbs/movieposter_mask_reflect.png">$INFO[ListItem.Icon]</texture>
+          <aspectratio scalediffuse="false">scale</aspectratio>
+          <texture background="true" flipy="true" diffuse="thumbs/movieposter_mask_reflect.png">$INFO[ListItem.Icon]</texture>
           <fadetime>400</fadetime>
           <visible>[Skin.HasSetting(TVShowsUsePosters)+Container.Content(tvshows)]|Container.Content(movies)|Container.Content(seasons)</visible>
         </control>
@@ -856,7 +856,7 @@
           <posy>-87</posy>
           <width>280</width>
           <height>397</height>
-          <aspectratio scalediffuse="false">stretch</aspectratio>
+          <aspectratio scalediffuse="false">scale</aspectratio>
           <texture background="true" diffuse="thumbs/boxes/case_mask.png">$INFO[ListItem.Icon]</texture>
           <fadetime>400</fadetime>
           <visible>[Skin.HasSetting(TVShowsUsePosters)+Container.Content(tvshows)]|Container.Content(movies)|Container.Content(seasons)</visible>
