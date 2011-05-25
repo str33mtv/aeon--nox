@@ -6,8 +6,8 @@
         <posy>5</posy>
         <width>550</width>
         <height>103</height>
-        <aspectratio scalediffuse="false">stretch</aspectratio>
-        <texture background="true" diffuse="thumbs/banner_wall_mask.png">DefaultBanner.png</texture>
+        <aspectratio scalediffuse="false">scale</aspectratio>
+        <texture background="true" diffuse="thumbs/banner_wall_mask.png">defaultVideoCover.png</texture>
         <info>ListItem.Icon</info>
       </control>
       <control type="image">
@@ -47,8 +47,8 @@
         <posy>7</posy>
         <width>500</width>
         <height>96</height>
-        <aspectratio scalediffuse="false">stretch</aspectratio>
-        <texture background="true" diffuse="thumbs/banner_wall_mask.png">DefaultBanner.png</texture>
+        <aspectratio scalediffuse="false">scale</aspectratio>
+        <texture background="true" diffuse="thumbs/banner_wall_mask.png">defaultVideoCover.png</texture>
         <info>ListItem.Icon</info>
         <visible>!IsEmpty(ListItem.Thumb)</visible>
         <animation effect="zoom" center="280,45" start="110" end="120" time="200" tween="cubic" easing="out" reversible="false">Focus</animation>
@@ -93,8 +93,8 @@
         <posy>5</posy>
         <width>550</width>
         <height>103</height>
-        <aspectratio scalediffuse="false">stretch</aspectratio>
-        <texture background="true" diffuse="thumbs/banner_wall_mask.png">DefaultBanner.png</texture>
+        <aspectratio scalediffuse="false">scale</aspectratio>
+        <texture background="true" diffuse="thumbs/banner_wall_mask.png">defaultVideoCover.png</texture>
         <info>ListItem.Path,,banner.jpg</info>
       </control>
       <control type="image">
@@ -134,8 +134,8 @@
         <posy>7</posy>
         <width>500</width>
         <height>96</height>
-        <aspectratio scalediffuse="false">stretch</aspectratio>
-        <texture background="true" diffuse="thumbs/banner_wall_mask.png">DefaultBanner.png</texture>
+        <aspectratio scalediffuse="false">scale</aspectratio>
+        <texture background="true" diffuse="thumbs/banner_wall_mask.png">defaultVideoCover.png</texture>
         <info>ListItem.Path,,banner.jpg</info>
         <animation effect="zoom" center="280,45" start="110" end="120" time="200" tween="cubic" easing="out" reversible="false">Focus</animation>
       </control>
@@ -224,7 +224,7 @@
       <textureslidernibfocus>views/scrollBarNib.png</textureslidernibfocus>
       <pulseonselect>yes</pulseonselect>
       <onup>51</onup>
-      <ondown>SetFocus(109)</ondown>
+      <ondown>51</ondown>
       <showonepage>false</showonepage>
       <orientation>horizontal</orientation>
     </control>
@@ -265,7 +265,7 @@
       <showonepage>false</showonepage>
       <pulseonselect>yes</pulseonselect>
       <onleft>51</onleft>
-      <onright>SetFocus(109)</onright>
+      <onright>51</onright>
     </control>
   </include>
   <include name="BannerWall">

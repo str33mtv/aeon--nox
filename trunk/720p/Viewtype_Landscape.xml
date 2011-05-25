@@ -27,7 +27,7 @@
           <aspectratio scalediffuse="false">scale</aspectratio>
           <texture background="true" diffuse="thumbs/multiplex_tvmask.png">defaultVideoCover.png</texture>
           <bordertexture border="-44">thumbs/multiplex_tvborder.png</bordertexture>
-          <info>ListItem.Thumb</info>
+          <info>ListItem.Icon</info>
         </control>
         <control type="image">
           <posx>4</posx>
@@ -37,7 +37,7 @@
           <aspectratio scalediffuse="false">scale</aspectratio>
           <texture flipy="true" background="true" diffuse="thumbs/multiplex_tvmaskreflect.png">defaultVideoCover.png</texture>
           <colordiffuse>aaFFFFFF</colordiffuse>
-          <info>ListItem.Thumb</info>
+          <info>ListItem.Icon</info>
         </control>
       </control>
       <control type="group">
@@ -162,7 +162,7 @@
           <aspectratio scalediffuse="false">scale</aspectratio>
           <texture background="true" diffuse="thumbs/multiplex_tvmask.png">defaultVideoCover.png</texture>
           <bordertexture border="-44">thumbs/multiplex_tvborder.png</bordertexture>
-          <info>ListItem.Thumb</info>
+          <info>ListItem.Icon</info>
         </control>
         <control type="image">
           <posx>38</posx>
@@ -171,7 +171,7 @@
           <height>180</height>
           <aspectratio scalediffuse="false">scale</aspectratio>
           <texture flipy="true" background="true" diffuse="thumbs/multiplex_tvmaskreflect.png">defaultVideoCover.png</texture>
-          <info>ListItem.Thumb</info>
+          <info>ListItem.Icon</info>
           <colordiffuse>aaFFFFFF</colordiffuse>
         </control>
       </control>
