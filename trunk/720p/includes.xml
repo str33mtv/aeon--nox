@@ -462,11 +462,11 @@
   </include>
   <include name="subcolorfocus">
     <textcolor>ff2e2e2e</textcolor>
-    <selectedcolor>9b3cd2fd</selectedcolor>
+    <selectedcolor>FF585858</selectedcolor>
   </include>
   <include name="listcolorfocus">
     <textcolor>ff2e2e2e</textcolor>
-    <selectedcolor>ff2e2e2e</selectedcolor>
+    <selectedcolor>FF585858</selectedcolor>
   </include>
   <include name="detailcolornofocus">
     <textcolor>dcbdbdbd</textcolor>
