@@ -1256,7 +1256,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <textcolor>ff969696</textcolor>
-        <label>$LOCALIZE[31024] $INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages]</label>
+        <label>$INFO[Container(50).CurrentPage,$LOCALIZE[31024] ]/$INFO[Container(50).NumPages]</label>
       </control>
       <include condition="Skin.HasSetting(cdartfliplist)">CDArtFlip</include>
       <include condition="Window.IsActive(videolibrary)">ListIconPoster</include>
