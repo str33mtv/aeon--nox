@@ -479,7 +479,7 @@
   <include name="Furniture_NowPlayingWidget">
     <control type="group">
       <include>Animation_WidgetZoom</include>
-      <animation effect="slide" time="800" start="0,0" end="-86,0" tween="cubic" easing="inout" condition="[Container.Content(movies)+Skin.HasSetting(breadcrumb)]|Window.IsActive(settings)|Window.IsActive(systeminfo)|Window.IsActive(picturessettings)|Window.IsActive(programssettings)|Window.IsActive(weathersettings)|Window.IsActive(musicsettings)|Window.IsActive(systemsettings)|Window.IsActive(videossettings)|Window.IsActive(networksettings)|Window.IsActive(appearancesettings)|Window.IsActive(1111)">Conditional</animation>
+      <animation effect="slide" time="800" start="0,0" end="-80,0" tween="cubic" easing="inout" condition="[Container.Content(movies)+Skin.HasSetting(breadcrumb)]|Window.IsActive(settings)|Window.IsActive(systeminfo)|Window.IsActive(picturessettings)|Window.IsActive(programssettings)|Window.IsActive(weathersettings)|Window.IsActive(musicsettings)|Window.IsActive(systemsettings)|Window.IsActive(videossettings)|Window.IsActive(networksettings)|Window.IsActive(appearancesettings)|Window.IsActive(1111)">Conditional</animation>
       <visible>Player.HasMedia</visible>
       <visible>!SubString(Window(videolibrary).Property(tvtunesIsAlive),True)</visible>
       <posx>0</posx>
@@ -511,7 +511,7 @@
         <font>Font_Reg14</font>
         <textcolor>a8FFFFFF</textcolor>
         <scroll>true</scroll>
-        <label>[UPPERCASE][COLOR a8FFFFFF]$INFO[MusicPlayer.Artist][/COLOR][/UPPERCASE]</label>
+        <label>[COLOR a8FFFFFF]$INFO[MusicPlayer.Artist][/COLOR]</label>
       </control>
       <control type="label">
         <posx>92</posx>
@@ -521,7 +521,7 @@
         <font>Font_Reg14</font>
         <textcolor>a8FFFFFF</textcolor>
         <scroll>true</scroll>
-        <label>[UPPERCASE][COLOR FFFFFFFF]$INFO[MusicPlayer.Title][/COLOR][/UPPERCASE]</label>
+        <label>[COLOR FFFFFFFF]$INFO[MusicPlayer.Title][/COLOR]</label>
       </control>
       <control type="label">
         <posx>88</posx>
@@ -531,31 +531,29 @@
         <font>Font_Reg14</font>
         <textcolor>a8FFFFFF</textcolor>
         <scroll>true</scroll>
-        <label>[UPPERCASE][COLOR a8FFFFFF]$INFO[Videoplayer.TVShowTitle][/COLOR][/UPPERCASE]</label>
+        <label>$INFO[Videoplayer.TVShowTitle]</label>
       </control>
       <control type="label">
         <posx>88</posx>
         <posy>3</posy>
         <width>240</width>
         <height>18</height>
-        <font>Font_Reg14</font>
-        <textcolor>a8FFFFFF</textcolor>
+        <font>Font_Reg17</font>
+        <textcolor>white2</textcolor>
         <scroll>true</scroll>
-        <label>[UPPERCASE][COLOR FFFFFFFF]$INFO[Videoplayer.Title][/COLOR][/UPPERCASE]</label>
-        <animation effect="slide" start="0,0" end="0,7" time="0" condition="!IsEmpty(Videoplayer.TVShowTitle)">Conditional</animation>
-        <visible>VideoPlayer.Content(movies)</visible>
+        <label>$INFO[Videoplayer.Title]</label>
+        <visible>!VideoPlayer.Content(episodes)|IsEmpty(Videoplayer.TVShowTitle)</visible>
       </control>
       <control type="label">
         <posx>88</posx>
-        <posy>3</posy>
+        <posy>10</posy>
         <width>310</width>
         <height>18</height>
         <font>Font_Reg14</font>
-        <textcolor>a8FFFFFF</textcolor>
+        <textcolor>white2</textcolor>
         <scroll>true</scroll>
-        <label>[UPPERCASE][COLOR FFFFFFFF]$INFO[Videoplayer.Title][/COLOR][/UPPERCASE]</label>
-        <animation effect="slide" start="0,0" end="0,7" time="0" condition="!IsEmpty(Videoplayer.TVShowTitle)">Conditional</animation>
-        <visible>!VideoPlayer.Content(movies)</visible>
+        <label>$INFO[Videoplayer.Title]</label>
+        <visible>VideoPlayer.Content(episodes)+!IsEmpty(Videoplayer.TVShowTitle)</visible>
       </control>
       <control type="label">
         <description>Current time</description>
@@ -566,6 +564,7 @@
         <font>Font_Reg14</font>
         <label>$INFO[Player.Time] / $INFO[Player.Duration]</label>
         <align>center</align>
+        <textcolor>white2</textcolor>
         <visible>Player.HasDuration</visible>
       </control>
       <control type="label">
@@ -577,10 +576,12 @@
         <font>Font_Reg14</font>
         <label>$INFO[Player.Time] / ∞</label>
         <align>center</align>
+        <textcolor>white2</textcolor>
         <visible>!Player.HasDuration</visible>
       </control>
       <control type="group">
         <animation effect="slide" start="0,0" end="0,8" time="0" condition="VideoPlayer.Content(movies)">Conditional</animation>
+        <visible>![[Container.Content(movies)+Skin.HasSetting(breadcrumb)]|Window.IsActive(settings)|Window.IsActive(systeminfo)|Window.IsActive(picturessettings)|Window.IsActive(programssettings)|Window.IsActive(weathersettings)|Window.IsActive(musicsettings)|Window.IsActive(systemsettings)|Window.IsActive(videossettings)|Window.IsActive(networksettings)|Window.IsActive(appearancesettings)|Window.IsActive(1111)]</visible>
         <control type="image">
           <description>Cd overlay</description>
           <animation effect="rotate" end="-360" center="auto" time="5000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
