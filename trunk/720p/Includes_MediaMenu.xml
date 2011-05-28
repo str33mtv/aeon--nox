@@ -236,7 +236,7 @@
       <label>$LOCALIZE[31166]</label>
       <onclick>Skin.ToggleSetting(infopanelmusic)</onclick>
       <selected>Skin.HasSetting(infopanelmusic)</selected>
-      <visible>[Control.IsVisible(509)|Control.IsVisible(513)]+!Skin.HasSetting(hideoptions)</visible>
+      <visible>[Control.IsVisible(509)|Control.IsVisible(513)]+[Container.Content(albums)|Container.Content(artists)]+!Skin.HasSetting(hideoptions)</visible>
       <radiowidth>65</radiowidth>
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
@@ -250,7 +250,7 @@
       <label>$LOCALIZE[31167]</label>
       <onclick>Skin.ToggleSetting(infopaneautomusic)</onclick>
       <selected>Skin.HasSetting(infopaneautomusic)</selected>
-      <visible>[Control.IsVisible(509)|Control.IsVisible(513)]+Skin.HasSetting(infopanelmusic)+!Skin.HasSetting(hideoptions)</visible>
+      <visible>[Control.IsVisible(509)|Control.IsVisible(513)]+[Container.Content(albums)|Container.Content(artists)]+Skin.HasSetting(infopanelmusic)+!Skin.HasSetting(hideoptions)</visible>
     </control>
     <control type="radiobutton" id="642">
       <description>Cases</description>
@@ -259,7 +259,7 @@
       <label>$LOCALIZE[31250]</label>
       <onclick>Skin.ToggleSetting(lightinfopanel)</onclick>
       <selected>Skin.HasSetting(lightinfopanel)</selected>
-      <visible>[Control.IsVisible(509)|Control.IsVisible(513)]+Skin.HasSetting(infopanelmusic)+!Skin.HasSetting(hideoptions)</visible>
+      <visible>[Control.IsVisible(509)|Control.IsVisible(513)]+[Container.Content(albums)|Container.Content(artists)]+Skin.HasSetting(infopanelmusic)+!Skin.HasSetting(hideoptions)</visible>
       <radiowidth>65</radiowidth>
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
