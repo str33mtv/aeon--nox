@@ -82,6 +82,8 @@
         <onclick>Skin.SetBool(infopanellauncher)</onclick>
         <onclick>Skin.SetBool(MoreFullscreenInfo)</onclick>
         <onclick>Skin.SetBool(lowlist)</onclick>
+        <onclick>Skin.SetBool(Skin.HasSetting(HomeMenuNoMoviesButton))</onclick>
+        <onclick>Skin.SetBool(Skin.HasSetting(HomeMenuNoTVShowsButton))</onclick>
         <onclick>Skin.Reset(Show_SlideShow_Paused)</onclick>
         <onclick>Skin.Reset(fstrailer)</onclick>
         <onclick>Skin.Reset(Show_Info_Paused)</onclick>
