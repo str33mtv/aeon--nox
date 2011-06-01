@@ -14,6 +14,8 @@
 - "Flatten" button only visible in videolibrary.
 - Added "Recommended settings" option. This will set all options to how I think Aeon Nox looks and works best.
   All custom shortcuts, paths, backgrounds and the settings for wider menu items, animated icons and disable/enable viewtypes and menu items remain intact.
+- Added new theme "White".
+- Fixed bug where labels are not visible when first activating the skin.
 
 [B]1.2.0[/B]
 - Fixed season fanart in info screen on season level.
