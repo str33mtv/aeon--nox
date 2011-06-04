@@ -16,6 +16,7 @@
   All custom shortcuts, paths, backgrounds and the settings for wider menu items, animated icons and disable/enable viewtypes and menu items remain intact.
 - Added new theme "White".
 - Fixed bug where labels are not visible when first activating the skin.
+- Redesigned Panel view.
 
 [B]1.2.0[/B]
 - Fixed season fanart in info screen on season level.
