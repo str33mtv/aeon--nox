@@ -655,7 +655,15 @@
             <onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
             <selected>!Skin.HasSetting(homepageWeatherinfo)</selected>
           </control>
-
+          <control type="radiobutton" id="505">
+            <description>enable weather info</description>
+            <include>Default_SettingRadioButton</include>
+            <label>31296</label>
+            <onclick>Skin.ToggleSetting(homepageWeatheranimated)</onclick>
+            <selected>Skin.HasSetting(homepageWeatheranimated)</selected>
+            <enable>Skin.HasSetting(AnimatedWeatherIcons)</enable>
+            <visible>!Skin.HasSetting(homepageWeatherinfo)</visible>
+          </control>
           <control type="radiobutton" id="205">
             <description>Show Recently added info</description>
             <include>Default_SettingRadioButton</include>
