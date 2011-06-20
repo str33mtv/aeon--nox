@@ -720,7 +720,7 @@
           <font>Font_Info</font>
           <textcolor>white</textcolor>
           <shadowcolor>-</shadowcolor>
-          <label>$INFO[Weather.Temperature]</label>
+          <label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
         </control>
       </control>
     </control>
@@ -771,7 +771,7 @@
           <font>Font_Info</font>
           <textcolor>white</textcolor>
           <shadowcolor>-</shadowcolor>
-          <label>$INFO[Weather.Temperature]</label>
+          <label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
         </control>
       </control>
 
