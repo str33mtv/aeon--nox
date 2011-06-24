@@ -1,5 +1,6 @@
 [B]1.3.5[/B]
 - Weather widget now shows weather plus info if it's the current weather addon.
+- Increased font size for plot in VideoInfo and InfoWall
 
 [B]1.3.4[/B]
 - Seperate Infopanel visibility for tvshows and episodes.
