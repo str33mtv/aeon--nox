@@ -952,7 +952,7 @@
           <label>$LOCALIZE[31250]</label>
           <onclick>Skin.ToggleSetting(lightinfopanel)</onclick>
           <selected>Skin.HasSetting(lightinfopanel)</selected>
-          <visible>[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)|Control.IsVisible(508)]+[Container.Content(tvshows)+Skin.HasSetting(showcaseinfoontv)]|[Container.Content(movies)+Skin.HasSetting(showcaseinfoon)]|[Skin.HasSetting(showcaseinfoonep)+Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
+          <visible>[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)|Control.IsVisible(508)]+[[Container.Content(tvshows)+Skin.HasSetting(showcaseinfoontv)]|[Container.Content(movies)+Skin.HasSetting(showcaseinfoon)]|[Skin.HasSetting(showcaseinfoonep)+Container.Content(episodes)]]+!Skin.HasSetting(hideoptions)</visible>
           <radiowidth>65</radiowidth>
           <radioheight>65</radioheight>
           <radioposx>125</radioposx>
@@ -1433,6 +1433,18 @@
           <onclick>Skin.ToggleSetting(TVInfoWallLandscape)</onclick>
           <selected>Skin.HasSetting(TVInfoWallLandscape)</selected>
           <visible>Control.IsVisible(512)+Container.Content(tvshows)+!Skin.HasSetting(hideoptions)</visible>
+        </control>
+        <control type="radiobutton" id="685">
+          <description>Toggle Dark</description>
+          <textwidth>170</textwidth>
+          <include>Objects_MediaMenuButton2</include>
+          <label>$LOCALIZE[31372]</label>
+          <onclick>Skin.ToggleSetting(LowListPlotOnly)</onclick>
+          <selected>Skin.HasSetting(LowListPlotOnly)</selected>
+          <visible>[Control.IsVisible(511)]+[Container.Content(movies)|Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
+          <radiowidth>65</radiowidth>
+          <radioheight>65</radioheight>
+          <radioposx>125</radioposx>
         </control>
       </control>
     </control>
