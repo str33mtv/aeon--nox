@@ -351,7 +351,7 @@
     <control type="group">
       <visible>!Player.Playing</visible>
       <control type="group">
-        <visible>Window.IsActive(2)</visible>
+        <visible>Window.IsActive(pictures)</visible>
         <visible allowhiddenfocus="true">ControlGroup(9003).HasFocus|ControlGroup(9010).HasFocus</visible>
         <control type="image">
           <posx>49</posx>
