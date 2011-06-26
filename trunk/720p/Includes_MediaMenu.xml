@@ -3,71 +3,70 @@
   <include name="MusicPlaylistButtons">
     <control type="radiobutton" id="20">
       <description>Shuffle button</description>
-      <include>Objects_MediaMenuButton2</include>
+      <include>Objects_MediaMenuButton</include>
       <radiowidth>65</radiowidth>
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
       <label>191</label>
-      <visible>Window.IsActive(500)</visible>
+      <visible>Window.IsActive(musicplaylist)</visible>
     </control>
     <control type="button" id="26">
       <description>Repeat button</description>
-      <include>Objects_MediaMenuButton2</include>
+      <include>Objects_MediaMenuButton</include>
       <radiowidth>65</radiowidth>
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
       <label>-</label>
-      <visible>Window.IsActive(500)</visible>
+      <visible>Window.IsActive(musicplaylist)</visible>
     </control>
     <control type="button" id="21">
       <description>Save button</description>
       <label>190</label>
-      <include>Objects_MediaMenuButton2</include>
+      <include>Objects_MediaMenuButton</include>
       <radiowidth>65</radiowidth>
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
-      <visible>Window.IsActive(500)</visible>
+      <visible>Window.IsActive(musicplaylist)</visible>
     </control>
     <control type="button" id="22">
       <description>Clear button</description>
       <label>192</label>
-      <onclick>ReplaceWindow(music)</onclick>
-      <include>Objects_MediaMenuButton2</include>
+      <include>Objects_MediaMenuButton</include>
       <radiowidth>65</radiowidth>
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
-      <visible>Window.IsActive(500)</visible>
+      <visible>Window.IsActive(musicplaylist)</visible>
     </control>
   </include>
   <include name="VideoPlaylistButtons">
     <control type="radiobutton" id="20">
       <description>Shuffle button</description>
       <textwidth>170</textwidth>
-      <include>Objects_MediaMenuButton2</include>
+      <include>Objects_MediaMenuButton</include>
       <label>191</label>
-      <visible>Window.IsActive(28)</visible>
+      <visible>Window.IsActive(videoplaylist)</visible>
     </control>
     <control type="button" id="26">
       <description>Repeat button</description>
       <label>$LOCALIZE[486]</label>
       <textwidth>170</textwidth>
-      <include>Objects_MediaMenuButton2</include>
-      <visible>Window.IsActive(28)</visible>
+      <include>Objects_MediaMenuButton</include>
+      <visible>Window.IsActive(videoplaylist)</visible>
     </control>
     <control type="button" id="21">
       <description>Save button</description>
       <label>190</label>
       <textwidth>170</textwidth>
-      <include>Objects_MediaMenuButton2</include>
-      <visible>Window.IsActive(28)</visible>
+      <include>Objects_MediaMenuButton</include>
+      <visible>Window.IsActive(videoplaylist)</visible>
     </control>
     <control type="button" id="22">
       <description>Clear button</description>
       <label>192</label>
       <onclick>ReplaceWindow(video)</onclick>
       <textwidth>170</textwidth>
-      <include>Objects_MediaMenuButton2</include>
-      <visible>Window.IsActive(28)</visible>
+      <include>Objects_MediaMenuButton</include>
+      <visible>Window.IsActive(videoplaylist)</visible>
     </control>
   </include>
   <include name="AddonBrowserButtons">
@@ -576,6 +575,8 @@
         <include condition="Window.IsActive(VideoFiles)">VideoFilesButtons</include>
         <include condition="Window.IsActive(MusicLibrary)">MusicLibraryButtons_Left</include>
         <include condition="Window.IsActive(MusicFiles)">MusicFilesButtons</include>
+        <include condition="Window.IsActive(musicplaylist)">MusicPlaylistButtons</include>
+        <include condition="Window.IsActive(videoplaylist)">VideoPlaylistButtons</include>
       </control>
 
       <control type="grouplist" id="9010">
@@ -612,8 +613,6 @@
           <selected>system.ismaster</selected>
           <visible>system.haslocks</visible>
         </control>
-        <include condition="Window.IsActive(500)">MusicPlaylistButtons</include>
-        <include condition="Window.IsActive(28)">VideoPlaylistButtons</include>
         <include condition="Window.IsActive(1)">ProgramButtons</include>
         <control type="radiobutton" id="606">
           <description>Toggle Fanart</description>
