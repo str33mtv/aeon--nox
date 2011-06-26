@@ -539,7 +539,7 @@
           <label fallback="312577">$INFO[ListItem.Plot]</label>
           <autoscroll delay="15000" time="2000" repeat="10000">Skin.HasSetting(AutoScroll)+!Control.HasFocus(60)</autoscroll>
           <textcolor>FFececec</textcolor>
-          <visible>!Control.IsVisible(50)</visible>
+          <visible>!Control.IsVisible(50)+!Control.HasFocus(10)+!Control.HasFocus(12)+!Control.HasFocus(13)</visible>
         </control>
         <control type="group">
           <visible>Container.Content(movies)|Container.Content(episodes)|Container.Content(MusicVideos)</visible>
@@ -617,6 +617,7 @@
         <onright>9000</onright>
         <ondown>50</ondown>
         <showonepage>false</showonepage>
+        <visible>!Control.HasFocus(10)+!Control.HasFocus(12)+!Control.HasFocus(13)</visible>
       </control>
       <control type="grouplist" id="9000">
         <posx>548</posx>
@@ -702,6 +703,7 @@
         <pagecontrol>60</pagecontrol>
         <scrolltime>200</scrolltime>
         <orientation>vertical</orientation>
+        <visible>!Control.HasFocus(10)+!Control.HasFocus(12)+!Control.HasFocus(13)</visible>
         <itemlayout height="30" width="430">
           <control type="label">
             <posx>10</posx>
@@ -729,6 +731,89 @@
           </control>
         </focusedlayout>
       </control>
+      <control type="image">
+        <posx>708</posx>
+        <posy>397</posy>
+        <width>374</width>
+        <height>216</height>
+        <fadetime>500</fadetime>
+        <aspectratio align="center">scale</aspectratio>
+        <texture background="true">$INFO[listitem.property(fanart_image)]</texture>
+        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+        <bordersize>7</bordersize>
+        <visible>!IsEmpty(listitem.property(fanart_image))+Control.HasFocus(12)</visible>
+      </control>
+      <control type="image">
+        <posx>708</posx>
+        <posy>397</posy>
+        <width>374</width>
+        <height>216</height>
+        <fadetime>500</fadetime>
+        <aspectratio align="center">keep</aspectratio>
+        <texture background="true">$INFO[listitem.Thumb]</texture>
+        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+        <bordersize>7</bordersize>
+        <visible>Control.HasFocus(10)</visible>
+      </control>
+      <control type="image">
+        <description>Actor image</description>
+        <posx>543</posx>
+        <posy>403</posy>
+        <width>214</width>
+        <height>214</height>
+        <texture background="true">$INFO[Container(50).Listitem.Icon]</texture>
+        <aspectratio>keep</aspectratio>
+        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+        <bordersize>7</bordersize>
+        <visible>Control.IsVisible(50)</visible>
+      </control>
+      <control type="image">
+        <posx>543</posx>
+        <posy>450</posy>
+        <width>214</width>
+        <height>214</height>
+        <fadetime>500</fadetime>
+        <aspectratio align="center">keep</aspectratio>
+        <texture background="true">$INFO[ListItem.FileNameAndPath,,/landscape.jpg]</texture>
+        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+        <bordersize>7</bordersize>
+        <visible>Control.HasFocus(13)</visible>
+      </control>
+      <control type="image">
+        <posx>703</posx>
+        <posy>340</posy>
+        <width>414</width>
+        <height>214</height>
+        <fadetime>500</fadetime>
+        <aspectratio align="top">keep</aspectratio>
+        <texture background="true">$INFO[ListItem.FileNameAndPath,,/banner.jpg]</texture>
+        <bordertexture border="7">thumbs/thumbshadow.png</bordertexture>
+        <bordersize>7</bordersize>
+        <visible>Control.HasFocus(13)</visible>
+      </control>
+      <control type="image">
+        <posx>793</posx>
+        <posy>450</posy>
+        <width>214</width>
+        <height>214</height>
+        <fadetime>500</fadetime>
+        <aspectratio align="bottom">keep</aspectratio>
+        <texture background="true">$INFO[ListItem.FileNameAndPath,,/logo.png]</texture>
+        <bordersize>7</bordersize>
+        <visible>Control.HasFocus(13)</visible>
+      </control>
+      <control type="image">
+        <posx>1043</posx>
+        <posy>450</posy>
+        <width>214</width>
+        <height>214</height>
+        <fadetime>500</fadetime>
+        <aspectratio align="bottom">keep</aspectratio>
+        <texture background="true">$INFO[ListItem.FileNameAndPath,,/clearart.png]</texture>
+        <bordersize>7</bordersize>
+        <visible>Control.HasFocus(13)</visible>
+      </control>
+
       <control type="label">
         <description>Filename</description>
         <posx>550</posx>
