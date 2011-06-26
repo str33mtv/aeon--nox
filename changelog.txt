@@ -1,5 +1,6 @@
 [B]1.4.1[/B]
 - Added weather submenu with all home window options for the weather widget.
+- Added wraplist for DialogVideoInfo, DialogAlbumInfo and SongInfo.
 
 [B]1.4.0[/B]
 - Changed default layout of high LowList to show only plot/year/runtime. ("Show Info" option added).
