@@ -500,46 +500,46 @@
           <item id="1">
             <description>Tracks</description>
             <label>182</label>
-            <onclick>SendClick(2003,5)</onclick>
+            <onclick>SendClick(2001,5)</onclick>
             <visible>Container.Content(albums)+!Control.IsVisible(50)</visible>
           </item>
           <item id="6">
             <description>Discography</description>
             <label>21888</label>
-            <onclick>SendClick(2003,5)</onclick>
+            <onclick>SendClick(2001,5)</onclick>
             <visible>Container.Content(artists)+!Control.IsVisible(50)</visible>
           </item>
           <item id="7">
             <description>Tracks</description>
             <label>183</label>
-            <onclick>SendClick(2003,5)</onclick>
+            <onclick>SendClick(2001,5)</onclick>
             <visible>Container.Content(albums)+Control.IsVisible(50)</visible>
           </item>
           <item id="8">
             <description>Discography</description>
             <label>21887</label>
-            <onclick>SendClick(2003,5)</onclick>
+            <onclick>SendClick(2001,5)</onclick>
             <visible>Container.Content(artists)+Control.IsVisible(50)</visible>
           </item>
           <item id="2">
             <description>Play last.fm</description>
-            <label>Last.FM</label>
-            <onclick>SendClick(2003,11)</onclick>
+            <label>15200</label>
+            <onclick>SendClick(2001,11)</onclick>
           </item>
           <item id="3">
             <description>Refresh</description>
             <label>$LOCALIZE[184]</label>
-            <onclick>SendClick(2003,6)</onclick>
+            <onclick>SendClick(2001,6)</onclick>
           </item>
           <item id="4">
             <description>Get Thumb</description>
             <label>$LOCALIZE[13405]</label>
-            <onclick>SendClick(2003,10)</onclick>
+            <onclick>SendClick(2001,10)</onclick>
           </item>
           <item id="5">
             <description>Get Fanart</description>
             <label>$LOCALIZE[20413]</label>
-            <onclick>SendClick(2003,12)</onclick>
+            <onclick>SendClick(2001,12)</onclick>
             <visible>!Container.Content(albums)</visible>
           </item>
         </content>
