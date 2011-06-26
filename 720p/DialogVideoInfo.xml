@@ -530,7 +530,7 @@
         <control type="textbox">
           <description>Plot</description>
           <posx>3</posx>
-          <posy>356</posy>
+          <posy>360</posy>
           <width>630</width>
           <height>210</height>
           <align>left</align>
