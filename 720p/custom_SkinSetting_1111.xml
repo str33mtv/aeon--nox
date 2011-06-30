@@ -1827,6 +1827,20 @@
                 <onup>9004</onup>
                 <ondown>9004</ondown>
               </control>
+              <control type="button" id="303">
+                <description>Default Image button</description>
+                <posx>560</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>20445</label>
+                <onclick>Skin.SetString(Home_Custom_Back_Custom1_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+                <onleft>302</onleft>
+                <onright>300</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
             </control>
             <control type="group">
               <visible>Container(9004).HasFocus(16)</visible>
@@ -1872,6 +1886,20 @@
                 <onup>9004</onup>
                 <ondown>9004</ondown>
               </control>
+              <control type="button" id="303">
+                <description>Default Image button</description>
+                <posx>560</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>20445</label>
+                <onclick>Skin.SetString(Home_Custom_Back_Custom2_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+                <onleft>302</onleft>
+                <onright>300</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
             </control>
             <control type="group">
               <visible>Container(9004).HasFocus(17)</visible>
@@ -1913,6 +1941,20 @@
                 <label>571</label>
                 <onclick>Skin.Reset(Home_Custom_Back_Custom3_Folder)</onclick>
                 <onleft>301</onleft>
+                <onright>300</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+              <control type="button" id="303">
+                <description>Default Image button</description>
+                <posx>560</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>20445</label>
+                <onclick>Skin.SetString(Home_Custom_Back_Custom3_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+                <onleft>302</onleft>
                 <onright>300</onright>
                 <onup>9004</onup>
                 <ondown>9004</ondown>
