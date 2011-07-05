@@ -1,3 +1,6 @@
+[B]1.4.3[/B]
+- "Submenu of movies uses Cinema Experience Script as default" can only be enabled if the cse script is installed.
+
 [B]1.4.2[/B]
 - Volume dialog no longer shows volume when passthrough is active.
 
