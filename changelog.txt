@@ -1,3 +1,6 @@
+[B]1.4.4[/B]
+- Watched / New overlay toggles no longer requires reload skin.
+
 [B]1.4.3[/B]
 - "Submenu of movies uses Cinema Experience Script as default" can only be enabled if the cse script is installed.
 
