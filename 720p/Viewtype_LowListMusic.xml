@@ -59,7 +59,7 @@
         <description>CDArt</description>
         <posx>8</posx>
         <posy>280</posy>
-        <visible>Control.IsVisible(802)</visible>
+        <visible>Control.IsVisible(802)+Container.Content(songs)</visible>
         <animation effect="slide" start="0,0" end="-40,0" time="400" easing="inout" tween="cubic" condition="Control.HasFocus(60)">Conditional</animation>
         <animation type="Conditional" condition="Skin.HasSetting(cdartlowlist)">
           <effect type="slide" start="0,0" end="0,120" time="800" tween="cubic" easing="inout" />
