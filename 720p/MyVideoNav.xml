@@ -1,7 +1,7 @@
 <window id="25">
   <defaultcontrol always="true">9999</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <views>50,51,501,504,503,500,508,509,512,514,516,505,510,511,550</views>
+  <views>50,51,501,504,503,500,508,509,512,514,516,505,510,511,550,55</views>
   <controls>
     <control type="button" id="9999">
       <description>trigger</description>
@@ -147,7 +147,7 @@
     </control>
     <control type="group">
       <include>Animation_OpenCloseZoom</include>
-      <visible>Control.IsVisible(508)|Control.IsVisible(503)|Control.IsVisible(509)|Control.IsVisible(504)|Control.IsVisible(501)|Control.IsVisible(510)|Control.IsVisible(50)|Control.IsVisible(505)</visible>
+      <visible>Control.IsVisible(508)|Control.IsVisible(503)|Control.IsVisible(509)|Control.IsVisible(504)|Control.IsVisible(501)|Control.IsVisible(510)|Control.IsVisible(50)|Control.IsVisible(505)|Control.IsVisible(55)</visible>
       <include>Furniture_Showcase</include>
     </control>
     <control type="group">
@@ -183,11 +183,12 @@
       <include condition="!Skin.HasSetting(DisableInfoWallVL)">AddonWall</include>
       <include condition="!Skin.HasSetting(DisableBigFanVL)">BigFan</include>
       <include condition="!Skin.HasSetting(DisableEpisodeVL)">Viewtype_Episode</include>
+      <include condition="!Skin.HasSetting(DisableCarouselVL)">Carousel</include>
       <!--<include>LiveTVView1</include>-->
       <!-- view id = 560 -->
     </control>
     <control type="group">
-      <visible>Control.IsVisible(510)|Control.IsVisible(514)|Control.IsVisible(512)|Control.IsVisible(50)</visible>
+      <visible>Control.IsVisible(510)|Control.IsVisible(514)|Control.IsVisible(512)|Control.IsVisible(50)|Control.IsVisible(55)</visible>
       <include>VideoWindowPosters</include>
     </control>
     <include>ScrollOffsetLabel</include>
@@ -198,14 +199,14 @@
         <texturefocus>-</texturefocus>
         <texturenofocus>-</texturenofocus>
         <onfocus>SetFocus(7001)</onfocus>
-        <visible>!IsEmpty(ListItem.Trailer)+!Player.HasVideo+[Container.Content(movies)+Skin.HasSetting(showcaseinfoon)+[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)]|Control.IsVisible(511)|Control.IsVisible(550)|Control.IsVisible(510)|Control.IsVisible(516)|Control.IsVisible(50)]</visible>
+        <visible>!IsEmpty(ListItem.Trailer)+!Player.HasVideo+[Container.Content(movies)+Skin.HasSetting(showcaseinfoon)+[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)]|Control.IsVisible(511)|Control.IsVisible(550)|Control.IsVisible(510)|Control.IsVisible(516)|Control.IsVisible(50)|Control.IsVisible(55)]</visible>
       </control>
       <control type="button" id="7000">
         <include>HiddenObject</include>
         <texturefocus>-</texturefocus>
         <texturenofocus>-</texturenofocus>
         <onfocus>SetFocus(9000)</onfocus>
-        <visible>[IsEmpty(ListItem.Trailer)|Player.HasVideo]+[Container.Content(movies)+Skin.HasSetting(showcaseinfoon)+[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)]|Control.IsVisible(511)|Control.IsVisible(550)|Control.IsVisible(510)|Control.IsVisible(516)|Control.IsVisible(50)]</visible>
+        <visible>[IsEmpty(ListItem.Trailer)|Player.HasVideo]+[Container.Content(movies)+Skin.HasSetting(showcaseinfoon)+[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)]|Control.IsVisible(511)|Control.IsVisible(550)|Control.IsVisible(510)|Control.IsVisible(516)|Control.IsVisible(50)|Control.IsVisible(55)]</visible>
       </control>
       <control type="button" id="7000">
         <include>HiddenObject</include>
@@ -354,12 +355,12 @@
     </control>
     <control type="group">
       <include>Animation_OpenCloseZoom</include>
-      <visible>Control.IsVisible(508)|Control.IsVisible(503)|Control.IsVisible(509)|Control.IsVisible(504)|Control.IsVisible(501)|Control.IsVisible(51)|Control.IsVisible(500)|[Control.IsVisible(510)+Skin.HasSetting(posterslide)]|[Control.IsVisible(512)+!Skin.HasSetting(infowallflags)]|Control.IsVisible(516)|Control.IsVisible(514)</visible>
+      <visible>Control.IsVisible(508)|Control.IsVisible(503)|Control.IsVisible(509)|Control.IsVisible(504)|Control.IsVisible(501)|Control.IsVisible(51)|Control.IsVisible(500)|[Control.IsVisible(510)+Skin.HasSetting(posterslide)]|[Control.IsVisible(512)+!Skin.HasSetting(infowallflags)]|Control.IsVisible(516)|Control.IsVisible(514)|Control.IsVisible(55)</visible>
       <include>FloorFlags</include>
     </control>
     <control type="group">
       <include>Animation_OpenCloseZoom</include>
-      <visible>Control.IsVisible(508)|Control.IsVisible(503)|Control.IsVisible(509)|Control.IsVisible(504)|Control.IsVisible(501)|Control.IsVisible(510)</visible>
+      <visible>Control.IsVisible(508)|Control.IsVisible(503)|Control.IsVisible(509)|Control.IsVisible(504)|Control.IsVisible(501)|Control.IsVisible(510)|Control.IsVisible(55)</visible>
       <include>Furniture_DarkGradient</include>
     </control>
     <control type="group">
