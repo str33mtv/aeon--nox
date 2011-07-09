@@ -359,6 +359,23 @@
       <radioposx>125</radioposx>
     </control>
   </include>
+  <include name="PicturesButtons">
+    <control type="button" id="6">
+      <description>Start a picture slideshow</description>
+      <include>Objects_MediaMenuButton</include>
+      <label>13317</label>
+    </control>
+    <control type="button" id="7">
+      <description>Start a recursive picture slideshow</description>
+      <include>Objects_MediaMenuButton</include>
+      <label>13318</label>
+    </control>
+    <control type="radiobutton" id="9">
+      <description>Randomize the picture slideshow</description>
+      <include>Objects_MediaMenuButton</include>
+      <label>13319</label>
+    </control>
+  </include>
   <include name="Media_Menu_No_Breadcrumbs">
     <control type="label">
       <posx>1260</posx>
@@ -602,6 +619,7 @@
         <include condition="Window.IsActive(MusicFiles)">MusicFilesButtons</include>
         <include condition="Window.IsActive(musicplaylist)">MusicPlaylistButtons</include>
         <include condition="Window.IsActive(videoplaylist)">VideoPlaylistButtons</include>
+        <include condition="Window.IsActive(pictures)">PicturesButtons</include>
       </control>
 
       <control type="grouplist" id="9010">
