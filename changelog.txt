@@ -4,6 +4,7 @@
 - Fixed: cut off label with more than 99 episodes in list view (seasons).
 - Added option to enable animated backgrounds only on home window.
 - Added default buttons in pictures section.
+- Added "Manual add to library" button to musiclibrary.
 
 [B]1.4.4[/B]
 - Watched / New overlay toggles no longer requires reload skin.
