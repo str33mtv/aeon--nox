@@ -654,6 +654,7 @@
           <label fallback="312577">$INFO[ListItem.Plot]</label>
           <textcolor>d0FFFFFF</textcolor>
           <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
+          <animation effect="fade" start="100" end="0" time="1100" condition="Player.HasVideo">Conditional</animation>
         </control>
       </control>
     </control>
@@ -776,6 +777,7 @@
       <control type="group">
         <posx>420</posx>
         <posy>42</posy>
+        <animation effect="fade" start="100" end="0" time="1100" condition="Player.HasVideo">Conditional</animation>
         <control type="label">
           <posx>0</posx>
           <posy>-2</posy>
@@ -1224,6 +1226,7 @@
           <font>Font_Info</font>
           <label fallback="312577">$INFO[ListItem.Plot]</label>
           <textcolor>d0FFFFFF</textcolor>
+          <animation effect="fade" start="100" end="0" time="1100" condition="Player.HasVideo">Conditional</animation>
           <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
         </control>
       </control>
