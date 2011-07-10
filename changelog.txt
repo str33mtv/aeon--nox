@@ -8,6 +8,7 @@
 - Added missing default buttons to musicfiles section.
 - Unified all select and settings dialogs.
 - Fixed special characters not uppercase on home menu.
+- Removed animation on playing video in Showcase/Landscape views (caused crashes on some lower-end systems).
 
 [B]1.4.4[/B]
 - Watched / New overlay toggles no longer requires reload skin.
