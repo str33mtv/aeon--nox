@@ -41,7 +41,7 @@
         <width>400</width>
         <height>40</height>
         <textcolor>white</textcolor>
-        <font>Font_Info</font>
+        <font>Font_Bold19</font>
         <label>$LOCALIZE[1036]</label>
         <align>left</align>
         <aligny>center</aligny>
@@ -72,7 +72,7 @@
             <height>40</height>
             <textcolor>FF929191</textcolor>
             <aligny>center</aligny>
-            <font>Font_Info</font>
+            <font>Font_Reg19</font>
             <info>ListItem.Label</info>
           </control>
         </itemlayout>
@@ -91,7 +91,7 @@
             <height>40</height>
             <textcolor>white</textcolor>
             <aligny>center</aligny>
-            <font>Font_Info</font>
+            <font>Font_Reg19</font>
             <info>ListItem.Label</info>
           </control>
         </focusedlayout>
