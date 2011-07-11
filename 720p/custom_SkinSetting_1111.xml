@@ -1040,26 +1040,26 @@
             </focusedlayout>
             <content>
               <item id="3">
-                <label>1</label>
+                <label>31500</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/pictures.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
               </item>
               <item id="2">
-                <label>2</label>
+                <label>31501</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/music.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
               </item>
               <item id="10">
-                <label>20342</label>
+                <label>31502</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/movies.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
                 <visible>Skin.HasSetting(HomeMenuNoMoviesButton) + Library.HasContent(Movies)</visible>
               </item>
               <item id="11">
-                <label>20343</label>
+                <label>31503</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/tvshows.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
@@ -1129,49 +1129,49 @@
                 <visible>Skin.HasSetting(HomeMenuFavourite6)+!IsEmpty(Skin.String(HomeMenuFavourite6_Label))</visible>
               </item>
               <item id="1">
-                <label>3</label>
+                <label>31504</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/videos.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
               </item>
               <item id="4">
-                <label>0</label>
+                <label>31505</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/programs.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
               </item>
               <item id="7">
-                <label>13000</label>
+                <label>31506</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/settings.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
               </item>
               <item id="8">
-                <label>24001</label>
+                <label>31507</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/Addons.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</thumb>
               </item>
               <item id="12">
-                <label>13005</label>
+                <label>31508</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/shutdown.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Shutdown_Folder)]</thumb>
               </item>
               <item id="13">
-                <label>1036</label>
+                <label>31509</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/favourites.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
               </item>
               <item id="14">
-                <label>341</label>
+                <label>31511</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/play_disc.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Disc_Folder)]</thumb>
               </item>
               <item id="5">
-                <label>8</label>
+                <label>31510</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/weather.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
