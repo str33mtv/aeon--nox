@@ -234,6 +234,7 @@
       <radiowidth>65</radiowidth>
       <radioheight>65</radioheight>
       <radioposx>125</radioposx>
+      <visible>!IsEmpty(Skin.String(ArtistsLogosPath))</visible>
     </control>
     <control type="radiobutton" id="617">
       <description>Toggle Fanart</description>
