@@ -2715,7 +2715,7 @@
             <align>left</align>
             <aligny>center</aligny>
           </control>
-          <control type="radiobutton" id="450">
+          <control type="radiobutton" id="529">
             <label>$LOCALIZE[31176] [B]1[/B]</label>
             <include>Default_SettingRadioButton</include>
             <onclick>Skin.ToggleSetting(HomeMusicPlaylist1)</onclick>
