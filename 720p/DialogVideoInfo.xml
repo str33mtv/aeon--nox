@@ -396,7 +396,7 @@
           <aligny>center</aligny>
           <font>Font_Info</font>
           <textcolor>FF868686</textcolor>
-          <label>$LOCALIZE[33054]:</label>
+          <label>$LOCALIZE[572]:</label>
           <visible>Container.Content(tvshows)</visible>
         </control>
         <control type="label">
@@ -499,7 +499,7 @@
           <aligny>center</aligny>
           <font>Font_Info</font>
           <textcolor>FFececec</textcolor>
-          <label>$INFO[ListItem.Property(TotalSeasons)]</label>
+          <label>$INFO[ListItem.Studio]</label>
           <visible>Container.Content(tvshows)</visible>
         </control>
         <control type="label">
