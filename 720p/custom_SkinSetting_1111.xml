@@ -1044,12 +1044,14 @@
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/pictures.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
               </item>
               <item id="2">
                 <label>31501</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/music.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
               </item>
               <item id="10">
                 <label>31502</label>
@@ -1133,48 +1135,56 @@
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/videos.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible>
               </item>
               <item id="4">
                 <label>31505</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/programs.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
               </item>
               <item id="7">
                 <label>31506</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/settings.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoSettingsButton)</visible>
               </item>
               <item id="8">
                 <label>31507</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/Addons.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoAddonsButton)</visible>
               </item>
               <item id="12">
                 <label>31508</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/shutdown.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Shutdown_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoShutdownButton)</visible>
               </item>
               <item id="13">
                 <label>31509</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/favourites.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Favourites_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoFavouritesButton)</visible>
               </item>
               <item id="14">
                 <label>31511</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/play_disc.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Disc_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoDiscButton)</visible>
               </item>
               <item id="5">
                 <label>31510</label>
                 <onclick>-</onclick>
                 <icon>special://skin/backgrounds/weather.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
               </item>
             </content>
           </control>
