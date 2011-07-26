@@ -1,3 +1,8 @@
+[B]1.5.1[/B]
+- Added TV Show title to Infopanel.
+- Changed episode number to label in InfoWall.
+- Added background toggle to InfoWall and Episode views.
+
 [B]1.5.0[/B]
 - Added view "Carousel".
 - Added CDArt en Artist logo to LowList.
