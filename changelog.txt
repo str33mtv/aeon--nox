@@ -3,6 +3,7 @@
 - Fixed logo in LowList seasons view.
 - Fixed "Get Tunes" label.
 - Removed OSD settings form General settings menu (all are available in "Misc options" in Music OSD).
+- Added fullscreen video for the setting windows.
 
 [B]1.5.1[/B]
 - Added TV Show title to Infopanel.
