@@ -4,6 +4,7 @@
 	<controls>
 
     <include>CommonSettingsBackground</include>
+    <include>CommonMediaPlayingBackground</include>
 
 
     <control type="group">
