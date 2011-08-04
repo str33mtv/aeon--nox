@@ -56,6 +56,28 @@
         <aspectratio>keep</aspectratio>
         <texture background="true">thumbs/poster_overlay-focus.png</texture>
       </control>
+      <control type="image">
+        <description>POSTER icon</description>
+        <posx>64</posx>
+        <posy>188</posy>
+        <width>233</width>
+        <height>176</height>
+        <texture background="true">thumbs/play-button.png</texture>
+        <fadetime>400</fadetime>
+        <visible>!IsEmpty(ListItem.Trailer)+!Control.HasFocus(7001)+Skin.HasSetting(bigtrailerbutton)</visible>
+        <animation effect="fade" start="35" end="35" condition="!Control.HasFocus(7001)">Conditional</animation>
+      </control>
+      <control type="image">
+        <description>POSTER icon</description>
+        <posx>64</posx>
+        <posy>188</posy>
+        <width>233</width>
+        <height>176</height>
+        <texture background="true">thumbs/play-button.png</texture>
+        <fadetime>400</fadetime>
+        <visible>!IsEmpty(ListItem.Trailer)+Control.HasFocus(7001)</visible>
+        <animation effect="fade" start="50" end="20" time="1000" pulse="true" condition="Control.HasFocus(7001)">Conditional</animation>
+      </control>
     </control>
     <control type="group">
       <posx>870</posx>
@@ -109,6 +131,28 @@
         <fadetime>IconCrossfadeTime2</fadetime>
         <texture diffuse="thumbs/movieposter_mask_reflect.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
         <colordiffuse>52FFFFFF</colordiffuse>
+      </control>
+      <control type="image">
+        <description>POSTER icon</description>
+        <posx>64</posx>
+        <posy>188</posy>
+        <width>233</width>
+        <height>176</height>
+        <texture background="true">thumbs/play-button.png</texture>
+        <fadetime>400</fadetime>
+        <visible>!IsEmpty(ListItem.Trailer)+!Control.HasFocus(7001)+Skin.HasSetting(bigtrailerbutton)</visible>
+        <animation effect="fade" start="35" end="35" condition="!Control.HasFocus(7001)">Conditional</animation>
+      </control>
+      <control type="image">
+        <description>POSTER icon</description>
+        <posx>64</posx>
+        <posy>188</posy>
+        <width>233</width>
+        <height>176</height>
+        <texture background="true">thumbs/play-button.png</texture>
+        <fadetime>400</fadetime>
+        <visible>!IsEmpty(ListItem.Trailer)+Control.HasFocus(7001)</visible>
+        <animation effect="fade" start="50" end="20" time="1000" pulse="true" condition="Control.HasFocus(7001)">Conditional</animation>
       </control>
     </control>
   </include>
@@ -1292,7 +1336,6 @@
           <visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
           <showonepage>false</showonepage>
         </control>
-      </control>
       <control type="label" id="161">
         <posx>105</posx>
         <posy>636</posy>
@@ -1314,6 +1357,7 @@
         <aligny>center</aligny>
         <textcolor>ff969696</textcolor>
         <label>$INFO[Container(50).CurrentPage,$LOCALIZE[31024] ]/$INFO[Container(50).NumPages]</label>
+      </control>
       </control>
       <include condition="Skin.HasSetting(cdartfliplist)">CDArtFlip</include>
       <include condition="Window.IsActive(videolibrary)">ListIconPoster</include>
@@ -1345,19 +1389,30 @@
           <texture diffuse="thumbs/diffuse_mirror3.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
           <visible>!Container.Content(genres)</visible>
         </control>
+        <control type="image">
+          <description>POSTER icon</description>
+          <posx>64</posx>
+          <posy>182</posy>
+          <width>233</width>
+          <height>176</height>
+          <texture background="true">thumbs/play-button.png</texture>
+          <fadetime>400</fadetime>
+          <visible>!IsEmpty(ListItem.Trailer)+!Control.HasFocus(7001)+Skin.HasSetting(bigtrailerbutton)</visible>
+          <animation effect="fade" start="35" end="35" condition="!Control.HasFocus(7001)">Conditional</animation>
+        </control>
+        <control type="image">
+          <description>POSTER icon</description>
+          <posx>64</posx>
+          <posy>182</posy>
+          <width>233</width>
+          <height>176</height>
+          <texture background="true">thumbs/play-button.png</texture>
+          <fadetime>400</fadetime>
+          <visible>!IsEmpty(ListItem.Trailer)+Control.HasFocus(7001)</visible>
+          <animation effect="fade" start="50" end="20" time="1000" pulse="true" condition="Control.HasFocus(7001)">Conditional</animation>
+        </control>
         <include condition="Window.IsActive(videoLibrary)">ListGenrePostersVideo</include>
         <include condition="Window.IsActive(MusicLibrary)">ListGenreMusic</include>
-      </control>
-      <control type="image">
-        <description>POSTER icon</description>
-        <posx>914</posx>
-        <posy>282</posy>
-        <width>233</width>
-        <height>176</height>
-        <texture background="true">thumbs/play-button.png</texture>
-        <fadetime>400</fadetime>
-        <visible>!IsEmpty(ListItem.Trailer)+Control.HasFocus(7001)+!Player.HasVideo</visible>
-        <animation effect="fade" start="50" end="20" time="1000" pulse="true" condition="Control.HasFocus(7001)">Conditional</animation>
       </control>
       <include condition="!Skin.HasSetting(HideListFlags)">MusicMediaFlags</include>
       <include condition="!Skin.HasSetting(HideListFlags)">FloorFlagsList</include>
