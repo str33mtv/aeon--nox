@@ -1,5 +1,6 @@
 [B]1.5.3[/B]
 - Fixed: episode label not visible when the infopanel is deactivated on TV Show level.
+- Added dts 6.1 and dd 6.1 flags in info view
 
 [B]1.5.2[/B]
 - Added option to show episode thumb in Landscape view.
