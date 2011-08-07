@@ -1,3 +1,7 @@
+[B]1.5.4[/B]
+- Fixed Networksetup.
+- Fixed numeric dialog pop up when enering master lock settings.
+
 [B]1.5.3[/B]
 - Fixed: episode label not visible when the infopanel is deactivated on TV Show level.
 - Added dts 6.1 and dd 6.1 flags in info view
