@@ -158,7 +158,7 @@
           <control type="image">
             <include>VideoInfoRatingVars</include>
             <texture>flags/rating/mpaa_nr.png</texture>
-            <visible>SubString(ListItem.mpaa,US:NR) | SubString(ListItem.mpaa,USA:NR) | SubString(ListItem.mpaa,Rated NR | SubString(ListItem.mpaa,NR)|IsEmpty(ListItem.Mpaa)</visible>
+            <visible>SubString(ListItem.mpaa,US:NR) | SubString(ListItem.mpaa,USA:NR) | SubString(ListItem.mpaa,Rated NR) | SubString(ListItem.mpaa,NR)|IsEmpty(ListItem.Mpaa)</visible>
           </control>
           <!--UK-->
           <control type="image">
@@ -564,7 +564,7 @@
             <colordiffuse>FF868686</colordiffuse>
             <include>FloorRatingVars</include>
             <texture>flags/rating/MPAA_NR_Certificate_US.png</texture>
-            <visible>[SubString(ListItem.mpaa,US:NR) | SubString(ListItem.mpaa,USA:NR) | SubString(ListItem.mpaa,Rated NR | SubString(ListItem.mpaa,NR)| IsEmpty(ListItem.Mpaa)]+!IsEmpty(ListItem.Title)</visible>
+            <visible>[SubString(ListItem.mpaa,US:NR) | SubString(ListItem.mpaa,USA:NR) | SubString(ListItem.mpaa,Rated NR) | SubString(ListItem.mpaa,NR)| IsEmpty(ListItem.Mpaa)]+!IsEmpty(ListItem.Title)</visible>
           </control>
           <control type="image">
             <colordiffuse>FF868686</colordiffuse>
