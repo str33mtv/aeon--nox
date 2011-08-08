@@ -195,7 +195,7 @@
 					<aligny>center</aligny>
 					<font>Font_Reg18</font>
 					<textcolor>abFFFFFF</textcolor>
-					<label>$LOCALIZE[567]:</label>
+					<label>$LOCALIZE[180]:</label>
 					<visible>Container.Content(songs)</visible>
 				</control>
 				<control type="label">
@@ -206,7 +206,7 @@
 					<aligny>top</aligny>
 					<font>Font_Reg18</font>
 					<textcolor>white</textcolor>
-					<label fallback="312577">$INFO[ListItem.PlayCount]</label>
+					<label fallback="312577">$INFO[ListItem.Duration]</label>
 					<visible>Container.Content(songs)</visible>
 				</control>
 				<control type="label">
@@ -217,7 +217,7 @@
 					<aligny>center</aligny>
 					<font>Font_Reg18</font>
 					<textcolor>abFFFFFF</textcolor>
-					<label>$LOCALIZE[568]:</label>
+					<label>$LOCALIZE[515]:</label>
 					<visible>Container.Content(songs)</visible>
 				</control>
 				<control type="label">
@@ -228,7 +228,7 @@
 					<aligny>top</aligny>
 					<font>Font_Reg18</font>
 					<textcolor>white</textcolor>
-					<label fallback="312577">$INFO[ListItem.LastPlayed]</label>
+					<label fallback="312577">$INFO[ListItem.Genre]</label>
 					<visible>Container.Content(songs)</visible>
 				</control>
 				<control type="label">
