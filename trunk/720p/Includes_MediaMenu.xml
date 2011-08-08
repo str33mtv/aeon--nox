@@ -1369,7 +1369,19 @@
           <onclick>Skin.ToggleSetting(usecases)</onclick>
           <onclick>XBMC.ReloadSkin()</onclick>
           <selected>Skin.HasSetting(usecases)</selected>
-          <visible>[Control.IsVisible(504)|Control.IsVisible(511)]+[Container.Content(movies)|Container.Content(tvshows)|Container.Content(seasons)|Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
+          <visible>Control.IsVisible(504)+[Container.Content(movies)|Container.Content(tvshows)|Container.Content(seasons)|Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
+          <radiowidth>65</radiowidth>
+          <radioheight>65</radioheight>
+          <radioposx>125</radioposx>
+        </control>
+        <control type="radiobutton" id="695">
+          <description>Cases</description>
+          <textwidth>170</textwidth>
+          <include>Objects_MediaMenuButton2</include>
+          <label>$LOCALIZE[31248]</label>
+          <onclick>Skin.ToggleSetting(usecaseslowlist)</onclick>
+          <selected>Skin.HasSetting(usecaseslowlist)</selected>
+          <visible>Control.IsVisible(511)+[Container.Content(movies)|Container.Content(tvshows)|Container.Content(seasons)|Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
           <radiowidth>65</radiowidth>
           <radioheight>65</radioheight>
           <radioposx>125</radioposx>
