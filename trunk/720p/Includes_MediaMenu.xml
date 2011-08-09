@@ -1470,7 +1470,7 @@
           <aligny>center</aligny>
           <onclick>Skin.ToggleSetting(newstatus)</onclick>
           <selected>Skin.HasSetting(newstatus)</selected>
-          <visible>[[Control.IsVisible(510)+Skin.HasSetting(posterslide)]|Control.IsVisible(503)|Control.IsVisible(508)|Control.IsVisible(512)|Control.IsVisible(500)|Control.IsVisible(516)]+[Container.Content(movies)|Container.Content(tvshows)|Container.Content(seasons)|Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
+          <visible>[Control.IsVisible(510)|Control.IsVisible(503)|Control.IsVisible(508)|Control.IsVisible(512)|Control.IsVisible(500)|Control.IsVisible(516)]+[Container.Content(movies)|Container.Content(tvshows)|Container.Content(seasons)|Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
           <radiowidth>65</radiowidth>
           <radioheight>65</radioheight>
           <radioposx>125</radioposx>
@@ -1482,7 +1482,7 @@
           <aligny>center</aligny>
           <onclick>Skin.ToggleSetting(watchedoverlay)</onclick>
           <selected>Skin.HasSetting(watchedoverlay)</selected>
-          <visible>[[Control.IsVisible(510)+Skin.HasSetting(posterslide)]|Control.IsVisible(503)|Control.IsVisible(508)|Control.IsVisible(512)|Control.IsVisible(500)|Control.IsVisible(516)]+[Container.Content(movies)|Container.Content(tvshows)|Container.Content(seasons)|Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
+          <visible>[Control.IsVisible(510)|Control.IsVisible(503)|Control.IsVisible(508)|Control.IsVisible(512)|Control.IsVisible(500)|Control.IsVisible(516)]+[Container.Content(movies)|Container.Content(tvshows)|Container.Content(seasons)|Container.Content(episodes)]+!Skin.HasSetting(hideoptions)</visible>
           <radiowidth>65</radiowidth>
           <radioheight>65</radioheight>
           <radioposx>125</radioposx>

@@ -3,6 +3,7 @@
 - New seekbar.
 - New LowList layout.
 - New PseudoTV layout.
+- Added watched overlay to Posters view.
 
 [B]1.5.4[/B]
 - Fixed Networksetup.
