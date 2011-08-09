@@ -811,7 +811,7 @@
             <aligny>center</aligny>
             <font>Font_Reg18</font>
             <textcolor>grey</textcolor>
-            <label>$INFO[VideoPlayer.Season,$LOCALIZE[20373] , â€¢ ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] ,]</label>
+            <label>$INFO[VideoPlayer.Season,$LOCALIZE[20373] , • ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] ,]</label>
             <scroll>true</scroll>
             <visible>VideoPlayer.Content(episodes)</visible>
           </control>
