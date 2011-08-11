@@ -992,4 +992,7 @@
   <include name="UnLoadRecentAdded">
     <onunload>XBMC.RunScript(script.recentlyadded,limit=8&amp;albums=False&amp;unplayed=True&amp;totals=True)</onunload>
   </include>
+  <include name="LoadTVTunes">
+    <onload>XBMC.RunScript(script.tvtunes,backend=True)</onload>
+  </include>
 </includes>
