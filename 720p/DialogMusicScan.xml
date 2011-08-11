@@ -6,7 +6,7 @@
     <posx>0</posx>
     <posy>0</posy>
   </coordinates>
-  <onunload>XBMC.RunScript(script.recentlyadded,limit=8&amp;albums=False&amp;unplayed=True&amp;totals=True)</onunload>
+  <include condition="Skin.HasSetting(homepageHideRecentlyAdded)">UnLoadRecentAdded</include>
   <include>Animation_DialogPopup</include>
   <controls>
     <control type="group">

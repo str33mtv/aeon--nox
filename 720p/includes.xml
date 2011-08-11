@@ -989,4 +989,7 @@
     <textoffsetx>50</textoffsetx>
     <aligny>center</aligny>
   </include>
+  <include name="UnLoadRecentAdded">
+    <onunload>XBMC.RunScript(script.recentlyadded,limit=8&amp;albums=False&amp;unplayed=True&amp;totals=True)</onunload>
+  </include>
 </includes>
