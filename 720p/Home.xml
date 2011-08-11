@@ -1,7 +1,9 @@
 <window id="0">
   <defaultcontrol always="true">8999</defaultcontrol>
+  <include condition="Skin.HasSetting(homepageHideRecentlyAdded)">LoadRecentAdded</include>
   <allowoverlay>yes</allowoverlay>
   <controls>
+    <include>StartupCustomFocus</include>
     <!-- Fanart -->
     <control type="multiimage">
       <include>CommonFanartVars</include>
@@ -53,8 +55,6 @@
     <!-- Latest/Random Items -->
     <control type="group">
       <include>Animation_OpenCloseZoom</include>
-      <include condition="!Skin.HasSetting(customstartupfocus)">StartUpNoCustomfocus</include>
-      <include condition="Skin.HasSetting(customstartupfocus)">StartupCustomFocus</include>
       <include condition="Skin.HasSetting(HomeLatestMovies)">LatestMovies</include>
       <include condition="Skin.HasSetting(HomeRandomMovies)">RandomMovies</include>
       <include condition="Skin.HasSetting(HomeLatestTV)">LatestTV</include>
