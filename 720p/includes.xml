@@ -430,11 +430,11 @@
   </include>
   <include name="subcolorfocus">
     <textcolor>ff2e2e2e</textcolor>
-    <selectedcolor>FF585858</selectedcolor>
+    <selectedcolor>CC007fa4</selectedcolor>
   </include>
   <include name="listcolorfocus">
     <textcolor>ff2e2e2e</textcolor>
-    <selectedcolor>FF585858</selectedcolor>
+    <selectedcolor>CC007fa4</selectedcolor>
   </include>
   <include name="detailcolornofocus">
     <textcolor>dcbdbdbd</textcolor>
@@ -442,7 +442,7 @@
   </include>
   <include name="detailcolorfocus">
     <textcolor>ff2e2e2e</textcolor>
-    <selectedcolor>FF585858</selectedcolor>
+    <selectedcolor>CC007fa4</selectedcolor>
   </include>
   <include name="Furniture_NowPlayingWidget">
     <control type="group">
