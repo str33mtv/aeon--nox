@@ -1467,7 +1467,7 @@
       <height>242</height>
       <width>242</width>
       <texture>home/nowplaying_overlay.png</texture>
-      <aspectratio align="bottom">stretch</aspectratio>
+      <aspectratio  >stretch</aspectratio>
     </control>
   </include>
 
