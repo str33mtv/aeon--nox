@@ -23,11 +23,13 @@
 			<include>CommonRootView</include> <!-- view id = 50 -->
 			<include>ShowcaseQuadrate</include><!-- view id = 51 -->
       <include>AddonWall</include>
-      <include>Viewtype_Wall</include><!-- view id = 500 --><!--
-			<include>PictureWrapView</include> --><!-- view id = 510 --><!--
-			<include>PictureThumbView</include> --><!-- view id = 511 --><!--
-			<include>AddonInfoListView1</include> --><!-- view id = 550 -->
+      <include>Viewtype_Wall</include><!-- view id = 500 -->
 		</control>
+    <control type="button" id="7000">
+      <include>HiddenObject</include>
+      <onfocus>SetFocus(9000)</onfocus>
+      <visible>Control.IsVisible(509)</visible>
+    </control>
     <control type="group">
       <include>Animation_OpenCloseZoom</include>
       <visible>Control.IsVisible(513)|Control.IsVisible(509)</visible>
