@@ -120,6 +120,14 @@
       <include condition="Skin.HasSetting(animatedbg)">Animation_CommonFade</include>
       <include>CommonFanartVars</include>
       <imagepath fallback="special://skin/backgrounds/music.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</imagepath>
+      <visible>Skin.HasSetting(MusicLibraryFanart)|IsEmpty(ListItem.property(fanart_image))</visible>
+      <animation effect="fade" start="0" end="100" time="1000">Visible</animation>
+    </control>
+    <control type="image">
+      <include>FullscreenDimensions</include>
+      <texture>common/black.png</texture>
+      <visible>!Skin.HasSetting(MusicLibraryFanart)+IsEmpty(ListItem.property(fanart_image))</visible>
+      <animation effect="fade" start="100" end="0" time="1000">Visible</animation>
     </control>
   </include>
   <include name="CommonPictureBackground">
@@ -134,6 +142,14 @@
       <include condition="Skin.HasSetting(animatedbg)">Animation_CommonFade</include>
       <include>CommonFanartVars</include>
       <imagepath fallback="special://skin/backgrounds/programs.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Programs_Folder)]</imagepath>
+      <visible>IsEmpty(ListItem.property(fanart_image))</visible>
+      <animation effect="fade" start="0" end="100" time="1000">Visible</animation>
+    </control>
+    <control type="image">
+      <include>FullscreenDimensions</include>
+      <texture>common/black.png</texture>
+      <visible>IsEmpty(ListItem.property(fanart_image))</visible>
+      <animation effect="fade" start="100" end="0" time="1000">Visible</animation>
     </control>
   </include>
   <include name="CommonWeatherBackground">
