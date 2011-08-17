@@ -142,13 +142,37 @@
                 <animation effect="slide" start="0,0" end="0,-150" time="200" easing="inout" tween="circle" condition="[Skin.HasSetting(lowermainmenu)|Skin.HasSetting(Lockhomemenulow)]">Conditional</animation>
               </control>
             </control>
+            <control type="group">
+              <posx>0</posx>
+              <posy>-13</posy>
+              <width>840</width>
+              <height>472</height>
               <control type="image">
                 <posx>0</posx>
-                <posy>224</posy>
+                <posy>237</posy>
                 <width>840</width>
                 <height>42</height>
                 <texture background="true">osd/osd_back.png</texture>
+                <visible>!Skin.HasSetting(glasshome)+!Skin.HasSetting(classichome)</visible>
               </control>
+              <control type="image">
+                <posx>0</posx>
+                <posy>225</posy>
+                <width>840</width>
+                <height>66</height>
+                <texture background="true">home/glass_bar.png</texture>
+                <visible>Skin.HasSetting(glasshome)</visible>
+                <animation effect="fade" start="100" end="80" time="50" condition="true">Conditional</animation>
+              </control>
+              <control type="image">
+                <posx>0</posx>
+                <posy>211</posy>
+                <width>840</width>
+                <height>97</height>
+                <texture background="true">home/homemenu_back.png</texture>
+                <visible>Skin.HasSetting(classichome)</visible>
+              </control>
+            </control>
             <control type="group">
               <posx>0</posx>
               <posy>-13</posy>
@@ -345,6 +369,7 @@
             <width>214</width>
             <height>64</height>
             <texture>views/listpanel_selectbar.png</texture>
+            <animation effect="fade" start="100" end="50" time="50" condition="!Control.HasFocus(9000)">Conditional</animation>
           </control>
           <control type="label">
             <posx>30</posx>
@@ -669,20 +694,6 @@
             <include>Default_SettingRadioButton</include>
             <onclick>Skin.ToggleSetting(biggergap)</onclick>
             <selected>Skin.HasSetting(biggergap)</selected>
-          </control>
-          <control type="radiobutton" id="281">
-            <label>31249</label>
-            <include>Default_SettingRadioButton</include>
-            <onclick>Skin.ToggleSetting(classichome)</onclick>
-            <onclick>Skin.Reset(glasshome)</onclick>
-            <selected>Skin.HasSetting(classichome)</selected>
-          </control>
-          <control type="radiobutton" id="282">
-            <label>31251</label>
-            <include>Default_SettingRadioButton</include>
-            <onclick>Skin.ToggleSetting(glasshome)</onclick>
-            <onclick>Skin.Reset(classichome)</onclick>
-            <selected>Skin.HasSetting(glasshome)</selected>
           </control>
           <control type="radiobutton" id="293">
             <label>31269</label>
@@ -1125,12 +1136,25 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>185</width>
-                <height>42</height>
-                <font>Font_Bold28</font>
+                <height>40</height>
+                <font>Font_Bold30</font>
                 <textcolor>48FFFFFF</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+                <visible>!Skin.HasSetting(classichome)</visible>
+              </control>
+              <control type="label">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>185</width>
+                <height>40</height>
+                <font>Font_OSDClassic</font>
+                <textcolor>48FFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+                <visible>Skin.HasSetting(classichome)</visible>
               </control>
             </itemlayout>
             <focusedlayout height="42" width="200">
@@ -1138,41 +1162,69 @@
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>185</width>
-                <height>42</height>
-                <font>Font_Bold28</font>
+                <height>40</height>
+                <font>Font_Bold30</font>
                 <textcolor>48FFFFFF</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+                <visible>!Skin.HasSetting(classichome)</visible>
                 <visible>!Control.HasFocus(9004)</visible>
               </control>
               <control type="label">
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>185</width>
-                <height>42</height>
-                <font>Font_Bold28</font>
+                <height>40</height>
+                <font>Font_Bold30</font>
                 <textcolor>white</textcolor>
                 <align>center</align>
                 <aligny>center</aligny>
                 <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+                <visible>!Skin.HasSetting(classichome)</visible>
+                <visible>Control.HasFocus(9004)</visible>
+              </control>
+              <control type="label">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>185</width>
+                <height>40</height>
+                <font>Font_OSDClassic</font>
+                <textcolor>48FFFFFF</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+                <visible>Skin.HasSetting(classichome)</visible>
+                <visible>!Control.HasFocus(9004)</visible>
+              </control>
+              <control type="label">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>185</width>
+                <height>40</height>
+                <font>Font_OSDClassic</font>
+                <textcolor>white</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+                <visible>Skin.HasSetting(classichome)</visible>
                 <visible>Control.HasFocus(9004)</visible>
               </control>
             </focusedlayout>
             <content>
-              <item id="3">
-                <label>31500</label>
-                <onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
-                <icon>special://skin/backgrounds/pictures.jpg</icon>
-                <thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
-                <visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
-              </item>
               <item id="2">
                 <label>31501</label>
                 <onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
                 <icon>special://skin/backgrounds/music.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
                 <visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+              </item>
+              <item id="24">
+                <label>31398</label>
+                <label2>$INFO[Skin.String(Current_Main_Menu)]</label2>
+                <onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
+                <icon>special://skin/backgrounds/curtains.jpg</icon>
+                <thumb>-</thumb>
               </item>
               <item id="10">
                 <label>31502</label>
@@ -1307,7 +1359,22 @@
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
                 <visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
               </item>
+              <item id="3">
+                <label>31500</label>
+                <onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
+                <icon>special://skin/backgrounds/pictures.jpg</icon>
+                <thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
+                <visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
+              </item>
             </content>
+          </control>
+          <control type="image">
+            <posx>74</posx>
+            <posy>137</posy>
+            <width>840</width>
+            <height>80</height>
+            <texture background="true">home/homemenu_gradient.png</texture>
+            <animation effect="slide" start="0,0" end="0,150" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)|Skin.HasSetting(Lockhomemenulow)">Conditional</animation>
           </control>
 
           <control type="group">
@@ -2378,6 +2445,57 @@
                 <ondown>9004</ondown>
               </control>
             </control>
+            <control type="group">
+              <visible>Container(9004).HasFocus(24)</visible>
+              <control type="button" id="300">
+                <description>Single Image button</description>
+                <posx>5</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>Nox</label>
+                <onclick>Skin.Reset(classichome)</onclick>
+                <onclick>Skin.Reset(glasshome)</onclick>
+                <onclick>Skin.SetString(Current_Main_Menu,Nox)</onclick>
+                <onleft>9000</onleft>
+                <onright>301</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+              <control type="button" id="301">
+                <description>Multi Image button</description>
+                <posx>190</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>31249</label>
+                <onclick>Skin.SetBool(classichome)</onclick>
+                <onclick>Skin.Reset(glasshome)</onclick>
+                <onclick>Skin.SetString(Current_Main_Menu,$LOCALIZE[31249])</onclick>
+                <onleft>300</onleft>
+                <onright>302</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+              <control type="button" id="302">
+                <description>Default Image button</description>
+                <posx>375</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>31251</label>
+                <onclick>Skin.SetBool(glasshome)</onclick>
+                <onclick>Skin.Reset(classichome)</onclick>
+                <onclick>Skin.SetString(Current_Main_Menu,$LOCALIZE[31251])</onclick>
+                <onleft>301</onleft>
+                <onright>300</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+            </control>
           </control>
 
           <control type="label">
@@ -2389,9 +2507,9 @@
             <aligny>center</aligny>
             <font>Font_Reg14</font>
             <haspath>yes</haspath>
-            <label fallback="571">$LOCALIZE[143] $INFO[Container(9004).ListItem.Thumb]</label>
+            <label fallback="571">$INFO[Container(9004).ListItem.Thumb,$LOCALIZE[143] ]</label>
             <textcolor>white</textcolor>
-            <visible>!IsEmpty(Container(9004).ListItem.Thumb)</visible>
+            <visible>!IsEmpty(Container(9004).ListItem.Thumb)+!Container(9004).HasFocus(24)</visible>
           </control>
           <control type="label">
             <posx>74</posx>
@@ -2404,7 +2522,20 @@
             <haspath>yes</haspath>
             <label>$LOCALIZE[143] $LOCALIZE[571]</label>
             <textcolor>white</textcolor>
-            <visible>IsEmpty(Container(9004).ListItem.Thumb)</visible>
+            <visible>IsEmpty(Container(9004).ListItem.Thumb)+!Container(9004).HasFocus(24)</visible>
+          </control>
+          <control type="label">
+            <posx>74</posx>
+            <posy>505</posy>
+            <width>840</width>
+            <height>20</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>Font_Reg14</font>
+            <haspath>yes</haspath>
+            <label fallback="571">$INFO[Container(9004).ListItem.Label2,$LOCALIZE[143] ]</label>
+            <textcolor>white</textcolor>
+            <visible>Container(9004).HasFocus(24)</visible>
           </control>
         </control>
         <control type="grouplist" id="9005">
