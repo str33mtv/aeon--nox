@@ -1111,9 +1111,9 @@
 
           <control type="wraplist" id="9004">
             <hitrect x="0" y="0" w="0" h="0" />
-            <posx>75</posx>
+            <posx>74</posx>
             <posy>153</posy>
-            <width>840</width>
+            <width>841</width>
             <height>40</height>
             <align>center</align>
             <onleft>9004</onleft>
