@@ -1020,7 +1020,7 @@
             <onclick>Skin.ToggleSetting(HideListFlags)</onclick>
             <selected>Skin.HasSetting(HideListFlags)</selected>
           </control>
-          <control type="radiobutton" id="303">
+          <control type="radiobutton" id="305">
             <label>31286</label>
             <include>Default_SettingRadioButton</include>
             <onclick>Skin.ToggleSetting(cdartfliplist)</onclick>
@@ -1454,6 +1454,74 @@
           <control type="group">
             <posx>210</posx>
             <posy>430</posy>
+            <control type="group">
+              <visible>Container(9004).HasFocus(24)</visible>
+              <animation effect="slide" start="0" end="-90" reversible="false" condition="true">Conditional</animation>
+              <control type="button" id="300">
+                <description>Single Image button</description>
+                <posx>5</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>Nox</label>
+                <onclick>Skin.Reset(classichome)</onclick>
+                <onclick>Skin.Reset(glasshome)</onclick>
+                <onclick>Skin.SetString(Current_Main_Menu,Nox)</onclick>
+                <onleft>9000</onleft>
+                <onright>301</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+              <control type="button" id="301">
+                <description>Multi Image button</description>
+                <posx>190</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>31249</label>
+                <onclick>Skin.SetBool(classichome)</onclick>
+                <onclick>Skin.Reset(glasshome)</onclick>
+                <onclick>Skin.SetString(Current_Main_Menu,$LOCALIZE[31249])</onclick>
+                <onleft>300</onleft>
+                <onright>302</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+              <control type="button" id="302">
+                <description>Default Image button</description>
+                <posx>375</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>31251</label>
+                <onclick>Skin.SetBool(glasshome)</onclick>
+                <onclick>Skin.Reset(classichome)</onclick>
+                <onclick>Skin.SetString(Current_Main_Menu,$LOCALIZE[31251])</onclick>
+                <onleft>301</onleft>
+                <onright>303</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+              <control type="togglebutton" id="303">
+                <description>Wider menu button</description>
+                <posx>560</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>$LOCALIZE[31399]: $LOCALIZE[571]</label>
+                <altlabel>$LOCALIZE[31399]: $LOCALIZE[31289]</altlabel>
+                <onclick>Skin.ToggleSetting(biggergap)</onclick>
+                <onleft>302</onleft>
+                <onright>300</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+                <usealttexture>Skin.HasSetting(biggergap)</usealttexture>
+              </control>
+            </control>
             <control type="group">
               <visible>Container(9004).HasFocus(1)</visible>
               <posx>-90</posx>
@@ -2519,74 +2587,6 @@
                 <ondown>9004</ondown>
               </control>
             </control>
-            <control type="group">
-              <visible>Container(9004).HasFocus(24)</visible>
-              <animation effect="slide" start="0" end="-90" reversible="false" condition="true">Conditional</animation>
-              <control type="button" id="300">
-                <description>Single Image button</description>
-                <posx>5</posx>
-                <posy>0</posy>
-                <width>180</width>
-                <height>40</height>
-                <align>center</align>
-                <label>Nox</label>
-                <onclick>Skin.Reset(classichome)</onclick>
-                <onclick>Skin.Reset(glasshome)</onclick>
-                <onclick>Skin.SetString(Current_Main_Menu,Nox)</onclick>
-                <onleft>9000</onleft>
-                <onright>301</onright>
-                <onup>9004</onup>
-                <ondown>9004</ondown>
-              </control>
-              <control type="button" id="301">
-                <description>Multi Image button</description>
-                <posx>190</posx>
-                <posy>0</posy>
-                <width>180</width>
-                <height>40</height>
-                <align>center</align>
-                <label>31249</label>
-                <onclick>Skin.SetBool(classichome)</onclick>
-                <onclick>Skin.Reset(glasshome)</onclick>
-                <onclick>Skin.SetString(Current_Main_Menu,$LOCALIZE[31249])</onclick>
-                <onleft>300</onleft>
-                <onright>302</onright>
-                <onup>9004</onup>
-                <ondown>9004</ondown>
-              </control>
-              <control type="button" id="302">
-                <description>Default Image button</description>
-                <posx>375</posx>
-                <posy>0</posy>
-                <width>180</width>
-                <height>40</height>
-                <align>center</align>
-                <label>31251</label>
-                <onclick>Skin.SetBool(glasshome)</onclick>
-                <onclick>Skin.Reset(classichome)</onclick>
-                <onclick>Skin.SetString(Current_Main_Menu,$LOCALIZE[31251])</onclick>
-                <onleft>301</onleft>
-                <onright>303</onright>
-                <onup>9004</onup>
-                <ondown>9004</ondown>
-              </control>
-              <control type="togglebutton" id="303">
-                <description>Wider menu button</description>
-                <posx>560</posx>
-                <posy>0</posy>
-                <width>180</width>
-                <height>40</height>
-                <align>center</align>
-                <label>$LOCALIZE[31399]: $LOCALIZE[571]</label>
-                <altlabel>$LOCALIZE[31399]: $LOCALIZE[31289]</altlabel>
-                <onclick>Skin.ToggleSetting(biggergap)</onclick>
-                <onleft>302</onleft>
-                <onright>300</onright>
-                <onup>9004</onup>
-                <ondown>9004</ondown>
-                <usealttexture>Skin.HasSetting(biggergap)</usealttexture>
-              </control>
-            </control>
           </control>
 
           <control type="label">
@@ -2624,7 +2624,7 @@
             <aligny>center</aligny>
             <font>Font_Reg14</font>
             <haspath>yes</haspath>
-            <label fallback="571">$INFO[Container(9004).ListItem.Label2,$LOCALIZE[143] ]</label>
+            <label fallback="571">$INFO[Container(9004).ListItem.Label2,$LOCALIZE[143] ]$INFO[Control.GetLabel(303), - ]</label>
             <textcolor>white</textcolor>
             <visible>Container(9004).HasFocus(24)</visible>
           </control>
