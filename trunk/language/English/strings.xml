@@ -279,7 +279,7 @@
   <string id="31247">Show Genre</string>
   <string id="31248">BD/DVD Cases</string>
   <string id="31249">Classic</string>
-  <string id="31250">- Transparent</string>
+  <string id="31250">Transparent</string>
   <string id="31251">Glass</string>
   <string id="31252">Add Favorite to Movies Submenu</string>
   <string id="31253">Add Favorite to Music Submenu</string>
@@ -326,6 +326,7 @@
   <string id="31293">Square</string>
   <string id="31296">Animated weather icons</string>
   <string id="31297">Show fanart slideshow from your music collection</string>
+  <string id="31298">Set spot color</string>
   <string id="31299">Music button always opens "Albums" view</string>
   <string id="31360">Upcoming</string>
   <string id="31361">Disable fanart</string>
@@ -343,10 +344,20 @@
   <string id="31377">CDArt</string>
   <string id="31378">Set Path to Music Library</string>
   <string id="31379">- Only on Home window</string>
+  <string id="31383">Backdrop</string>
+  <string id="31384">Curtain</string>
+  <string id="31385">Off/Trigger</string>
+  <string id="31386">Hide while scrolling</string>
+  <string id="31387">Darken</string>
+  <string id="31388">Floor label:</string>
+  <string id="31389">Set topbar color</string>
   <string id="31394">Press DOWN to see trailer</string>
+  <string id="31395">Enable extrafanart</string>
   <string id="31397">Ended</string>
   <string id="31398">Style</string>
   <string id="31399">Spacing</string>
+  <string id="31426">Full</string>
+  <string id="31427">Outline</string>
 
   <!-- Home Menu -->
   <string id="31500">PICTURES</string>
