@@ -61,26 +61,13 @@
           <height>64</height>
           <texture border="0,0,0,0">osd/osd_back.png</texture>
         </control>
-          <control type="progress" id="20">
-          <description>Progressbar</description>
-          <posx>320</posx>
-          <posy>8</posy>
-          <width>640</width>
-          <height>13</height>
-          <texturebg>osd/seek/progress_back_long.png</texturebg>
-          <lefttexture>osd/seek/progresscache_left.png</lefttexture>
-          <midtexture>osd/seek/progresscache_mid.png</midtexture>
-          <righttexture>osd/seek/progresscache_right.png</righttexture>
-          <overlaytexture>-</overlaytexture>
-          <info>Player.ProgressCache</info>
-        </control>
         <control type="progress" id="20">
           <description>Progressbar</description>
           <posx>320</posx>
           <posy>8</posy>
           <width>640</width>
           <height>13</height>
-          <texturebg>osd/seek/progresscache_back_long.png</texturebg>
+          <texturebg>osd/seek/progress_back_long.png</texturebg>
           <lefttexture>osd/seek/progress_left.png</lefttexture>
           <midtexture>osd/seek/progress_mid.png</midtexture>
           <righttexture>osd/seek/progress_right.png</righttexture>
@@ -396,19 +383,6 @@
             <width>640</width>
             <height>13</height>
             <texturebg>osd/seek/progress_back_long.png</texturebg>
-            <lefttexture>osd/seek/progresscache_left.png</lefttexture>
-            <midtexture>osd/seek/progresscache_mid.png</midtexture>
-            <righttexture>osd/seek/progresscache_right.png</righttexture>
-            <overlaytexture>-</overlaytexture>
-            <info>Player.ProgressCache</info>
-          </control>
-          <control type="progress" id="20">
-            <description>Progressbar</description>
-            <posx>320</posx>
-            <posy>8</posy>
-            <width>640</width>
-            <height>13</height>
-            <texturebg>osd/seek/progresscache_back_long.png</texturebg>
             <lefttexture>osd/seek/progress_left.png</lefttexture>
             <midtexture>osd/seek/progress_mid.png</midtexture>
             <righttexture>osd/seek/progress_right.png</righttexture>
