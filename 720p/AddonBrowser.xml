@@ -15,9 +15,9 @@
       <include condition="Skin.HasSetting(animatedbg)">Animation_Background</include>
       <include>Animation_OpenCloseZoom</include>		
 		</control>
+    <include>CommonCurtainBackdrop</include>
     <control type="group">
-      <visible>Control.IsVisible(500)|[Control.IsVisible(512)+Skin.HasSetting(altoverlayinfowall)]</visible>
-      <include>Furniture_WallBackground</include>
+      <visible>[Control.IsVisible(512)+Skin.HasSetting(altoverlayinfowall)]</visible>
       <include>Furniture_WallBackground_Small</include>
     </control>
     <control type="group">
@@ -26,7 +26,7 @@
     </control>
     <control type="group">
       <include>Animation_OpenCloseZoom</include>
-      <visible>Control.IsVisible(509)|Control.IsVisible(50)</visible>
+      <visible>Control.IsVisible(509)|Control.IsVisible(50)|Control.isVisible(500)</visible>
       <include>Furniture_Showcase</include>
     </control>
     <control type="group">
@@ -43,7 +43,7 @@
     </control>
     <control type="group">
       <include>Animation_OpenCloseZoom</include>
-      <visible>Control.IsVisible(509)</visible>
+      <visible>Control.IsVisible(509)|Control.IsVisible(500)</visible>
       <include>Furniture_DarkGradient</include>
     </control>
     <include>BehindDialogFadeOut</include>

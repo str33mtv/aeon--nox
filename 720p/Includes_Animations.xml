@@ -212,4 +212,20 @@
   <include name="SmallerDialogs">
     <animation effect="zoom" start="100" end="70" center="auto" time="800" easing="inout" tween="circle" condition="Skin.HasSetting(smallerdialogs)">Conditional</animation>
   </include>
+  <include name="Animation_MediaMenuSlide">
+    <animation type="Conditional" condition="!ControlGroup(9000).HasFocus">
+      <effect type="slide" end="0,280" time="400" easing="in" tween="cubic"/>
+    </animation>
+    <animation type="WindowClose">
+      <effect type="slide" end="0,280" time="400" easing="in" tween="cubic"/>
+    </animation>
+  </include>
+  <include name="Animation_MediaMenuSlide2">
+    <animation type="Conditional" condition="!ControlGroup(9000).HasFocus">
+      <effect type="slide" end="-280,0" time="400" easing="in" tween="cubic"/>
+    </animation>
+    <animation type="WindowClose">
+      <effect type="slide" end="-280,0" time="400" easing="in" tween="cubic"/>
+    </animation>
+  </include>
 </includes>

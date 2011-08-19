@@ -1,7 +1,9 @@
 <window>
-	<defaultcontrol always="true">8</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	<controls>
+  <defaultcontrol always="true">8</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <include condition="IsEmpty(Skin.String(diffuse))">LoadSpotDiffuseColor</include>
+  <include condition="IsEmpty(Skin.String(diffuse_bar))">LoadTopbarDiffuseColor</include>
+  <controls>
     <control type="button" id="8">
       <description>trigger</description>
       <onfocus>XBMC.RunScript(script.randomitems,limit=8&amp;unplayed=True)</onfocus>
@@ -47,5 +49,5 @@
       <texturefocus>-</texturefocus>
       <visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
     </control>
-	</controls>
+  </controls>
 </window>

@@ -65,6 +65,22 @@
     </control>
     <control type="button" id="7000">
       <include>HiddenObject</include>
+      <onup>SetFocus(9000)</onup>
+      <onleft>Control.Move(501,-1)</onleft>
+      <onright>Control.Move(501,1)</onright>
+      <ondown>SetFocus(50)</ondown>
+      <visible>Skin.HasSetting(infopanellauncher)+Control.IsVisible(501)</visible>
+    </control>
+    <control type="button" id="7000">
+      <include>HiddenObject</include>
+      <onup>SetFocus(9000)</onup>
+      <onleft>Control.Move(504,-1)</onleft>
+      <onright>Control.Move(504,1)</onright>
+      <ondown>SetFocus(50)</ondown>
+      <visible>Skin.HasSetting(infopanellauncher)+Control.IsVisible(504)</visible>
+    </control>
+    <control type="button" id="7000">
+      <include>HiddenObject</include>
       <onfocus>SetFocus(9000)</onfocus>
       <visible>!Skin.HasSetting(infopanellauncher)+[Control.IsVisible(509)|Control.IsVisible(501)|Control.IsVisible(504)]|Control.IsVisible(55)</visible>
     </control>

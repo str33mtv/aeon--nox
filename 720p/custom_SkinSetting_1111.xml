@@ -1394,7 +1394,7 @@
               <item id="7">
                 <label>31506</label>
                 <onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
-                <icon>special://skin/backgrounds/settings.jpg</icon>
+                <icon>special://skin/backgrounds/systeminfo.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
                 <visible>!Skin.HasSetting(HomeMenuNoSettingsButton)</visible>
               </item>
