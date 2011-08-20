@@ -275,7 +275,7 @@
         <onleft>Control.Move(501,-1)</onleft>
         <onright>Control.Move(501,1)</onright>
         <ondown>SetFocus(50)</ondown>
-        <visible>!Skin.HasSetting(showcaseinfoontv)+Container.Content(tvshows)+Control.IsVisible(501)</visible>
+        <visible>!Skin.HasSetting(showcaseinfoontv)+[Container.Content(tvshows)|Container.Content(seasons)]+Control.IsVisible(501)</visible>
       </control>
       <control type="button" id="7000">
         <include>HiddenObject</include>
@@ -286,7 +286,7 @@
         <onleft>Control.Move(504,-1)</onleft>
         <onright>Control.Move(504,1)</onright>
         <ondown>SetFocus(50)</ondown>
-        <visible>!Skin.HasSetting(showcaseinfoontv)+Container.Content(tvshows)+Control.IsVisible(504)</visible>
+        <visible>!Skin.HasSetting(showcaseinfoontv)+[Container.Content(tvshows)|Container.Content(seasons)]+Control.IsVisible(504)</visible>
       </control>
       <control type="button" id="7000">
         <include>HiddenObject</include>
