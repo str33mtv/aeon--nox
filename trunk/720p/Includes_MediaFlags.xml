@@ -244,6 +244,7 @@
     <aspectratio>keep</aspectratio>
     <fadetime>IconCrossfadeTime2</fadetime>
     <colordiffuse>floor</colordiffuse>
+    <animation effect="fade" time="250">VisibleChange</animation>
   </include>
   <include name="FloorFlags">
     <include>StudioGenerator</include>
@@ -895,6 +896,7 @@
     <aspectratio>keep</aspectratio>
     <colordiffuse>floor</colordiffuse>
     <fadetime>IconCrossfadeTime2</fadetime>
+    <animation effect="fade" time="250">VisibleChange</animation>
   </include>
   <include name="InfoListFlagVars">
     <width>90</width>
@@ -902,6 +904,7 @@
     <aspectratio>keep</aspectratio>
     <colordiffuse>ff2e2e2e</colordiffuse>
     <fadetime>IconCrossfadeTime2</fadetime>
+    <animation effect="fade" time="250">VisibleChange</animation>
   </include>
   <include name="Posters_Furniture">
     <control type="group">

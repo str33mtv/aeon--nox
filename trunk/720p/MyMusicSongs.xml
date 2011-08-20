@@ -32,13 +32,7 @@
     </control>
     <control type="button" id="7002">
       <include>HiddenObject</include>
-      <texturefocus>-</texturefocus>
-      <texturenofocus>-</texturenofocus>
-      <onup>Control.Move(506,-1)</onup>
-      <onleft>506</onleft>
-      <onright>SetFocus(9000)</onright>
-      <ondown>Control.Move(506,1)</ondown>
-      <onclick>PlayMedia($INFO[ListItem.FileNameAndPath])</onclick>
+      <onfocus>SetFocus(9000)</onfocus>
       <visible>Control.IsVisible(506)</visible>
     </control>
     <control type="button" id="7000">
