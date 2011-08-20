@@ -94,7 +94,7 @@
         <texturefocus>-</texturefocus>
         <texturenofocus>-</texturenofocus>
         <onfocus>SetFocus(9010)</onfocus>
-        <visible>Container(9000).HasFocus(6)|Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(5) | Container(9000).HasFocus(7) | Container(9000).HasFocus(9) | [Container(9000).HasFocus(1) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]] | Container(9000).HasFocus(10) | Container(9000).HasFocus(11) | Container(9000).HasFocus(12)</visible>
+        <visible>Container(9000).HasFocus(6)|Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(5) | Container(9000).HasFocus(7) | Container(9000).HasFocus(9) | [Container(9000).HasFocus(1) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]] | Container(9000).HasFocus(10) | Container(9000).HasFocus(11) | Container(9000).HasFocus(12)| Container(9000).HasFocus(25)</visible>
       </control>
       <control type="button" id="330">
         <description>INVISIBLE button: No Submenu</description>
@@ -451,10 +451,10 @@
               <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
               <visible>Container(9000).HasFocus(11)</visible>
             </item>
-            <item id="90175">
+            <item id="90176">
               <label>31243</label>
               <onclick>ActivateWindow(1118)</onclick>
-              <visible>Container(9000).HasFocus(11)</visible>
+              <visible>Container(9000).HasFocus(11)+Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
             </item>
             <!--System-->
             <item id="90190">
@@ -521,6 +521,8 @@
               <onclick>ActivateWindow(weathersettings)</onclick>
               <visible>Container(9000).HasFocus(6)</visible>
             </item>
+            <!--TV Guide-->
+            <include condition="!Skin.HasSetting(HomeMenuNoTVGuideButton)">TVguideSubMenu</include>
           </content>
         </control>
       </control>
@@ -618,6 +620,13 @@
             <icon>special://skin/backgrounds/tvshows.jpg</icon>
             <thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
             <visible>Skin.HasSetting(HomeMenuNoTVShowsButton) + Library.HasContent(TVShows)</visible>
+          </item>
+          <item id="25">
+            <label>31290</label>
+            <onclick>ActivateWindow(1118)</onclick>
+            <icon>special://skin/backgrounds/tvguide.jpg</icon>
+            <thumb>$INFO[Skin.String(Home_Custom_Back_TVGuide_Folder)]</thumb>
+            <visible>!Skin.HasSetting(HomeMenuNoTVGuideButton) + Library.HasContent(TVShows)</visible>
           </item>
           <include condition="Skin.HasSetting(HomeMenuVideoPlaylist1)">CustomMainSPL1</include>
           <include condition="Skin.HasSetting(HomeMenuVideoPlaylist2)">CustomMainSPL2</include>
