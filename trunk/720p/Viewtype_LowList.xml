@@ -1110,8 +1110,8 @@
             <posx>850</posx>
             <posy>510</posy>
             <width>425</width>
-            <height>128</height>
-            <font>Font_Info</font>
+            <height>148</height>
+            <font>Font_Reg18</font>
             <label>$INFO[Container.ShowPlot]</label>
             <textcolor>d0FFFFFF</textcolor>
             <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -1122,35 +1122,12 @@
             <posy>510</posy>
             <width>425</width>
             <height>250</height>
-            <font>Font_Info</font>
+            <font>Font_Reg18</font>
             <label>$INFO[Container.ShowPlot]</label>
             <textcolor>d0FFFFFF</textcolor>
             <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
             <visible>Container.Content(seasons)+!Skin.HasSetting(highlist)+ListItem.IsFolder</visible>
           </control>
-          <!-- <control type="textbox">
-            <posx>850</posx>
-            <posy>510</posy>
-            <width>425</width>
-            <height>135</height>
-            <font>Font_Info</font>
-            <label>$INFO[ListItem.Plot]</label>
-            <textcolor>d0FFFFFF</textcolor>
-            <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-            <visible>Container.Content(tvshows)+Skin.HasSetting(highlist)</visible>
-          </control>
-          <control type="textbox">
-            <posx>850</posx>
-            <posy>510</posy>
-            <width>425</width>
-            <height>191</height>
-            <font>Font_Info</font>
-            <label>$INFO[ListItem.Plot]</label>
-            <textcolor>d0FFFFFF</textcolor>
-            <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
-            <visible>Container.Content(tvshows)+!Skin.HasSetting(highlist)</visible>
-          </control>
--->
         </control>
       </control>
       <control type="fixedlist" id="511">
@@ -1200,9 +1177,9 @@
             <aligny>center</aligny>
             <include>listcolornofocus</include>
             <font>Font_Bold16</font>
-            <label>[UPPERCASE]$INFO[ListItem.Rating][/UPPERCASE]</label>
+            <label fallback="-">$INFO[ListItem.Rating]</label>
+            <visible>!IsEmpty(ListItem.Thumb)+!Container.Content(seasons)</visible>
           </control>
-
           <control type="image">
             <posx>500</posx>
             <posy>5</posy>
@@ -1295,7 +1272,8 @@
             <aligny>center</aligny>
             <include>listcolorfocus</include>
             <font>Font_Info</font>
-            <label>[UPPERCASE]$INFO[ListItem.Rating][/UPPERCASE]</label>
+            <label fallback="-">$INFO[ListItem.Rating]</label>
+            <visible>!IsEmpty(ListItem.Thumb)+!Container.Content(seasons)</visible>
           </control>
           <control type="image">
             <posx>500</posx>
