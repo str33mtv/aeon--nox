@@ -316,6 +316,7 @@
         <onup>SetFocus(9000)</onup>
         <include condition="!Skin.HasSetting(fstrailer)">Trailer_Windowed</include>
         <include condition="Skin.HasSetting(fstrailer)">Trailer_Fullscreen</include>
+        <onclick>SetFocus(50)</onclick>
         <font>-</font>
         <label>-</label>
         <visible>!IsEmpty(ListItem.Trailer) + !Player.HasVideo   + !Control.IsVisible(50)</visible>
@@ -330,6 +331,7 @@
         <onup>9000</onup>
         <include condition="!Skin.HasSetting(fstrailer)">Trailer_Windowed</include>
         <include condition="Skin.HasSetting(fstrailer)">Trailer_Fullscreen</include>
+        <onclick>SetFocus(50)</onclick>
         <font>-</font>
         <label>-</label>
         <visible>!IsEmpty(ListItem.Trailer) + !Player.HasVideo  + Control.IsVisible(50)</visible>
