@@ -18,6 +18,7 @@
 
 - Added color selector for the topbar.
 
+- Disabling PosterSlide now enables Multiplex layout.
 
 [B]1.5.4[/B]
 - Fixed Networksetup.
