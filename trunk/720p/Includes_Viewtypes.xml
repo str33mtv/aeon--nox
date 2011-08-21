@@ -1856,7 +1856,7 @@
       <posx>75</posx>
       <width>1130</width>
       <height>590</height>
-      <texture border="0,0,0,204">views/multiplex_tablet_extra.png</texture>
+      <texture border="0,0,0,204">views/four_thumbs_layout.png</texture>
       <visible>Container.Content(movies)+[[Skin.HasSetting(fourthumbs)+Control.IsVisible(501)]|[Skin.HasSetting(fourthumbs503)+Control.IsVisible(503)]|[Skin.HasSetting(fourthumbs504)+Control.IsVisible(504)]]</visible>
     </control>
   </include>
