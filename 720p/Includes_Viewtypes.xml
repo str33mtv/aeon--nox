@@ -133,78 +133,23 @@
         <textcolor>white</textcolor>
         <label fallback="312577">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
       </control>
-      <control type="group">
-        <visible>!Skin.HasSetting(audiosublabelfip)</visible>
-        <control type="label">
-          <posx>235</posx>
-          <posy>95</posy>
-          <height>13</height>
-          <width>280</width>
-          <font>Font_Info</font>
-          <textcolor>abFFFFFF</textcolor>
-          <label>$LOCALIZE[21875]:</label>
-        </control>
-        <control type="label">
-          <posx>235</posx>
-          <posy>115</posy>
-          <height>13</height>
-          <width>200</width>
-          <font>Font_Info</font>
-          <textcolor>white</textcolor>
-          <label fallback="312577">$INFO[ListItem.Country]</label>
-        </control>
+      <control type="label">
+        <posx>235</posx>
+        <posy>95</posy>
+        <height>13</height>
+        <width>280</width>
+        <font>Font_Info</font>
+        <textcolor>abFFFFFF</textcolor>
+        <label>$LOCALIZE[21875]:</label>
       </control>
-      <control type="group">
-        <visible>Skin.HasSetting(audiosublabelfip)</visible>
-        <control type="label">
-          <posx>235</posx>
-          <posy>95</posy>
-          <height>13</height>
-          <width>280</width>
-          <font>Font_Info</font>
-          <textcolor>abFFFFFF</textcolor>
-          <label>$LOCALIZE[460] / $LOCALIZE[462]:</label>
-        </control>
-        <control type="label">
-          <posx>235</posx>
-          <posy>115</posy>
-          <height>13</height>
-          <width>280</width>
-          <font>Font_Info</font>
-          <textcolor>white</textcolor>
-          <label>[UPPERCASE]$INFO[ListItem.AudioLanguage] / $INFO[ListItem.SubtitleLanguage][/UPPERCASE]</label>
-          <visible>!IsEmpty(ListItem.AudioLanguage)+!IsEmpty(ListItem.SubtitleLanguage)</visible>
-        </control>
-        <control type="label">
-          <posx>235</posx>
-          <posy>115</posy>
-          <height>13</height>
-          <width>280</width>
-          <font>Font_Info</font>
-          <textcolor>white</textcolor>
-          <label>[UPPERCASE]$INFO[ListItem.AudioLanguage][/UPPERCASE] / $LOCALIZE[16018]</label>
-          <visible>!IsEmpty(ListItem.AudioLanguage)+IsEmpty(ListItem.SubtitleLanguage)</visible>
-        </control>
-        <control type="label">
-          <posx>235</posx>
-          <posy>115</posy>
-          <height>13</height>
-          <width>280</width>
-          <font>Font_Info</font>
-          <textcolor>white</textcolor>
-          <label>$LOCALIZE[312577] / [UPPERCASE]$INFO[ListItem.SubtitleLanguage][/UPPERCASE]</label>
-          <visible>IsEmpty(ListItem.AudioLanguage)+!IsEmpty(ListItem.SubtitleLanguage)</visible>
-        </control>
-        <control type="label">
-          <posx>235</posx>
-          <posy>115</posy>
-          <height>13</height>
-          <width>280</width>
-          <font>Font_Info</font>
-          <textcolor>white</textcolor>
-          <label>$LOCALIZE[312577] / $LOCALIZE[16018]</label>
-          <visible>IsEmpty(ListItem.AudioLanguage)+IsEmpty(ListItem.SubtitleLanguage)</visible>
-        </control>
+      <control type="label">
+        <posx>235</posx>
+        <posy>115</posy>
+        <height>13</height>
+        <width>200</width>
+        <font>Font_Info</font>
+        <textcolor>white</textcolor>
+        <label fallback="312577">$INFO[ListItem.Country]</label>
       </control>
       <control type="textbox">
         <posx>0</posx>
@@ -567,78 +512,23 @@
           <label>$LOCALIZE[312577]</label>
           <visible>IsEmpty(ListItem.Duration)</visible>
         </control>
-        <control type="group">
-          <visible>!Skin.HasSetting(audiosublabel)</visible>
-          <control type="label">
-            <posx>0</posx>
-            <posy>225</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>abFFFFFF</textcolor>
-            <label>$LOCALIZE[515]:</label>
-          </control>
-          <control type="label">
-            <posx>0</posx>
-            <posy>242</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label fallback="312577">$INFO[ListItem.Genre]</label>
-          </control>
+        <control type="label">
+          <posx>0</posx>
+          <posy>225</posy>
+          <height>13</height>
+          <width>280</width>
+          <font>Font_Info</font>
+          <textcolor>abFFFFFF</textcolor>
+          <label>$LOCALIZE[515]:</label>
         </control>
-        <control type="group">
-          <visible>Skin.HasSetting(audiosublabel)</visible>
-          <control type="label">
-            <posx>0</posx>
-            <posy>225</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>abFFFFFF</textcolor>
-            <label>$LOCALIZE[460] / $LOCALIZE[462]:</label>
-          </control>
-          <control type="label">
-            <posx>0</posx>
-            <posy>243</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>[UPPERCASE]$INFO[ListItem.AudioLanguage] / $INFO[ListItem.SubtitleLanguage][/UPPERCASE]</label>
-            <visible>!IsEmpty(ListItem.AudioLanguage)+!IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
-          <control type="label">
-            <posx>0</posx>
-            <posy>243</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>[UPPERCASE]$INFO[ListItem.AudioLanguage][/UPPERCASE] / $LOCALIZE[16018]</label>
-            <visible>!IsEmpty(ListItem.AudioLanguage)+IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
-          <control type="label">
-            <posx>0</posx>
-            <posy>243</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>$LOCALIZE[312577] / [UPPERCASE]$INFO[ListItem.SubtitleLanguage][/UPPERCASE]</label>
-            <visible>IsEmpty(ListItem.AudioLanguage)+!IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
-          <control type="label">
-            <posx>0</posx>
-            <posy>243</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>$LOCALIZE[312577] / $LOCALIZE[16018]</label>
-            <visible>IsEmpty(ListItem.AudioLanguage)+IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
+        <control type="label">
+          <posx>0</posx>
+          <posy>242</posy>
+          <height>13</height>
+          <width>280</width>
+          <font>Font_Info</font>
+          <textcolor>white</textcolor>
+          <label fallback="312577">$INFO[ListItem.Genre]</label>
         </control>
         <control type="label">
           <posx>0</posx>
@@ -907,78 +797,23 @@
           <label>$LOCALIZE[312577]</label>
           <visible>IsEmpty(ListItem.Duration)</visible>
         </control>
-        <control type="group">
-          <visible>!Skin.HasSetting(audiosublabel)</visible>
-          <control type="label">
-            <posx>235</posx>
-            <posy>95</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>abFFFFFF</textcolor>
-            <label>$LOCALIZE[21875]:</label>
-          </control>
-          <control type="label">
-            <posx>235</posx>
-            <posy>115</posy>
-            <height>13</height>
-            <width>200</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label fallback="312577">$INFO[ListItem.Country]</label>
-          </control>
+        <control type="label">
+          <posx>235</posx>
+          <posy>95</posy>
+          <height>13</height>
+          <width>280</width>
+          <font>Font_Info</font>
+          <textcolor>abFFFFFF</textcolor>
+          <label>$LOCALIZE[21875]:</label>
         </control>
-        <control type="group">
-          <visible>Skin.HasSetting(audiosublabel)</visible>
-          <control type="label">
-            <posx>235</posx>
-            <posy>95</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>abFFFFFF</textcolor>
-            <label>$LOCALIZE[460] / $LOCALIZE[462]:</label>
-          </control>
-          <control type="label">
-            <posx>235</posx>
-            <posy>115</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>[UPPERCASE]$INFO[ListItem.AudioLanguage] / $INFO[ListItem.SubtitleLanguage][/UPPERCASE]</label>
-            <visible>!IsEmpty(ListItem.AudioLanguage)+!IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
-          <control type="label">
-            <posx>235</posx>
-            <posy>115</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>[UPPERCASE]$INFO[ListItem.AudioLanguage][/UPPERCASE] / $LOCALIZE[16018]</label>
-            <visible>!IsEmpty(ListItem.AudioLanguage)+IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
-          <control type="label">
-            <posx>235</posx>
-            <posy>115</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>$LOCALIZE[312577] / [UPPERCASE]$INFO[ListItem.SubtitleLanguage][/UPPERCASE]</label>
-            <visible>IsEmpty(ListItem.AudioLanguage)+!IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
-          <control type="label">
-            <posx>235</posx>
-            <posy>115</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>$LOCALIZE[312577] / $LOCALIZE[16018]</label>
-            <visible>IsEmpty(ListItem.AudioLanguage)+IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
+        <control type="label">
+          <posx>235</posx>
+          <posy>115</posy>
+          <height>13</height>
+          <width>200</width>
+          <font>Font_Info</font>
+          <textcolor>white</textcolor>
+          <label fallback="312577">$INFO[ListItem.Country]</label>
         </control>
         <control type="textbox">
           <posx>0</posx>
@@ -1140,78 +975,23 @@
           <label>$LOCALIZE[312577]</label>
           <visible>IsEmpty(ListItem.Duration)</visible>
         </control>
-        <control type="group">
-          <visible>!Skin.HasSetting(audiosublabel)</visible>
-          <control type="label">
-            <posx>0</posx>
-            <posy>225</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>abFFFFFF</textcolor>
-            <label>$LOCALIZE[515]:</label>
-          </control>
-          <control type="label">
-            <posx>0</posx>
-            <posy>242</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label fallback="312577">$INFO[ListItem.Genre]</label>
-          </control>
+        <control type="label">
+          <posx>0</posx>
+          <posy>225</posy>
+          <height>13</height>
+          <width>280</width>
+          <font>Font_Info</font>
+          <textcolor>abFFFFFF</textcolor>
+          <label>$LOCALIZE[515]:</label>
         </control>
-        <control type="group">
-          <visible>Skin.HasSetting(audiosublabel)</visible>
-          <control type="label">
-            <posx>0</posx>
-            <posy>225</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>abFFFFFF</textcolor>
-            <label>$LOCALIZE[460] / $LOCALIZE[462]:</label>
-          </control>
-          <control type="label">
-            <posx>0</posx>
-            <posy>243</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>[UPPERCASE]$INFO[ListItem.AudioLanguage] / $INFO[ListItem.SubtitleLanguage][/UPPERCASE]</label>
-            <visible>!IsEmpty(ListItem.AudioLanguage)+!IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
-          <control type="label">
-            <posx>0</posx>
-            <posy>243</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>[UPPERCASE]$INFO[ListItem.AudioLanguage][/UPPERCASE] / $LOCALIZE[16018]</label>
-            <visible>!IsEmpty(ListItem.AudioLanguage)+IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
-          <control type="label">
-            <posx>0</posx>
-            <posy>243</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>$LOCALIZE[312577] / [UPPERCASE]$INFO[ListItem.SubtitleLanguage][/UPPERCASE]</label>
-            <visible>IsEmpty(ListItem.AudioLanguage)+!IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
-          <control type="label">
-            <posx>0</posx>
-            <posy>243</posy>
-            <height>13</height>
-            <width>280</width>
-            <font>Font_Info</font>
-            <textcolor>white</textcolor>
-            <label>$LOCALIZE[312577] / $LOCALIZE[16018]</label>
-            <visible>IsEmpty(ListItem.AudioLanguage)+IsEmpty(ListItem.SubtitleLanguage)</visible>
-          </control>
+        <control type="label">
+          <posx>0</posx>
+          <posy>242</posy>
+          <height>13</height>
+          <width>280</width>
+          <font>Font_Info</font>
+          <textcolor>white</textcolor>
+          <label fallback="312577">$INFO[ListItem.Genre]</label>
         </control>
         <control type="label">
           <posx>0</posx>
