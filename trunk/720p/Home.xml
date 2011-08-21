@@ -216,11 +216,6 @@
               <visible>!Library.HasContent(Video)</visible>
               <visible>Container(9000).HasFocus(2)</visible>
             </item>
-            <!--<item id="90108">
-              <label>$LOCALIZE[559]</label>
-              <onclick>ActivateWindow(28)</onclick>
-              <visible>Container(9000).HasFocus(2)</visible>
-            </item>-->
             <!--Music-->
           
             <include condition="Skin.HasSetting(HomeMusicPlaylist1)">CustomSubMusic1</include>
