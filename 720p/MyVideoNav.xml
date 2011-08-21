@@ -132,8 +132,9 @@
     </control>
     <control type="group">
       <include>Animation_OpenCloseZoom</include>
-      <visible>Control.IsVisible(508)|Control.IsVisible(503)|Control.IsVisible(509)|Control.IsVisible(504)|Control.IsVisible(501)</visible>
+      <visible>[Control.isVisible(510)+Skin.HasSetting(posterslide)]|Control.IsVisible(508)|Control.IsVisible(503)|Control.IsVisible(509)|Control.IsVisible(504)|Control.IsVisible(501)</visible>
       <include>ShowcaseInfoPaneMovies</include>
+      <animation effect="slide" end="0,68"  time="400" easing="inout" tween="cubic" condition="[Control.IsVisible(510)+Skin.HasSetting(posterslide)]">Conditional</animation>
       <animation effect="slide" end="0,30"  time="400" easing="inout" tween="cubic" condition="Control.IsVisible(503)|Control.IsVisible(508)">Conditional</animation>
     </control>
     <control type="group">
@@ -181,14 +182,14 @@
         <texturefocus>-</texturefocus>
         <texturenofocus>-</texturenofocus>
         <onfocus>SetFocus(7001)</onfocus>
-        <visible>!IsEmpty(ListItem.Trailer)+!Player.HasVideo+[Container.Content(movies)+Skin.HasSetting(showcaseinfoon)+[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)]|Control.IsVisible(511)|Control.IsVisible(550)|Control.IsVisible(510)|Control.IsVisible(516)|Control.IsVisible(50)|Control.IsVisible(55)]</visible>
+        <visible>!IsEmpty(ListItem.Trailer)+!Player.HasVideo+[Container.Content(movies)+Skin.HasSetting(showcaseinfoon)+[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)]|Control.IsVisible(511)|Control.IsVisible(550)|[Control.IsVisible(510)+!Skin.HasSetting(posterslide)]|Control.IsVisible(516)|Control.IsVisible(50)|Control.IsVisible(55)]</visible>
       </control>
       <control type="button" id="7000">
         <include>HiddenObject</include>
         <texturefocus>-</texturefocus>
         <texturenofocus>-</texturenofocus>
         <onfocus>SetFocus(9000)</onfocus>
-        <visible>[IsEmpty(ListItem.Trailer)|Player.HasVideo]+[Container.Content(movies)+Skin.HasSetting(showcaseinfoon)+[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)]|Control.IsVisible(511)|Control.IsVisible(550)|Control.IsVisible(510)|Control.IsVisible(516)|Control.IsVisible(50)|Control.IsVisible(55)]</visible>
+        <visible>[IsEmpty(ListItem.Trailer)|Player.HasVideo]+[Container.Content(movies)+Skin.HasSetting(showcaseinfoon)+[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)]|Control.IsVisible(511)|Control.IsVisible(550)|[Control.IsVisible(510)+!Skin.HasSetting(posterslide)]|Control.IsVisible(516)|Control.IsVisible(50)|Control.IsVisible(55)]</visible>
       </control>
       <control type="button" id="7000">
         <include>HiddenObject</include>
@@ -211,6 +212,28 @@
         <ondown>SetFocus(50)</ondown>
         <onclick>PlayMedia($INFO[ListItem.FileNameAndPath])</onclick>
         <visible>!Skin.HasSetting(showcaseinfoon)+Container.Content(movies)+Control.IsVisible(501)+!IsEmpty(ListItem.Trailer)</visible>
+      </control>
+      <control type="button" id="7000">
+        <include>HiddenObject</include>
+        <texturefocus>-</texturefocus>
+        <texturenofocus>-</texturenofocus>
+        <onup>SetFocus(9000)</onup>
+        <onleft>Control.Move(510,-1)</onleft>
+        <onright>Control.Move(510,1)</onright>
+        <ondown>SetFocus(50)</ondown>
+        <onclick>PlayMedia($INFO[ListItem.FileNameAndPath])</onclick>
+        <visible>!Skin.HasSetting(showcaseinfoon)+Container.Content(movies)+[Control.isVisible(510)+Skin.HasSetting(posterslide)]+IsEmpty(ListItem.Trailer)</visible>
+      </control>
+      <control type="button" id="7000">
+        <include>HiddenObject</include>
+        <texturefocus>-</texturefocus>
+        <texturenofocus>-</texturenofocus>
+        <onup>SetFocus(7001)</onup>
+        <onleft>Control.Move(510,-1)</onleft>
+        <onright>Control.Move(510,1)</onright>
+        <ondown>SetFocus(50)</ondown>
+        <onclick>PlayMedia($INFO[ListItem.FileNameAndPath])</onclick>
+        <visible>!Skin.HasSetting(showcaseinfoon)+Container.Content(movies)+[Control.isVisible(510)+Skin.HasSetting(posterslide)]+!IsEmpty(ListItem.Trailer)</visible>
       </control>
       <control type="button" id="7000">
         <include>HiddenObject</include>
@@ -276,6 +299,17 @@
         <onright>Control.Move(501,1)</onright>
         <ondown>SetFocus(50)</ondown>
         <visible>!Skin.HasSetting(showcaseinfoontv)+[Container.Content(tvshows)|Container.Content(seasons)]+Control.IsVisible(501)</visible>
+      </control>
+      <control type="button" id="7000">
+        <include>HiddenObject</include>
+        <texturefocus>-</texturefocus>
+        <texturenofocus>-</texturenofocus>
+        <onclick>SetFocus(50)</onclick>
+        <onup>SetFocus(9000)</onup>
+        <onleft>Control.Move(510,-1)</onleft>
+        <onright>Control.Move(510,1)</onright>
+        <ondown>SetFocus(50)</ondown>
+        <visible>!Skin.HasSetting(showcaseinfoontv)+[Container.Content(tvshows)|Container.Content(seasons)]+[Control.isVisible(510)+Skin.HasSetting(posterslide)]</visible>
       </control>
       <control type="button" id="7000">
         <include>HiddenObject</include>
