@@ -685,9 +685,8 @@
         <width>130</width>
         <height>59</height>
         <font>Font_Reg21</font>
-        <textcolor>dcFFFFFF</textcolor>
+        <textcolor>floor</textcolor>
         <align>left</align>
-        <colordiffuse>floor</colordiffuse>
         <visible>[Container.Content(Albums) | Container.Content(Songs)]</visible>
         <visible>Control.IsVisible(509) | Control.IsVisible(50) | Control.IsVisible(513)|Control.IsVisible(500)</visible>
         <animation effect="slide" start="0,0" end="990,-20" time="0" condition="Control.IsVisible(50)">Conditional</animation>
@@ -714,9 +713,8 @@
         <width>90</width>
         <height>59</height>
         <font>Font_Reg21</font>
-        <textcolor>dcFFFFFF</textcolor>
+        <textcolor>floor</textcolor>
         <align>center</align>
-        <colordiffuse>floor</colordiffuse>
         <visible>Container.Content(Albums) | Container.Content(Songs)</visible>
         <visible>Control.IsVisible(509) | Control.IsVisible(50) | Control.IsVisible(513)|Control.IsVisible(500)</visible>
         <visible>!IsEmpty(ListItem.Year)</visible>
