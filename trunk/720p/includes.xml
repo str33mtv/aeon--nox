@@ -137,7 +137,7 @@
       <texture>common/black.png</texture>
       <visible>!Skin.HasSetting(MusicLibraryFanart)+IsEmpty(ListItem.property(fanart_image))</visible>
       <animation effect="fade" start="100" end="0" time="1000">Visible</animation>
-      <visible>WindowIsActive(musiclibrary)</visible>
+      <visible>Window.IsActive(musiclibrary)</visible>
     </control>
   </include>
   <include name="CommonPictureBackground">
