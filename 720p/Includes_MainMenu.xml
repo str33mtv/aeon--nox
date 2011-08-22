@@ -783,6 +783,312 @@
       </control>
     </control>
   </include>
+  <include name="CinemaSubMenuItem">
+    <item id="90169">
+      <label>CINEMA</label>
+      <include>MovieTitlesCinExp</include>
+      <visible>Container(9000).HasFocus(10)</visible>
+    </item>
+  </include>
+  <include name="TrailerSubMenuItem">
+    <item id="90168">
+      <label>$LOCALIZE[31162]</label>
+      <onclick>XBMC.ActivateWindow(MyVideoLibrary, plugin://plugin.video.apple.movie.trailers.lite/addon.py,return)</onclick>
+      <visible>Container(9000).HasFocus(10)</visible>
+    </item>
+  </include>
+  <include name="DefaultVideosSubMenu">
+    <item id="90109">
+      <label>136</label>
+      <onclick>ActivateWindow(VideoLibrary,Playlists,return)</onclick>
+      <visible>Container(9000).HasFocus(2)</visible>
+    </item>
+    <item id="90101">
+      <label>342</label>
+      <onclick>ActivateWindow(VideoLibrary,MovieTitles,return)</onclick>
+      <visible>Library.HasContent(Movies)</visible>
+      <visible>Container(9000).HasFocus(2)</visible>
+    </item>
+    <item id="90102">
+      <label>20343</label>
+      <onclick>ActivateWindow(VideoLibrary,TvShowTitles,return)</onclick>
+      <visible>Library.HasContent(TVShows)</visible>
+      <visible>Container(9000).HasFocus(2)</visible>
+    </item>
+    <item id="90103">
+      <label>20389</label>
+      <onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
+      <visible>Library.HasContent(MusicVideos)</visible>
+      <visible>Container(9000).HasFocus(2)</visible>
+    </item>
+    <item id="90104">
+      <label>744</label>
+      <onclick>ActivateWindow(VideoFiles)</onclick>
+      <visible>Container(9000).HasFocus(2)</visible>
+    </item>
+    <item id="90105">
+      <label>14022</label>
+      <onclick>ActivateWindow(VideoLibrary)</onclick>
+      <visible>Library.HasContent(Video)</visible>
+      <visible>Container(9000).HasFocus(2)</visible>
+    </item>
+    <item id="90106">
+      <label>24001</label>
+      <onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
+      <visible>Library.HasContent(Video)</visible>
+      <visible>Container(9000).HasFocus(2)</visible>
+    </item>
+    <item id="90107">
+      <label>24001</label>
+      <onclick>ActivateWindow(VideoFiles,Addons,return)</onclick>
+      <visible>!Library.HasContent(Video)</visible>
+      <visible>Container(9000).HasFocus(2)</visible>
+    </item>
+  </include>
+  <include name="DefaultMusicSubMenu">
+    <item id="90111">
+      <label>133</label>
+      <onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
+      <visible>Library.HasContent(Music)</visible>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+    <item id="90112">
+      <label>132</label>
+      <onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+      <visible>Library.HasContent(Music)</visible>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+    <item id="90110">
+      <label>ROOT</label>
+      <onclick>ActivateWindow(MusicLibrary,root)</onclick>
+      <visible>Library.HasContent(Music)</visible>
+      <visible>Container(9000).HasFocus(3)+Skin.HasSetting(musicmenulibrary)</visible>
+    </item>
+    <item id="90113">
+      <label>134</label>
+      <onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
+      <visible>Library.HasContent(Music)</visible>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+    <item id="90114">
+      <label>744</label>
+      <onclick>ActivateWindow(MusicFiles)</onclick>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+    <item id="90115=">
+      <label>14022</label>
+      <onclick>ActivateWindow(MusicLibrary)</onclick>
+      <visible>Library.HasContent(Music)</visible>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+    <item id="90116">
+      <label>24001</label>
+      <onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
+      <visible>Library.HasContent(Music)</visible>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+    <item id="90117">
+      <label>24001</label>
+      <onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
+      <visible>!Library.HasContent(Music)</visible>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+    <item id="90118">
+      <label>$LOCALIZE[31040]</label>
+      <onclick>ActivateWindow(500)</onclick>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+    <item id="90119">
+      <label>31334</label>
+      <onclick>XBMC.ActivateWindow(MusicLibrary,RecentlyAddedAlbums)</onclick>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+    <item id="90120">
+      <label>31333</label>
+      <onclick>XBMC.ActivateWindow(MusicLibrary,RecentlyPlayedAlbums)</onclick>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+    <item id="90121">
+      <label>$LOCALIZE[589]</label>
+      <onclick>XBMC.PlayerControl(PartyMode(music))</onclick>
+      <visible>Container(9000).HasFocus(3)</visible>
+    </item>
+  </include>
+  <include name="DefaultSystemSubMenu">
+    <item id="90141">
+      <label>5</label>
+      <onclick>ActivateWindow(Settings)</onclick>
+      <visible>Container(9000).HasFocus(5)</visible>
+    </item>
+    <item id="90146">
+      <label>24001</label>
+      <onclick>ActivateWindow(AddonBrowser)</onclick>
+      <visible>Container(9000).HasFocus(5)</visible>
+    </item>
+    <item id="90142">
+      <label>7</label>
+      <onclick>ActivateWindow(FileManager)</onclick>
+      <visible>Container(9000).HasFocus(5)</visible>
+    </item>
+    <item id="90143">
+      <label>13200</label>
+      <onclick>ActivateWindow(Profiles)</onclick>
+      <visible>Container(9000).HasFocus(5)</visible>
+    </item>
+    <item id="90144">
+      <label>130</label>
+      <onclick>ActivateWindow(SystemInfo)</onclick>
+      <visible>Container(9000).HasFocus(5)</visible>
+    </item>
+    <item id="90145">
+      <label>$LOCALIZE[470]</label>
+      <onclick>ActivateWindow(Credits)</onclick>
+      <visible>False</visible>
+      <visible>Container(9000).HasFocus(5)</visible>
+    </item>
+  </include>
+  <include name="DefaultMoviesSubMenu">
+    <item id="90161">
+      <label>369</label>
+      <include condition="Skin.HasSetting(cinemaexpdefault)">MovieTitlesCinExp</include>
+      <include condition="!Skin.HasSetting(cinemaexpdefault)">MovieTitlesNoCinExp</include>
+      <visible>Container(9000).HasFocus(10)</visible>
+    </item>
+    <item id="90162">
+      <label>135</label>
+      <include condition="Skin.HasSetting(cinemaexpdefault)">MovieGenresCinExp</include>
+      <include condition="!Skin.HasSetting(cinemaexpdefault)">MovieGenresNoCinExp</include>
+      <visible>Container(9000).HasFocus(10)</visible>
+    </item>
+    <item id="90163">
+      <label>652</label>
+      <include condition="Skin.HasSetting(cinemaexpdefault)">MovieYearsCinExp</include>
+      <include condition="!Skin.HasSetting(cinemaexpdefault)">MovieYearsNoCinExp</include>
+      <visible>Container(9000).HasFocus(10)</visible>
+    </item>
+    <item id="90164">
+      <label>344</label>
+      <include condition="Skin.HasSetting(cinemaexpdefault)">MovieActorsCinExp</include>
+      <include condition="!Skin.HasSetting(cinemaexpdefault)">MovieActorsNoCinExp</include>
+      <visible>Container(9000).HasFocus(10)</visible>
+    </item>
+    <item id="90165">
+      <label>20348</label>
+      <include condition="Skin.HasSetting(cinemaexpdefault)">MovieDirectorsCinExp</include>
+      <include condition="!Skin.HasSetting(cinemaexpdefault)">MovieDirectorsNoCinExp</include>
+      <visible>Container(9000).HasFocus(10)</visible>
+    </item>
+    <item id="90166">
+      <label>31334</label>
+      <include condition="Skin.HasSetting(cinemaexpdefault)">MovieRecentAddedCinExp</include>
+      <include condition="!Skin.HasSetting(cinemaexpdefault)">MovieRecentAddedNoCinExp</include>
+      <visible>Container(9000).HasFocus(10)</visible>
+    </item>
+    <item id="90167">
+      <label>24069</label>
+      <onclick>UpdateLibrary(video)</onclick>
+      <visible>Container(9000).HasFocus(10)</visible>
+    </item>
+  </include>
+  <include name="DefaultTVShowsSubMenu">
+    <item id="90171">
+      <label>369</label>
+      <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
+      <visible>Container(9000).HasFocus(11)</visible>
+    </item>
+    <item id="90172">
+      <label>135</label>
+      <onclick>ActivateWindow(VideoLibrary,TVShowGenres,return)</onclick>
+      <visible>Container(9000).HasFocus(11)</visible>
+    </item>
+    <item id="90173">
+      <label>652</label>
+      <onclick>ActivateWindow(VideoLibrary,TVShowYears,return)</onclick>
+      <visible>Container(9000).HasFocus(11)</visible>
+    </item>
+    <item id="90174">
+      <label>344</label>
+      <onclick>ActivateWindow(VideoLibrary,TVShowActors,return)</onclick>
+      <visible>Container(9000).HasFocus(11)</visible>
+    </item>
+    <item id="90175">
+      <label>31334</label>
+      <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
+      <visible>Container(9000).HasFocus(11)</visible>
+    </item>
+    <item id="90176">
+      <label>31243</label>
+      <onclick>ActivateWindow(1118)</onclick>
+      <visible>Container(9000).HasFocus(11)+Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
+    </item>
+  </include>
+  <include name="DefaultShutdownSubMenu">
+    <item id="90190">
+      <description>Shutdown Timer</description>
+      <label fallback="TIMER">31856</label>
+      <onclick>AlarmClock($LOCALIZE[20144],Shutdown(),)</onclick>
+      <visible>Container(9000).HasFocus(12)</visible>
+    </item>
+    <item id="90191">
+      <description>Restart Button</description>
+      <label>13313</label>
+      <onclick>Reset</onclick>
+      <visible>Container(9000).HasFocus(12)</visible>
+    </item>
+    <item id="90192">
+      <description>Suspend</description>
+      <label>13011</label>
+      <onclick>Suspend</onclick>
+      <visible>Container(9000).HasFocus(12)</visible>
+    </item>
+    <item id="90192">
+      <description>Hibernate</description>
+      <label>13010</label>
+      <onclick>Hibernate</onclick>
+      <visible>Container(9000).HasFocus(12)</visible>
+    </item>
+    <item id="90193">
+      <description>Logout Button</description>
+      <label>20126</label>
+      <onclick>System.LogOff</onclick>
+      <visible>System.HasLoginScreen</visible>
+      <visible>Container(9000).HasFocus(12)</visible>
+    </item>
+    <item id="90194">
+      <description>Quit</description>
+      <label>13009</label>
+      <onclick>Quit</onclick>
+      <visible>Container(9000).HasFocus(12)</visible>
+    </item>
+  </include>
+  <include name="DefaultWeatherSubMenu">
+    <item id="90200">
+      <description>Change fanart</description>
+      <label>33068</label>
+      <onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
+      <visible>Container(9000).HasFocus(6)+!IsEmpty(Skin.String(WeatherFanartDir))</visible>
+    </item>
+    <item id="90201">
+      <description>Toggle widget</description>
+      <label>WIDGET</label>
+      <onclick>Skin.ToggleSetting(homepageWeatherinfo)</onclick>
+      <onclick>ReloadSkin()</onclick>
+      <visible>Container(9000).HasFocus(6)</visible>
+    </item>
+    <item id="90202">
+      <description>Toggle animations</description>
+      <label>31375</label>
+      <onclick>Skin.ToggleSetting(homepageWeatheranimated)</onclick>
+      <onclick>ReloadSkin()</onclick>
+      <visible>Container(9000).HasFocus(6)+!IsEmpty(Skin.String(AnimatedWeatherIconsDir))+!Skin.HasSetting(homepageWeatherinfo)</visible>
+    </item>
+    <item id="90203">
+      <description>Go to weather settings</description>
+      <label>10004</label>
+      <onclick>ActivateWindow(weathersettings)</onclick>
+      <visible>Container(9000).HasFocus(6)</visible>
+    </item>
+  </include>
 </includes>
 
 
