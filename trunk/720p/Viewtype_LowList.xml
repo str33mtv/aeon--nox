@@ -35,6 +35,16 @@
         <control type="image">
           <description>Low List Background Panel</description>
           <posx>0</posx>
+          <posy>475</posy>
+          <width>1280</width>
+          <height>404</height>
+          <aspectratio scalediffuse="false">stretch</aspectratio>
+          <texture>views/lowlist_panelback_shadow.png</texture>
+          <include>Animation_CommonFade</include>
+        </control>
+        <control type="image">
+          <description>Low List Background Panel</description>
+          <posx>0</posx>
           <posy>503</posy>
           <width>1280</width>
           <height>404</height>
@@ -72,7 +82,7 @@
           <aspectratio>stretch</aspectratio>
           <fadetime>400</fadetime>
           <texture background="true">$INFO[ListItem.Path,,/logo.png]</texture>
-          <visible>!Window.IsActive(videofiles)+[Container.Content(tvshows)|Container.Content(seasons)]</visible>
+          <visible>[Container.Content(tvshows)|Container.Content(seasons)]</visible>
         </control>
       </control>
       <!--<control type="image">
@@ -890,7 +900,7 @@
         <control type="image">
           <posx>850</posx>
           <posy>658</posy>
-          <include>AudioFlagsVars</include>
+          <include>OSDAudioFlagsVars</include>
           <visible>!IsEmpty(ListItem.Thumb)</visible>
           <texture fallback="flags/studios/default-studio.png">$INFO[ListItem.Studio,flags/studios/,.png]</texture>
           <visible>!Skin.HasSetting(nostudioratingflags)|Container.Content(tvshows)|[Container.Content(seasons)+ListItem.IsFolder]</visible>
@@ -899,51 +909,51 @@
           <posx>950</posx>
           <posy>658</posy>
           <visible>Skin.HasSetting(sourceflags)</visible>
-          <include>FloorSourceFlags</include>
+          <include>LowListSourceFlags</include>
         </control>
         <control type="image">
           <posx>950</posx>
           <posy>658</posy>
-          <include>AudioFlagsVars</include>
+          <include>OSDAudioFlagsVars</include>
           <texture>$INFO[ListItem.VideoCodec,flags/videocodec/,.png]</texture>
           <visible>!Skin.HasSetting(sourceflags)|[!SubString(ListItem.filename,PDTV)+!SubString(ListItem.filename,sdtv)+!SubString(ListItem.Filename,hdtv)+!SubString(ListItem.Filename,hddvd)+!SubString(ListItem.Filename,hd-dvd)+!SubString(ListItem.Filename,bluray)+!SubString(ListItem.Filename,blu-ray)+!SubString(ListItem.Filename,brrip)+!SubString(ListItem.Filename,bdrip)+!SubString(ListItem.Filename,dvd)+!SubString(ListItem.Filename,dvb)+!SubString(ListItem.Filename,.iso,Right)+!SubString(ListItem.Filename,.ifo)+!SubString(ListItem.Filename,web-dl)]</visible>
         </control>
         <control type="image">
           <posx>850</posx>
           <posy>658</posy>
-          <include>AudioFlagsVars</include>
+          <include>OSDAudioFlagsVars</include>
           <texture>$INFO[ListItem.VideoAspect,flags/aspectratio/,.png]</texture>
           <visible>Skin.HasSetting(nostudioratingflags)</visible>
         </control>
         <control type="image">
           <posx>1050</posx>
           <posy>658</posy>
-          <include>AudioFlagsVars</include>
+          <include>OSDAudioFlagsVars</include>
           <texture>$INFO[ListItem.VideoResolution,flags/resolution/,.png]</texture>
         </control>
         <control type="group">
           <description>Audio Flags</description>
           <posx>1150</posx>
           <posy>658</posy>
-          <include>FloorAudioFlags</include>
+          <include>LowListAudioFlags</include>
         </control>
         <control type="group">
           <description>Rating Flags</description>
           <posx>1180</posx>
           <posy>658</posy>
-          <include>FloorRatingFlags</include>
+          <include>LowListRatingFlags</include>
           <visible>Container.Content(tvshows)|Container.Content(seasons)</visible>
         </control>
         <control type="image">
-        <posx>950</posx>
-        <posy>658</posy>
-        <width>220</width>
-        <height>60</height>
-        <aspectratio scalediffuse="true">keep</aspectratio>
-        <fadetime>400</fadetime>
-        <texture diffuse="thumbs/banner_mask.png" background="true">$INFO[ListItem.Path,,/banner.jpg]</texture>
-        <visible>Container.Content(tvshows)|Container.Content(seasons)</visible>
-      </control>
+          <posx>950</posx>
+          <posy>658</posy>
+          <width>220</width>
+          <height>60</height>
+          <aspectratio scalediffuse="true">keep</aspectratio>
+          <fadetime>400</fadetime>
+          <texture diffuse="thumbs/banner_mask.png" background="true">$INFO[ListItem.Path,,/banner.jpg]</texture>
+          <visible>Container.Content(tvshows)|Container.Content(seasons)</visible>
+        </control>
       </control>
       <control type="group">
         <description>Info labels</description>
@@ -1009,46 +1019,46 @@
             <scroll>true</scroll>
             <label fallback="312577">$INFO[ListItem.Writer]</label>
           </control>
-            <control type="label">
-              <posx>850</posx>
-              <posy>575</posy>
-              <height>13</height>
-              <width>105</width>
-              <font>Font_Reg18</font>
-              <textcolor>abFFFFFF</textcolor>
-              <scroll>true</scroll>
-              <label>$LOCALIZE[572]:</label>
-            </control>
-            <control type="label">
-              <posx>960</posx>
-              <posy>575</posy>
-              <height>13</height>
-              <width>280</width>
-              <font>Font_Reg18</font>
-              <textcolor>white</textcolor>
-              <scroll>true</scroll>
-              <label fallback="312577">$INFO[ListItem.Studio]</label>
-            </control>
-            <control type="label">
-              <posx>850</posx>
-              <posy>600</posy>
-              <height>13</height>
-              <width>105</width>
-              <font>Font_Reg18</font>
-              <textcolor>abFFFFFF</textcolor>
-              <scroll>true</scroll>
-              <label>$LOCALIZE[20074]:</label>
-            </control>
-            <control type="label">
-              <posx>960</posx>
-              <posy>600</posy>
-              <height>13</height>
-              <width>280</width>
-              <font>Font_Reg18</font>
-              <textcolor>white</textcolor>
-              <scroll>true</scroll>
-              <label fallback="Not Rated">$INFO[ListItem.Mpaa]</label>
-            </control>
+          <control type="label">
+            <posx>850</posx>
+            <posy>575</posy>
+            <height>13</height>
+            <width>105</width>
+            <font>Font_Reg18</font>
+            <textcolor>abFFFFFF</textcolor>
+            <scroll>true</scroll>
+            <label>$LOCALIZE[572]:</label>
+          </control>
+          <control type="label">
+            <posx>960</posx>
+            <posy>575</posy>
+            <height>13</height>
+            <width>280</width>
+            <font>Font_Reg18</font>
+            <textcolor>white</textcolor>
+            <scroll>true</scroll>
+            <label fallback="312577">$INFO[ListItem.Studio]</label>
+          </control>
+          <control type="label">
+            <posx>850</posx>
+            <posy>600</posy>
+            <height>13</height>
+            <width>105</width>
+            <font>Font_Reg18</font>
+            <textcolor>abFFFFFF</textcolor>
+            <scroll>true</scroll>
+            <label>$LOCALIZE[20074]:</label>
+          </control>
+          <control type="label">
+            <posx>960</posx>
+            <posy>600</posy>
+            <height>13</height>
+            <width>280</width>
+            <font>Font_Reg18</font>
+            <textcolor>white</textcolor>
+            <scroll>true</scroll>
+            <label fallback="Not Rated">$INFO[ListItem.Mpaa]</label>
+          </control>
           <control type="label">
             <posx>850</posx>
             <posy>625</posy>

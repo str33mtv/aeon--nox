@@ -1045,4 +1045,10 @@
     <onload condition="IsEmpty(Skin.String(diffuse))">Skin.SetString(diffuse,FF6db9e5)</onload>
     <onload condition="IsEmpty(Skin.String(diffuse_bar))">Skin.SetString(diffuse_bar,FFFFFFFF)</onload>
   </include>
+  <include name="FullscreenDimensions">
+    <posx>0</posx>
+    <posy>0</posy>
+    <width>1280</width>
+    <height>720</height>
+  </include>
 </includes>
