@@ -1,39 +1,11 @@
 <window>
-  <defaultcontrol always="true">8</defaultcontrol>
+  <defaultcontrol always="true">10</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <include condition="IsEmpty(Skin.String(diffuse))">LoadSpotDiffuseColor</include>
   <include condition="IsEmpty(Skin.String(diffuse_bar))">LoadTopbarDiffuseColor</include>
+  <include condition="Library.HasContent(tvshows)">LoadTVNextAired</include>
+  <include condition="[Skin.HasSetting(HomeRandomMovies)|Skin.HasSetting(HomeRandomTV)|Skin.HasSetting(HomeRandomMusic)|Skin.HasSetting(HomeRandomPoster)]">LoadRandomItems</include>
   <controls>
-    <control type="button" id="8">
-      <description>trigger</description>
-      <onfocus>XBMC.RunScript(script.randomitems,limit=8&amp;unplayed=True)</onfocus>
-      <onfocus>SetFocus(9)</onfocus>
-      <texturenofocus>-</texturenofocus>
-      <texturefocus>-</texturefocus>
-      <visible>Skin.HasSetting(HomeRandomMovies)|Skin.HasSetting(HomeRandomTV)|Skin.HasSetting(HomeRandomMusic)|Skin.HasSetting(HomeRandomAddons)|Skin.HasSetting(HomeRandomAlbums)|Skin.HasSetting(HomeRandomPoster)</visible>
-    </control>
-    <control type="button" id="8">
-      <description>trigger</description>
-      <onfocus>SetFocus(9)</onfocus>
-      <texturenofocus>-</texturenofocus>
-      <texturefocus>-</texturefocus>
-      <visible>!Skin.HasSetting(HomeRandomMovies)+!Skin.HasSetting(HomeRandomTV)+!Skin.HasSetting(HomeRandomMusic)+!Skin.HasSetting(HomeRandomAddons)+!Skin.HasSetting(HomeRandomAlbums)+!Skin.HasSetting(HomeRandomPoster)</visible>
-    </control>
-    <control type="button" id="9">
-      <description>Trigger to Auto run Next Aired script if the library has tv shows</description>
-      <onfocus>XBMC.RunScript(script.tv.show.next.aired,silent=True)</onfocus>
-      <onfocus>SetFocus(10)</onfocus>
-      <texturenofocus>-</texturenofocus>
-      <texturefocus>-</texturefocus>
-      <visible>Library.HasContent(tvshows)</visible>
-    </control>
-    <control type="button" id="9">
-      <description>Don't run if there are no tv shows</description>
-      <onfocus>SetFocus(10)</onfocus>
-      <texturenofocus>-</texturenofocus>
-      <texturefocus>-</texturefocus>
-      <visible>!Library.HasContent(tvshows)</visible>
-    </control>
     <control type="button" id="10">
       <description>trigger</description>
       <onfocus>ReplaceWindow(Home)</onfocus>

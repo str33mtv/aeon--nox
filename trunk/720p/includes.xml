@@ -1037,13 +1037,17 @@
   <include name="LoadTVTunes">
     <onload>XBMC.RunScript(script.tvtunes,backend=True)</onload>
   </include>
+  <include name="LoadRandomItems">
+    <onload>XBMC.RunScript(script.randomitems,limit=8&amp;unplayed=True)</onload>
+  </include>
+  <include name="LoadTVNextAired">
+    <onload>XBMC.RunScript(script.tv.show.next.aired,silent=True)</onload>
+  </include>
   <include name="LoadSpotDiffuseColor">
-    <onload condition="IsEmpty(Skin.String(diffuse))">Skin.SetString(diffuse,FF6db9e5)</onload>
-    <onload condition="IsEmpty(Skin.String(diffuse_bar))">Skin.SetString(diffuse_bar,FFFFFFFF)</onload>
+    <onload>Skin.SetString(diffuse,FF6db9e5)</onload>
   </include>
   <include name="LoadTopbarDiffuseColor">
-    <onload condition="IsEmpty(Skin.String(diffuse))">Skin.SetString(diffuse,FF6db9e5)</onload>
-    <onload condition="IsEmpty(Skin.String(diffuse_bar))">Skin.SetString(diffuse_bar,FFFFFFFF)</onload>
+    <onload>Skin.SetString(diffuse_bar,FFFFFFFF)</onload>
   </include>
   <include name="FullscreenDimensions">
     <posx>0</posx>
