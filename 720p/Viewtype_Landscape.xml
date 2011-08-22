@@ -192,7 +192,7 @@
           <font>Font_ShowcaseMainLabel2</font>
           <scroll>true</scroll>
           <textcolor>floor</textcolor>
-          <shadowcolor>black</shadowcolor>
+          <shadowcolor>floorshadow</shadowcolor>
           <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
           <visible>!Control.HasFocus(63)+!ControlGroup(9000).HasFocus+![Skin.HasSetting(landscapelogo)+Container.Content(tvshows)]</visible>
           <visible>![Control.IsVisible(503)+!Skin.HasSetting(showcaseinfoontv)+Container.Content(tvshows)+!Skin.HasSetting(landscapelogo)]</visible>
@@ -206,7 +206,7 @@
           <include>Animation_CommonFade</include>
           <font>Font_ShowcaseMainLabel2</font>
           <textcolor>floor</textcolor>
-          <shadowcolor>black</shadowcolor>
+          <shadowcolor>floorshadow</shadowcolor>
           <label>[UPPERCASE]$INFO[Container.NumItems] $LOCALIZE[31025] | $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/UPPERCASE]</label>
           <visible>ControlGroup(9000).HasFocus</visible>
         </control>
