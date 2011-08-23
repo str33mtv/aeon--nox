@@ -2602,6 +2602,66 @@
                 <ondown>9004</ondown>
               </control>
             </control>
+            <control type="group">
+              <visible>Container(9004).HasFocus(25)</visible>
+              <posx>-90</posx>
+              <control type="button" id="300">
+                <description>Single Image button</description>
+                <posx>5</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>31113</label>
+                <onclick>Skin.SetImage(Home_Custom_Back_TVGuide_Folder)</onclick>
+                <onleft>302</onleft>
+                <onright>301</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+              <control type="button" id="301">
+                <description>Multi Image button</description>
+                <posx>190</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>31114</label>
+                <onclick>Skin.SetPath(Home_Custom_Back_TVGuide_Folder)</onclick>
+                <onleft>300</onleft>
+                <onright>302</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+              <control type="button" id="302">
+                <description>Default Image button</description>
+                <posx>375</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>571</label>
+                <onclick>Skin.Reset(Home_Custom_Back_TVGuide_Folder)</onclick>
+                <onleft>301</onleft>
+                <onright>303</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+              <control type="button" id="303">
+                <description>Default Image button</description>
+                <posx>560</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <align>center</align>
+                <label>20445</label>
+                <onclick>Skin.SetString(Home_Custom_Back_TVGuide_Folder,special://profile/Thumbnails/Video/Fanart)</onclick>
+                <onleft>302</onleft>
+                <onright>300</onright>
+                <onup>9004</onup>
+                <ondown>9004</ondown>
+              </control>
+            </control>
           </control>
 
           <control type="label">
@@ -3315,7 +3375,7 @@
             <visible>Skin.HasSetting(HomeMenuFavourite6)</visible>
           </control>
 
-          <control type="label" id="529">
+          <control type="label" id="528">
             <textoffsetx>50</textoffsetx>
             <width>936</width>
             <height>49</height>
