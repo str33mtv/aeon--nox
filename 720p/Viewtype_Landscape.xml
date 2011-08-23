@@ -57,7 +57,7 @@
         <width>322</width>
         <height>125</height>
         <aspectratio scalediffuse="false">keep</aspectratio>
-        <texture>$INFO[ListItem.Path,,logo.png]</texture>
+        <texture fallback="fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
         <visible>Skin.HasSetting(landscapelogo)+Container.Content(tvshows)</visible>
       </control>
       <control type="image">
@@ -71,7 +71,7 @@
         <width>322</width>
         <height>125</height>
         <aspectratio scalediffuse="false">keep</aspectratio>
-        <texture flipy="true">$INFO[ListItem.Path,,logo.png]</texture>
+        <texture flipy="true" fallback="fallback.png">$INFO[ListItem.Path,,logo.png]</texture>
         <animation effect="fade" start="10" end="10" time="200" tween="cubic" easing="inout" condition="true">Conditional</animation>
         <visible>Skin.HasSetting(landscapelogo)+Container.Content(tvshows)</visible>
       </control>
@@ -164,21 +164,9 @@
       <include condition="!Skin.HasSetting(showcasewrap)">lsfixed</include>
       <include condition="Skin.HasSetting(showcasewrap)">lswrap</include>
       <control type="scrollbar" id="63">
-        <posx>305</posx>
-        <posy>670</posy>
-        <width>670</width>
-        <height>41</height>
-        <visible allowhiddenfocus="true">Control.HasFocus(63)</visible>
-        <texturesliderbackground border="14,0,14,0">views/scrollBarH.png</texturesliderbackground>
-        <texturesliderbar border="14,0,14,0">views/scrollBarH_bar.png</texturesliderbar>
-        <texturesliderbarfocus border="14,0,14,0">views/scrollBarH_bar_focus.png</texturesliderbarfocus>
-        <textureslidernib>views/scrollBarNib.png</textureslidernib>
-        <textureslidernibfocus>views/scrollBarNib.png</textureslidernibfocus>
-        <pulseonselect>yes</pulseonselect>
+        <animation effect="fade" start="100" end="0" time="400" condition="Control.HasFocus(503)|ControlGroup(9000).HasFocus|Control.HasFocus(7001)|Control.HasFocus(7000)|Control.HasFocus(109)">Conditional</animation>
         <onup>503</onup>
-        <ondown>SetFocus(109)</ondown>
-        <showonepage>false</showonepage>
-        <orientation>horizontal</orientation>
+        <ondown condition="Skin.HasSetting(FullScreenFanart)">SetFocus(109)</ondown>
       </control>
       <control type="group">
         <visible>!Control.HasFocus(109)</visible>
@@ -194,8 +182,20 @@
           <textcolor>floor</textcolor>
           <shadowcolor>floorshadow</shadowcolor>
           <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
-          <visible>!Control.HasFocus(63)+!ControlGroup(9000).HasFocus+![Skin.HasSetting(landscapelogo)+Container.Content(tvshows)]</visible>
-          <visible>![Control.IsVisible(503)+!Skin.HasSetting(showcaseinfoontv)+Container.Content(tvshows)+!Skin.HasSetting(landscapelogo)]</visible>
+          <visible>!Control.HasFocus(63)+![ControlGroup(9000).HasFocus+!Skin.HasSetting(breadcrumb)]+![Skin.HasSetting(landscapelogo)+Container.Content(tvshows)+!Skin.HasSetting(showcaseinfoontv)]</visible>
+        </control>
+        <control type="label">
+          <posx>340</posx>
+          <posy>693</posy>
+          <width>600</width>
+          <align>center</align>
+          <aligny>center</aligny>
+          <include>Animation_CommonFade</include>
+          <font>Font_Info</font>
+          <textcolor>floor</textcolor>
+          <shadowcolor>floorshadow</shadowcolor>
+          <label>$INFO[ListItem.Label2][LOWERCASE]$INFO[ListItem.Property(UnWatchedEpisodes), ($LOCALIZE[16101]: ,)][/LOWERCASE]</label>
+          <visible>Skin.HasSetting(landscapelogo)+Container.Content(tvshows)+!Skin.HasSetting(showcaseinfoontv)+!Control.HasFocus(63)</visible>
         </control>
         <control type="label">
           <posx>340</posx>
@@ -208,7 +208,7 @@
           <textcolor>floor</textcolor>
           <shadowcolor>floorshadow</shadowcolor>
           <label>[UPPERCASE]$INFO[Container.NumItems] $LOCALIZE[31025] | $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/UPPERCASE]</label>
-          <visible>ControlGroup(9000).HasFocus</visible>
+          <visible>ControlGroup(9000).HasFocus+!Skin.HasSetting(breadcrumb)</visible>
         </control>
       </control>
     </control>
