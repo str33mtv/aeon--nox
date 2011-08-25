@@ -100,19 +100,6 @@
       <include condition="Skin.HasSetting(showcasewrap)">scqwrap</include>
       <control type="group">
         <visible>!Control.HasFocus(110)</visible>
-      <control type="label">
-        <posx>340</posx>
-        <posy>670</posy>
-        <width>600</width>
-        <align>center</align>
-        <aligny>center</aligny>
-        <include>Animation_CommonFade</include>
-        <font>Font_Info</font>
-        <textcolor>FFe1e1e1</textcolor>
-        <shadowcolor>black</shadowcolor>
-        <label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label>
-        <visible>!Control.HasFocus(60)+!ControlGroup(9000).HasFocus</visible>
-      </control>
         <control type="label">
           <posx>340</posx>
           <posy>670</posy>
@@ -121,57 +108,70 @@
           <aligny>center</aligny>
           <include>Animation_CommonFade</include>
           <font>Font_Info</font>
-          <textcolor>FFe1e1e1</textcolor>
-          <shadowcolor>black</shadowcolor>
+          <textcolor>floor</textcolor>
+          <shadowcolor>floorshadow</shadowcolor>
+          <label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label>
+          <visible>!Control.HasFocus(60)+!ControlGroup(9000).HasFocus</visible>
+        </control>
+        <control type="label">
+          <posx>340</posx>
+          <posy>670</posy>
+          <width>600</width>
+          <align>center</align>
+          <aligny>center</aligny>
+          <include>Animation_CommonFade</include>
+          <font>Font_Info</font>
+          <textcolor>floor</textcolor>
+          <shadowcolor>floorshadow</shadowcolor>
           <label>[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
           <visible>!Control.HasFocus(60)+!ControlGroup(9000).HasFocus+[Window.IsActive(1)+Substring(Container.FolderPath,advanced.launcher)]</visible>
         </control>
-      <control type="label">
-        <posx>340</posx>
-        <posy>693</posy>
-        <width>600</width>
-        <align>center</align>
-        <aligny>center</aligny>
-        <include>Animation_CommonFade</include>
-        <font>Font_ShowcaseMainLabel2</font>
-        <textcolor>FFe1e1e1</textcolor>
-        <scroll>true</scroll>
-        <shadowcolor>black</shadowcolor>
-        <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
-        <visible>!Control.HasFocus(60)+!ControlGroup(9000).HasFocus</visible>
-      </control>
-      <control type="label">
-        <posx>340</posx>
-        <posy>693</posy>
-        <width>600</width>
-        <align>center</align>
-        <aligny>center</aligny>
-        <include>Animation_CommonFade</include>
-        <font>Font_ShowcaseMainLabel2</font>
-        <textcolor>FFe1e1e1</textcolor>
-        <shadowcolor>black</shadowcolor>
-        <label>[UPPERCASE]$INFO[Container.NumItems] $LOCALIZE[31025] | $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/UPPERCASE]</label>
-        <visible>ControlGroup(9000).HasFocus</visible>
-      </control>
-      <control type="scrollbar" id="60">
-        <posx>305</posx>
-        <posy>670</posy>
-        <width>670</width>
-        <height>41</height>
-        <visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
-        <texturesliderbackground border="14,0,14,0">views/scrollBarH.png</texturesliderbackground>
-        <texturesliderbar border="14,0,14,0">views/scrollBarH_bar.png</texturesliderbar>
-        <texturesliderbarfocus border="14,0,14,0">views/scrollBarH_bar_focus.png</texturesliderbarfocus>
-        <textureslidernib>views/scrollBarNib.png</textureslidernib>
-        <textureslidernibfocus>views/scrollBarNib.png</textureslidernibfocus>
-        <pulseonselect>yes</pulseonselect>
-        <onup>509</onup>
-        <ondown>110</ondown>
-        <showonepage>false</showonepage>
-        <orientation>horizontal</orientation>
-        <visible>Control.IsVisible(509)</visible>
-        <enable>Control.IsVisible(509)</enable>
-      </control>
+        <control type="label">
+          <posx>340</posx>
+          <posy>693</posy>
+          <width>600</width>
+          <align>center</align>
+          <aligny>center</aligny>
+          <include>Animation_CommonFade</include>
+          <font>Font_ShowcaseMainLabel2</font>
+          <textcolor>floor</textcolor>
+          <scroll>true</scroll>
+          <shadowcolor>floorshadow</shadowcolor>
+          <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+          <visible>!Control.HasFocus(60)+!ControlGroup(9000).HasFocus</visible>
+        </control>
+        <control type="label">
+          <posx>340</posx>
+          <posy>693</posy>
+          <width>600</width>
+          <align>center</align>
+          <aligny>center</aligny>
+          <include>Animation_CommonFade</include>
+          <font>Font_ShowcaseMainLabel2</font>
+          <textcolor>floor</textcolor>
+          <shadowcolor>floorshadow</shadowcolor>
+          <label>[UPPERCASE]$INFO[Container.NumItems] $LOCALIZE[31025] | $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/UPPERCASE]</label>
+          <visible>ControlGroup(9000).HasFocus</visible>
+        </control>
+        <control type="scrollbar" id="60">
+          <posx>305</posx>
+          <posy>670</posy>
+          <width>670</width>
+          <height>41</height>
+          <visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
+          <texturesliderbackground border="14,0,14,0">views/scrollBarH.png</texturesliderbackground>
+          <texturesliderbar border="14,0,14,0">views/scrollBarH_bar.png</texturesliderbar>
+          <texturesliderbarfocus border="14,0,14,0">views/scrollBarH_bar_focus.png</texturesliderbarfocus>
+          <textureslidernib>views/scrollBarNib.png</textureslidernib>
+          <textureslidernibfocus>views/scrollBarNib.png</textureslidernibfocus>
+          <pulseonselect>yes</pulseonselect>
+          <onup>509</onup>
+          <ondown>110</ondown>
+          <showonepage>false</showonepage>
+          <orientation>horizontal</orientation>
+          <visible>Control.IsVisible(509)</visible>
+          <enable>Control.IsVisible(509)</enable>
+        </control>
       </control>
     </control>
   </include>
