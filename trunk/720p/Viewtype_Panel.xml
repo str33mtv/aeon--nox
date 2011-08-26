@@ -284,7 +284,7 @@
           <control type="label">
             <posy>530</posy>
             <include>DetailValueVars</include>
-            <label fallback="312577">$INFO[ListItem.Mpaa]</label>
+            <label fallback="31452">$INFO[ListItem.Mpaa]</label>
           </control>
         </control>
         <control type="group">
@@ -415,7 +415,7 @@
           <control type="label">
             <posy>555</posy>
             <include>DetailValueVars</include>
-            <label fallback="312577">$INFO[ListItem.Mpaa]</label>
+            <label fallback="31452">$INFO[ListItem.Mpaa]</label>
           </control>
         </control>
 

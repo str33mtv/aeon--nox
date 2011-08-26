@@ -201,7 +201,7 @@
           <control type="image">
             <include>OSDRatingVars</include>
             <texture>flags/rating/MPAA_NR_Certificate_US.png</texture>
-            <visible>IsEmpty(VideoPlayer.mpaa)</visible>
+            <visible>[IsEmpty(VideoPlayer.mpaa)|SubString(VideoPlayer.Mpaa,not yet rated)]+!IsEmpty(VideoPlayer.Title)</visible>
           </control>
           <control type="image">
             <include>OSDRatingVars</include>
@@ -746,7 +746,7 @@
             <control type="image">
               <include>VideoInfoRatingVars</include>
               <texture>flags/rating/mpaa_nr.png</texture>
-              <visible>SubString(VideoPlayer.mpaa,US:NR) | SubString(VideoPlayer.mpaa,USA:NR) | SubString(VideoPlayer.mpaa,Rated NR) | SubString(VideoPlayer.mpaa,NR)|IsEmpty(VideoPlayer.Mpaa)</visible>
+              <visible>[IsEmpty(VideoPlayer.mpaa)|SubString(VideoPlayer.Mpaa,not yet rated)]+!IsEmpty(VideoPlayer.Title)</visible>
             </control>
             <!--UK-->
             <control type="image">
