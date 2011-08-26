@@ -151,7 +151,7 @@
   <string id="312574">Press 'X' to stop</string>
   <string id="312575">Press SELECT to see trailer</string>
   <string id="312576">Premiered</string>
-  <string id="312577">Info Unavailable</string>
+  <string id="312577">Info unavailable</string>
   <string id="312581">N/A</string>
   <string id="312578">SETTINGS</string>
   <string id="31201">CUSTOMISE</string>
@@ -364,6 +364,7 @@
   <string id="31429">On</string>
   <string id="31450">COLOR SELECTOR</string>
   <string id="31451">Enable watchcount</string>
+  <string id="31452">Not rated</string>
 
   <!-- Home Menu -->
   <string id="31500">PICTURES</string>
