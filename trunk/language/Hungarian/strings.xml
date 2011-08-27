@@ -1,6 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <!--Translator: Frodo-->
-<!--Date of translation: 07/08/2011-->
+<!--Date of translation: 27/08/2011-->
+<!--Verzió:1.2-->
 <!--Based on English-->
 <strings>
 	<!-- Vegyes feliratok -->
@@ -8,7 +9,7 @@
 	<string id="31001">Szeretem</string>
 	<string id="31002">Utálom</string>
 	<string id="31003">Kikapcsolási lehetőségek</string>
-	<string id="31004">Dolgozom...</string>
+	<string id="31004">...Dolgozom...</string>
 	<string id="31005">Infó elrejtése</string>
 	<string id="31007">Beépülők</string>
 	<string id="31020">Nemrég hozzáadott</string>
@@ -20,8 +21,6 @@
 	<string id="31026">Más beállítások</string>
 	<string id="31027">Fekvés</string>
 	<!-- Nézet típus feliratok -->
-	<string id="31028">Poszter</string>
-	<string id="31029">Fanart</string>
 	<string id="31030">Teljes lista</string>
 	<string id="31031">Kép ikonok</string>
 	<string id="31032">Képborító</string>
@@ -38,6 +37,7 @@
 	<string id="31049">Befejezés időpontja</string>
 	<string id="31050">Előző</string>
 	<string id="31051">Következő</string>
+	<string id="31052">Hátralevő</string>
 	<!-- Lejátszáslista szerkesztő feliratai -->
 	<string id="31055">Lejátszáslista megnyitása</string>
 	<string id="31056">Lejátszáslista mentése</string>
@@ -51,10 +51,7 @@
 	<string id="31101">Sajátképernyő lehetőségei</string>
 	<string id="31102">Háttér</string>
 	<string id="31103">"Megállítva" mutatása a diavetítés közben</string>
-	<string id="31104">Filmelőzetesek lejátszása ablakban [COLOR=grey3](csak a videóinfó ablakban)[/COLOR]</string>
-	<string id="31105">Médiacímek mutatása a háttér-médiaátvizsgáló futása alatt</string>
 	<string id="31106">Vegyes beállítások</string>
-	<string id="31107">Fájlnevekből olvasott filmjellemzők elrejtése [COLOR=grey3](BR, HD-DVD)[/COLOR]</string>
 	<string id="31108">Főmenügombok láthatósága</string>
 	<string id="31109">Médiahátterek</string>
 	<string id="31110">Háttér beállítása ehhez a médiatípushoz</string>
@@ -71,20 +68,16 @@
 	<string id="31121">KIEGÉSZÍTŐ ÚTVONALA</string>
 	<string id="31122">Időjárás oldal</string>
 	<string id="31123">Poszterek használata keskeny szalagcímek helyett a TV műsoroknál</string>
-	<string id="31124">A háttérben az éppen játszott videó megjelenítése</string>
-	<string id="31125">A háttérben az éppen futó vizualizáció megjelenítése</string>
 	<string id="31126">Dalszöveg gomb engedélyezése a zene navigációs-tálcán</string>
 	<string id="31127">DALSZÖVEG PROGRAM ÚTVONALA</string>
 	<string id="31128">Dalszöveg</string>
 	<string id="31129">Felirat-letöltés gomb engedélyezése a videó navigációs-tálcán</string>
 	<string id="31130">FELIRAT-PROGRAM ELÉRÉSI ÚTVONALA</string>
-	<string id="31140">Zene tálca</string>
-	<string id="31141">Videó tálca</string>
 	<!-- Script feliratok -->
 	<string id="31200">Parancsikonok</string>
 	<string id="31201">Kategóriák</string>
 	<string id="31202">Szereplők mutatása</string>
-	<string id="31203">Válaszd a dalodat</string>
+	<string id="31203">Válaszd a zeneszámodat</string>
 	<string id="31204">Link szekció</string>
 	<string id="31205">Dalszövegforrás</string>
 	<!-- Extra feliratok -->
@@ -106,13 +99,12 @@
 	<string id="31315">Alap</string>
 	<string id="31316"></string>
 	<string id="31317">Fanart elérési útvonal</string>
-	<string id="31318">Kis fanart</string>
 	<string id="31319">Választott profil</string>
 	<string id="31320">Utoljára bejelentkezve</string>
 	<string id="31321">Karaoke dalválasztó</string>
 	<string id="31322">Játszva</string>
-	<string id="31323">Legfrissebb filmek  </string>
-	<string id="31324">Legfrissebb epizódok  </string>
+	<string id="31323">Legfrissebb filmek</string>
+	<string id="31324">Legfrissebb epizódok</string>
 	<string id="31325">Lejátszáslista lehetőségek</string>
 	<string id="31326">Létrehozva</string>
 	<string id="31327">Felbontás</string>
@@ -121,7 +113,7 @@
 	<string id="31330">Nyomd a gombot a filmelőzetes[CR][CR]Lejátszásához</string>
 	<string id="31331">Újabb Filmek</string>
 	<string id="31332">Újabb részek</string>
-	<string id="31333">Mostani</string>
+	<string id="31333">Jelenlegi</string>
 	<string id="31334">Frissebbek</string>
 	<!-- Videó és Zene OSD Feliratok  -->
 	<string id="31351">Pillanatmegállítás</string>
@@ -132,19 +124,20 @@
 	<string id="31356">Felirat letöltése</string>
 	<string id="31357"></string>
 	<!-- Betűtípus készletek -->
-	<string id="31390">Arculat alapértelmezése</string>
+	<string id="31390">Felszín alapértelmezése</string>
 	<string id="31391">Alapértelmezett, nagybetűsítés nélkül</string>
 	<string id="31392">Arial betűkészlet</string>
 	<!-- Magyarázó feliratok  -->
-	<string id="31400">[B]MEGJELENÍTÉS MÓDJÁNAK BEÁLLÍTÁSA[/B][CR][CR]Arculat váltása · Nyelv, régió váltása · Fájl listázás módjának beállítása[CR]Képernyővédő beállítása</string>
+	<string id="31400">[B]MEGJELENÍTÉS MÓDJÁNAK BEÁLLÍTÁSA[/B][CR][CR]Felszín váltása · Nyelv, régió váltása · Fájl listázás módjának beállítása[CR]Képernyővédő beállítása</string>
 	<string id="31401">[B]VIDEÓ BEÁLLÍTÁSOK[/B][CR][CR]Film médiatár kezelése · Videólejátszás beállítása · Videólistázás módjának beállítása[CR]Feliratok karaktertípusának váltása</string>
 	<string id="31402">[B]ZENE BEÁLLÍTÁSOK[/B][CR][CR]Zene médiatár kezelése · Zenelejátszás beállítása · Zenelistázás módjának beállítása[CR]Zene lejátszási szabályok felállítása · Karaoke lehetőségek</string>
 	<string id="31403">[B]FÉNYKÉP BEÁLLÍTÁSOK[/B][CR][CR]Fényképek listázási módjának beállítása · Diavetítés beállítása</string>
-	<string id="31404">[B]IDŐJÁRÁS BEÁLLÍTÁSOK[/B][CR][CR]Három város megadása, melyekről időjárás információk fognak megjelenni</string>
+	<string id="31404">[B]IDŐJÁRÁS BEÁLLÍTÁSOK[/B][CR][CR]Három város megadása, amelyekről időjárás információk fognak megjelenni</string>
 	<string id="31405">[B]HÁLÓZATI BEÁLLÍTÁSOK[/B][CR][CR]XBMC távoli vezérlésének beállítása HTTP-n keresztül · Fájlmegosztás beállítása[CR]Internet elérési lehetőségek</string>
 	<string id="31406">[B]RENDSZERBEÁLLÍTÁSOK[/B][CR][CR]Kijelzők beállítása, kalibrálása · Hangkimenet konfigurálása · Távkapcsoló beállítása[CR]Energiagazdálkodási lehetőségek beállítása · Hibakeresés bekapcsolása[CR]Mesterzár felállítása</string>
-	<string id="31407">[B]ARCULAT BEÁLLÍTÁSOK[/B][CR][CR]Az Aeon Nox arculat beállítása · Sajátképernyő elemek hozzáadása/elvétele[CR]Arculat hátterek megváltoztatása</string>
+	<string id="31407">[B]FELSZÍN BEÁLLÍTÁSOK[/B][CR][CR]Az Aeon Nox felszín beállítása · Sajátképernyő elemek hozzáadása/elvétele[CR]Felszín háttereinek megváltoztatása</string>
 	<string id="31408">[B]KIEGÉSZÍTŐK BEÁLLÍTÁSA[/B][CR][CR]A telepített kiegészítők kezelése · Kiegészítők böngészése és telepítése az xbmc.org[CR]webhelyről · Kiegészítők beállításainak módosítása</string>
+	<string id="31409">[B]RENDSZER MONITOR[/B][CR][CR]Hardver ellenőrzése · Processzor használat[CR]XBMC revízió száma</string>
 	<string id="31421">Válaszd ki az XBMC felhasználói profilod[CR]a belépéshez</string>
 	<!--Aeon Nox-->
 	<string id="312573">Nyomd a FEL gombot az előzeteshez </string>
@@ -174,19 +167,17 @@
 	<string id="31131">Kisebb menü zárolásnál</string>
 	<string id="31140">Music OSD</string>
 	<string id="31141">Video OSD</string>
-	<string id="31143">Animált Fanart zene vizualizációnál</string>
+	<string id="31143">Animált Fanart, zene vizualizációnál</string>
 	<string id="31144">Zene Fanart "Most játszott"</string>
 	<string id="31145">Stúdió és értékelés elrejtése</string>
 	<string id="31146">10 dal mutatása 5 helyett</string>
 	<string id="31147">Lejátszási lista mutatása</string>
 	<string id="31148">Időpanel mutatása</string>
 	<string id="31149">Ez bezárja XBMC-t! [CR]Ezt akarod?</string>
-	<string id="31407">[B]SKIN BEÁLLÍTÁSOK[/B][CR][CR]Az Aeon Nox skin beállításai · Főmenü elemek hozzáadása / elrejtése[CR]Skin háttérek beállítása</string>
-	<string id="31409">[B]RENDSZER MONITOR[/B][CR][CR]Hardver ellenőrzése · Processzor használat[CR]XBMC revízió száma</string>
 	<string id="31124">Nagyobb felső sáv a zenei OSD-nél</string>
-	<string id="31125">Háttér mutatása "Most játszott" Vizualizációnál</string>
-	<string id="31142">Album  fanart mutatása Vizualizációnál</string>
-	<string id="31107">Jelölés elrejtése Lista nézetben</string>
+	<string id="31125">Háttér mutatása, "Most játszott" Vizualizációnál</string>
+	<string id="31142">Album  fanart mutatása a Vizualizációnál</string>
+	<string id="31107">Jelölés elrejtése a Lista nézetben</string>
 	<string id="31104">Eredeti Aeon zenei Vizualizáció használata</string>
 	<string id="31105">Főmenü zárolása</string>
 	<string id="31028">Showcase</string>
@@ -196,7 +187,7 @@
 	<string id="31152">CD Borító</string>
 	<string id="31153">Kis Lista</string>
 	<string id="31154">BETÖLTÉS</string>
-	<string id="31155">VÁRJ...</string>
+	<string id="31155">...VÁRJ...</string>
 	<string id="31156">Rendezte</string>
 	<string id="31157">Írta</string>
 	<string id="31158">Jelenlegi idő</string>
@@ -209,8 +200,8 @@
 	<string id="31165">Keskeny lista</string>
 	<string id="31166">Infopanel</string>
 	<string id="31167">- Auto elrejtés</string>
-	<string id="31168">No CoverFlow</string>
-	<string id="31169">Thin Panel</string>
+	<string id="31168">Nincs CoverFlow</string>
+	<string id="31169">Áttetsző panel</string>
 	<string id="31170">Kisebb Lista</string>
 	<string id="31171">TV Logo Script</string>
 	<string id="31318">Kicsi</string>
@@ -223,25 +214,25 @@
 	<string id="31178">Video Lejátszási lista gomb hozzáadása a TV Show almenühöz</string>
 	<string id="31179">Színház mód engedélyezése (Elrejti a Media Menüt)</string>
 	<string id="31180">Alternatív Színház mód engedélyezése (Elrejti a Media Menü opciókat)</string>
-	<string id="31181">Video Lejátszási lista hozzáadása Home Menühöz</string>
-	<string id="31182">Extrathumbs engedélyezése a Showcase nézetben</string>
-	<string id="31183">Kikapcsolás figyelmeztetés engedlyezése a Home Menüben</string>
+	<string id="31181">Video Lejátszási lista hozzáadása Főmenühöz</string>
+	<string id="31182">Extra-miniképek engedélyezése a Showcase nézetben</string>
+	<string id="31183">Kikapcsolás figyelmeztetés engedlyezése a Főmenüben</string>
 	<string id="31184">Forrás mutatása a Kodek helyett</string>
 	<string id="31185">Nézettípusok</string>
 	<string id="31186">Infopanel elrejtési idő beállítása</string>
 	<string id="31187">Infopanel elrejtési idő beállítása (másodperc)</string>
-	<string id="31188">Helyzet mutatása</string>
+	<string id="31188">Pozíció mutatása</string>
 	<string id="31189">Előző rész</string>
 	<string id="31190">Következő rész</string>
 	<string id="31191">Sötétebb Fanart</string>
-	<string id="31192">TV Show Thumb</string>
+	<string id="31192">TV Show Minikép</string>
 	<string id="31193">TV Show Logo</string>
-	<string id="31194">Fókusz Offset beállítása a Főmenüben (érték -2 től 14-ig)</string>
+	<string id="31194">Fókusz eltolás beállítása a Főmenüben (érték -2 től 14-ig)</string>
 	<string id="31195">Kedvencek hozzáadása a Főmenühöz</string>
 	<string id="31196">Kedvencek helye</string>
 	<string id="31197">Kedvencek gomb engedélyezése</string>
-	<string id="31198">Extrathumbs</string>
-	<string id="31199">Fókusz Offset engedélyezése a Főmenüben indításkor</string>
+	<string id="31198">Extra-miniképek</string>
+	<string id="31199">Fókusz eltolás engedélyezése a Főmenüben indításkor</string>
 	<string id="31217">UTOLSÓ DAL</string>
 	<string id="31218">UTOLSÓ DALOK</string>
 	<string id="31219">KIEMELT RÉSZ</string>
@@ -270,23 +261,23 @@
 	<string id="31237">Nyomd a BAL-t a bemutatóhoz</string>
 	<string id="31238">Bemutató gomb</string>
 	<string id="31239">-</string>
-	<string id="31240">Mutasd az "ÚJ" -at</string>
-	<string id="31241">Mutasd a "NÉZETT"-et</string>
+	<string id="31240">Mutasd az 'ÚJ' -at</string>
+	<string id="31241">Mutasd a 'NÉZETT'-et</string>
 	<string id="31242">Almenü a Filmeknél amik a Cinema Experience Scriptet használják</string>
-	<string id="31243">Visszaszámolás</string>
-	<string id="31244">CDArt engedélyezése a "Most játszott" -ban</string>
+	<string id="31243">Visszaszámlálás</string>
+	<string id="31244">CDArt engedélyezése a 'Most játszott' -ban</string>
 	<string id="31245">Tartalom mutatása</string>
 	<string id="31246">Tartalom mutatása túlírva</string>
 	<string id="31247">Műfaj mutatása</string>
 	<string id="31248">BD/DVD Borítók</string>
-	<string id="31249">Klasszikus</string>
+	<string id="31249">Klasszikus Aeon Főmenü Háttér használata</string>
 	<string id="31250">- Átlátszó</string>
-	<string id="31251">Átlátszó</string>
+	<string id="31251">Átlátszó Főmenü Háttér használata</string>
 	<string id="31252">Kedvencek hozzáadása a Filmek almenühöz</string>
 	<string id="31253">Kedvencek hozzáadása a Zene almenühöz</string>
 	<string id="31254">Kedvencek hozzáadása a TV Shows almenühöz </string>
 	<string id="31255">- Blu-ray Disc ikon használata alapként CDArt -nál</string>
-	<string id="31256">Wrap Lista használata a Landscape és Showcase nézetben</string>
+	<string id="31256">Borító lista használata a Landscape és Showcase nézetben</string>
 	<string id="31257">Részletek</string>
 	<string id="31258">Áttekintés</string>
 	<string id="31259">Nyomd a JOBB-ot a bemutatóhoz</string>
@@ -298,12 +289,12 @@
 	<string id="31265">Kisebb Pop-up Dialógok</string>
 	<string id="31266">ELŐRE</string>
 	<string id="31267">CDArt engedélyezése a Zenei Vizualizációnál</string>
-	<string id="31268">Breadcrumbs engedélyezése</string>
+	<string id="31268">Fenti-infó/idősáv engedélyezése</string>
 	<string id="31269">Háttér Effekt engedélyezése[I](Magasabb processzor használat!)   [/I]</string>
 	<string id="31270">Poszter csúsztatás</string>
 	<string id="31271">Poszterek</string>
 	<string id="31272">Infopanel nézet</string>
-	<string id="31273">Show Overlay</string>
+	<string id="31273">Overlay mutatása</string>
 	<string id="31274">Válassz Infopanel nézetet a Media Menüben[CR] (Nyomj FEL-t az aktiváláshoz)</string>
 	<string id="31275">Időjárási hátterek engedélyezése</string>
 	<string id="31276">Kisebb "Most játszott" Widget</string>
@@ -332,17 +323,37 @@
 	<string id="31362">Lekerekített borítók</string>
 	<string id="31364">Platform</string>
 	<string id="31368">Nyomd a JOBB-ot a bemutatóhoz</string>
-	<string id="31369">Most felülírod az Aeon Nox skin beállításokat![CR]Ezt akarod?</string>
+	<string id="31369">Most felülírod az Aeon Nox felszín beállításokat![CR]Ezt akarod?</string>
 	<string id="31370">Választható opciók </string>
 	<string id="31371">Színészképek diavetítése</string>
 	<string id="31372">Info mutatása</string>
-	<string id="31373">A Filmgyűjtemény Fanartok diavetítése</string>
+	<string id="31373">A Filmgyűjtemény - Fanartok diavetítése</string>
 	<string id="31374">Jelenlegi</string>
 	<string id="31375">Animációk</string>
 	<string id="31376">Carousel</string>
 	<string id="31377">CDArt</string>
 	<string id="31378">Zene könyvtár helye</string>
 	<string id="31379">- Csak főablakban</string>
+	<string id="31383">Háttér</string>
+	<string id="31384">Elrejt</string>
+	<string id="31385">Trigger: Ki </string>
+	<string id="31386">Elrejtés böngészésnél</string>
+	<string id="31387">Sötétebb</string>
+	<string id="31388">Alsó-sáv színe:</string>
+	<string id="31389">Felső-sáv színe</string>
+	<string id="31394">Nyomd a 'LE' gombot a bemutatóhoz</string>
+	<string id="31395">Extrafanart engedélyezése</string>
+	<string id="31396">BannerList</string>
+	<string id="31397">Befejezett</string>
+	<string id="31398">Stílus</string>
+	<string id="31399">Hely</string>
+	<string id="31426">Tele</string>
+	<string id="31427">Kívül</string>
+	<string id="31428">Kikapcsolás BE</string>
+	<string id="31429">Be</string>
+	<string id="31450">Színválasztó</string>
+	<string id="31451">Nézőszám egedélyezése</string>
+	<string id="31452">Nincs minősítve</string>
 	<!-- Home Menu -->
 	<string id="31500">Képek</string>
 	<string id="31501">Zenék</string>
@@ -375,7 +386,7 @@
 	<string id="31925">Rekord magas</string>
 	<string id="31926">Rekord Alacsony</string>
 	<string id="31927">Megfigyelt legmagasabb</string>
-	<string id="31928">Megfigyelt leglacsonyabb</string>
+	<string id="31928">Megfigyelt leglalacsonyabb</string>
 	<string id="31930">Alap nézet</string>
 	<string id="31931">Alap térképek</string>
 	<string id="31932">Térkép nagyítás</string>
