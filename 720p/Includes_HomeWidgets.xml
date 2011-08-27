@@ -249,42 +249,31 @@
           </control>
         </itemlayout>
         <focusedlayout height="300" width="180">
-          <control type="image">
-            <description>Main Icon</description>
-            <posx>40</posx>
-            <posy>75</posy>
-            <width>100</width>
-            <height>150</height>
-            <fadetime>IconCrossfadeTime</fadetime>
-            <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
-            <aspectratio scalediffuse="false">stretch</aspectratio>
-            <animation effect="zoom" center="auto" start="100" end="150" time="600" tween="back" easing="out">Focus</animation>
+          <control type="group">
+            <animation effect="zoom" center="auto" start="100" end="150" time="600" tween="back" easing="out" reversible="false">Focus</animation>
+            <animation effect="zoom" center="auto" start="150" end="100" time="300" tween="back" easing="out" reversible="false">UnFocus</animation>
             <animation effect="zoom" center="auto" start="100" end="150" time="600" tween="back" easing="out" condition="!Control.HasFocus(8003)">Conditional</animation>
+            <control type="image">
+              <description>Main Icon</description>
+              <posx>40</posx>
+              <posy>75</posy>
+              <width>100</width>
+              <height>150</height>
+              <fadetime>IconCrossfadeTime</fadetime>
+              <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+              <aspectratio scalediffuse="false">stretch</aspectratio>
+            </control>
+            <control type="image">
+              <posx>40</posx>
+              <posy>75</posy>
+              <width>100</width>
+              <height>150</height>
+              <description>Main Icon Glass overlay</description>
+              <texture background="true" diffuse="thumbs/movieposter_mask.png">thumbs/poster_glass_noreflect.png</texture>
+              <bordertexture border="-7">thumbs/poster_shadow.png</bordertexture>
+              <aspectratio scalediffuse="false">stretch</aspectratio>
+            </control>
           </control>
-          <control type="image">
-            <posx>40</posx>
-            <posy>75</posy>
-            <width>100</width>
-            <height>150</height>
-            <description>Main Icon Glass overlay</description>
-            <texture background="true" diffuse="thumbs/movieposter_mask.png">thumbs/poster_glass_noreflect.png</texture>
-            <bordertexture border="-7">thumbs/poster_shadow.png</bordertexture>
-            <aspectratio scalediffuse="false">stretch</aspectratio>
-            <animation effect="zoom" center="auto" start="100" end="150" time="600" tween="back" easing="out">Focus</animation>
-            <animation effect="zoom" center="auto" start="100" end="150" time="600" tween="back" easing="out" condition="!Control.HasFocus(8003)">Conditional</animation>
-          </control>
-          <!--
-              <control type="image">
-                <description>POSTER icon</description>
-                <posx>53</posx>
-                <posy>95</posy>
-                <width>150</width>
-                <height>113</height>
-                <texture background="true">thumbs/play-button.png</texture>
-                <fadetime>400</fadetime>
-                <colordiffuse>AAFFFFFF</colordiffuse>
-                <animation effect="fade" start="50" end="20" time="1000" pulse="true" condition="Control.HasFocus(8003)">Conditional</animation>
-              </control>-->
         </focusedlayout>
         <content>
           <item id="1">

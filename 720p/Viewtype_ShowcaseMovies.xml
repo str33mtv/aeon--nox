@@ -98,22 +98,9 @@
       <include condition="!Skin.HasSetting(showcasewrap)">scmfixed</include>
       <include condition="Skin.HasSetting(showcasewrap)">scmwrap</include>
       <control type="scrollbar" id="61">
-        <posx>305</posx>
-        <posy>670</posy>
-        <width>670</width>
-        <height>41</height>
         <visible allowhiddenfocus="true">Control.IsVisible(501)+Control.HasFocus(61)</visible>
-        <texturesliderbackground border="14,0,14,0">views/scrollBarH.png</texturesliderbackground>
-        <texturesliderbar border="14,0,14,0">views/scrollBarH_bar.png</texturesliderbar>
-        <texturesliderbarfocus border="14,0,14,0">views/scrollBarH_bar_focus.png</texturesliderbarfocus>
-        <textureslidernib>views/scrollBarNib.png</textureslidernib>
-        <textureslidernibfocus>views/scrollBarNib.png</textureslidernibfocus>
-        <pulseonselect>yes</pulseonselect>
         <onup>501</onup>
         <ondown>SetFocus(109)</ondown>
-        <ondown>9000</ondown>
-        <showonepage>false</showonepage>
-        <orientation>horizontal</orientation>
       </control>
       <control type="group">
         <visible>!Control.HasFocus(109)+!Control.HasFocus(61)</visible>

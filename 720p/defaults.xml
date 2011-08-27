@@ -200,4 +200,18 @@
 		<aligny>center</aligny>
 		<pulseonselect>no</pulseonselect>
 	</default>
+  <default type="scrollbar">
+    <posx>305</posx>
+    <posy>670</posy>
+    <width>670</width>
+    <height>41</height>
+    <texturesliderbackground border="14,0,14,0">views/scrollBarH.png</texturesliderbackground>
+    <texturesliderbar border="14,0,14,0">views/scrollBarH_bar.png</texturesliderbar>
+    <texturesliderbarfocus border="14,0,14,0">views/scrollBarH_bar_focus.png</texturesliderbarfocus>
+    <textureslidernib>views/scrollBarNib.png</textureslidernib>
+    <textureslidernibfocus>views/scrollBarNib2.png</textureslidernibfocus>
+    <pulseonselect>yes</pulseonselect>
+    <showonepage>false</showonepage>
+    <orientation>horizontal</orientation>
+  </default>
 </includes>
