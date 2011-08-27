@@ -1,5 +1,4 @@
 [B]1.6.0[/B]
-- Added missing option to enable Music extrafanart (depended on "Path to Music Library").
 - New seekbar.
 - New LowList layout.
 - New PseudoTV layout.
@@ -8,8 +7,8 @@
 - Recently added runs on exit videoscan and musicscan.
 - Added trailer label to Random/Latest Poster widget and Latest Movie widget.
 - Added option "Slim List" to favorites dialog.
-- Removed classic/glass style options in Home Window options.
 - Added menu-item "Style" to Home window customizer screen to toggle main menu bar style.
+- Removed classic/glass style options in Home Window options.
 - Moved option "Wider Menu Items" to "Styles" menu in Home window customizer.
 - Media Menu is now on the left side of the screen (navigation unchanged).
 - Added support for extrafanart in videolibrary (place in root of movie or tv show folder in folder called "extrafanart")
@@ -19,6 +18,7 @@
 - Added theme Lite_Floor.
 - Stopped spamming debug log with messages about cinema experience and apple movie trailers.
 - Added fallback images for TV Shows, Movies and Music. To customize copy your image in the backgrounds folder and rename it to fallback_music.jpg, fallback_movies.jpg or fallback_tvshows.jpg
+- InfoList is now available for add-on views.
 
 [B]1.5.4[/B]
 - Fixed Networksetup.
