@@ -945,6 +945,12 @@
     </item>
   </include>
   <include name="DefaultMoviesSubMenu">
+    <item id="90166">
+      <label>31334</label>
+      <include condition="Skin.HasSetting(cinemaexpdefault)">MovieRecentAddedCinExp</include>
+      <include condition="!Skin.HasSetting(cinemaexpdefault)">MovieRecentAddedNoCinExp</include>
+      <visible>Container(9000).HasFocus(10)</visible>
+    </item>
     <item id="90161">
       <label>369</label>
       <include condition="Skin.HasSetting(cinemaexpdefault)">MovieTitlesCinExp</include>
@@ -975,12 +981,6 @@
       <include condition="!Skin.HasSetting(cinemaexpdefault)">MovieDirectorsNoCinExp</include>
       <visible>Container(9000).HasFocus(10)</visible>
     </item>
-    <item id="90166">
-      <label>31334</label>
-      <include condition="Skin.HasSetting(cinemaexpdefault)">MovieRecentAddedCinExp</include>
-      <include condition="!Skin.HasSetting(cinemaexpdefault)">MovieRecentAddedNoCinExp</include>
-      <visible>Container(9000).HasFocus(10)</visible>
-    </item>
     <item id="90167">
       <label>24069</label>
       <onclick>UpdateLibrary(video)</onclick>
@@ -998,6 +998,11 @@
       <onclick>ActivateWindow(VideoLibrary,TVShowGenres,return)</onclick>
       <visible>Container(9000).HasFocus(11)</visible>
     </item>
+    <item id="90175">
+      <label>31334</label>
+      <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
+      <visible>Container(9000).HasFocus(11)</visible>
+    </item>
     <item id="90173">
       <label>652</label>
       <onclick>ActivateWindow(VideoLibrary,TVShowYears,return)</onclick>
@@ -1006,11 +1011,6 @@
     <item id="90174">
       <label>344</label>
       <onclick>ActivateWindow(VideoLibrary,TVShowActors,return)</onclick>
-      <visible>Container(9000).HasFocus(11)</visible>
-    </item>
-    <item id="90175">
-      <label>31334</label>
-      <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
       <visible>Container(9000).HasFocus(11)</visible>
     </item>
     <item id="90176">
