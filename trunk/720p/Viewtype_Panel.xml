@@ -25,7 +25,7 @@
         <width>1280</width>
         <height>720</height>
         <texture>common/black.png</texture>
-        <colordiffuse>CCffffff</colordiffuse>
+        <colordiffuse>AAffffff</colordiffuse>
       </control>
       <include>Animation_OpenCloseZoom</include>
       <include>Furniture_SettingsBackPanel</include>

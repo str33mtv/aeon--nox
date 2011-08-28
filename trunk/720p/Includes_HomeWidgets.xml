@@ -54,7 +54,7 @@
         <font>Font_Info</font>
         <scroll>true</scroll>
         <textcolor>FF363636</textcolor>
-        <label>[UPPERCASE]$LOCALIZE[31368][/UPPERCASE]</label>
+        <label>$LOCALIZE[31368]</label>
         <visible>Control.HasFocus(8000)+!IsEmpty(Container(8000).ListItem.Property(Trailer))</visible>
         <animation effect="slide" start="0,30" end="0,0" time="100">Visible</animation>
         <animation effect="slide" start="0,0" end="0,30" time="100">Hidden</animation>
@@ -70,7 +70,7 @@
         <font>Font_Info</font>
         <scroll>true</scroll>
         <textcolor>FF363636</textcolor>
-        <label>[UPPERCASE]$LOCALIZE[312573][/UPPERCASE]</label>
+        <label>$LOCALIZE[312573]</label>
         <visible>Control.HasFocus(8003)+!IsEmpty(Container(8003).ListItem.Property(Trailer))</visible>
         <visible>Skin.HasSetting(Lockhomemenulow)|Skin.HasSetting(lowermainmenu)</visible>
         <animation effect="slide" start="0,30" end="0,0" time="100">Visible</animation>
@@ -87,7 +87,7 @@
         <font>Font_Info</font>
         <scroll>true</scroll>
         <textcolor>FF363636</textcolor>
-        <label>[UPPERCASE]$LOCALIZE[31394][/UPPERCASE]</label>
+        <label>$LOCALIZE[31394]</label>
         <visible>Control.HasFocus(8003)+!IsEmpty(Container(8003).ListItem.Property(Trailer))</visible>
         <visible>!Skin.HasSetting(Lockhomemenulow)+!Skin.HasSetting(lowermainmenu)</visible>
         <animation effect="slide" start="0,30" end="0,0" time="100">Visible</animation>
