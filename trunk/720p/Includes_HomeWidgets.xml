@@ -662,44 +662,44 @@
       <control type="image">
         <description>time background</description>
         <posx>0</posx>
-        <width>471</width>
+        <width>490</width>
         <height>27</height>
         <texture flipx="true">home/timepanel_mid.png</texture>
       </control>
       <control type="label" id="71">
         <posx>10</posx>
-        <posy>-2</posy>
-        <width>440</width>
+        <posy>-3</posy>
+        <width>460</width>
         <height>28</height>
         <aligny>center</aligny>
-        <font>Font_Info</font>
-        <textcolor>dcFFFFFF</textcolor>
+        <font>Font_Reg17</font>
+        <textcolor>white2</textcolor>
         <scroll>true</scroll>
-        <label>[UPPERCASE]$LOCALIZE[20342]: $INFO[Window.Property(Movies.Count)]   |   $LOCALIZE[16102]: $INFO[Window.Property(Movies.Watched)]   |   $LOCALIZE[16101]: $INFO[Window.Property(Movies.UnWatched)][/UPPERCASE]</label>
+        <label>$LOCALIZE[20342]: $INFO[Window.Property(Movies.Count)]   |   $LOCALIZE[16102]: $INFO[Window.Property(Movies.Watched)]   |   $LOCALIZE[16101]: $INFO[Window.Property(Movies.UnWatched)]</label>
         <visible>Container(9000).HasFocus(10)</visible>
       </control>
       <control type="label" id="71">
         <posx>5</posx>
-        <posy>-2</posy>
+        <posy>-3</posy>
         <width>460</width>
-        <font>Font_Info</font>
+        <font>Font_Reg17</font>
         <height>28</height>
         <aligny>center</aligny>
-        <textcolor>dcFFFFFF</textcolor>
+        <textcolor>white2</textcolor>
         <scroll>true</scroll>
-        <label>[UPPERCASE]$LOCALIZE[20343]: $INFO[Window.Property(TVShows.Count)]   |   $LOCALIZE[20360]: $INFO[Window.Property(Episodes.Count)]   |   $LOCALIZE[16101]: $INFO[Window.Property(Episodes.UnWatched)][/UPPERCASE]</label>
+        <label>$LOCALIZE[20343]: $INFO[Window.Property(TVShows.Count)]   |   $LOCALIZE[20360]: $INFO[Window.Property(Episodes.Count)]   |   $LOCALIZE[16101]: $INFO[Window.Property(Episodes.UnWatched)]</label>
         <visible>Container(9000).HasFocus(11)</visible>
       </control>
       <control type="label" id="71">
         <posx>10</posx>
-        <posy>-2</posy>
+        <posy>-3</posy>
         <width>460</width>
-        <font>Font_Info</font>
+        <font>Font_Reg17</font>
         <height>28</height>
         <aligny>center</aligny>
-        <textcolor>dcFFFFFF</textcolor>
+        <textcolor>white2</textcolor>
         <scroll>true</scroll>
-        <label>[UPPERCASE]$LOCALIZE[132]: $INFO[Window.Property(Music.AlbumsCount)]   |   $LOCALIZE[134]: $INFO[Window.Property(Music.SongsCount)]   |   $LOCALIZE[133]: $INFO[Window.Property(Music.ArtistsCount)][/UPPERCASE]</label>
+        <label>$LOCALIZE[132]: $INFO[Window.Property(Music.AlbumsCount)]   |   $LOCALIZE[134]: $INFO[Window.Property(Music.SongsCount)]   |   $LOCALIZE[133]: $INFO[Window.Property(Music.ArtistsCount)]</label>
         <visible>Container(9000).HasFocus(3)</visible>
       </control>
     </control>
@@ -710,50 +710,50 @@
       <visible>Skin.HasSetting(homepageHideRecentlyAdded)</visible>
       <visible>Container(9000).HasFocus(3)|Container(9000).HasFocus(10)|Container(9000).HasFocus(11)</visible>
       <animation effect="slide" start="0,0" end="-520,0" time="300">WindowClose</animation>
-      <animation effect="slide" start="-520,0" end="0,0" delay="WidgetSlideDelay" time="300" condition="!Window.Previous(startup)">WindowOpen</animation>
       <animation effect="slide" start="-520" end="0" time="300">VisibleChange</animation>
+      <animation effect="slide" start="-520,0" end="0,0" delay="WidgetSlideDelay" time="300" condition="!Window.Previous(startup)">WindowOpen</animation>
       <animation effect="slide" start="-520,0" end="0,0" delay="2500" time="600" condition="Window.Previous(startup)">WindowOpen</animation>
       <control type="image">
         <description>time background</description>
         <posx>0</posx>
-        <width>471</width>
+        <width>490</width>
         <height>27</height>
         <texture flipx="true" flipy="true">home/timepanel_mid.png</texture>
       </control>
       <control type="label" id="71">
         <posx>10</posx>
         <posy>-2</posy>
-        <width>440</width>
+        <width>460</width>
         <height>28</height>
-        <font>Font_Info</font>
-        <textcolor>dcFFFFFF</textcolor>
+        <font>Font_Reg17</font>
+        <textcolor>white2</textcolor>
         <scroll>true</scroll>
         <aligny>center</aligny>
-        <label>[UPPERCASE]$LOCALIZE[20342]: $INFO[Window.Property(Movies.Count)]   |   $LOCALIZE[16102]: $INFO[Window.Property(Movies.Watched)]   |   $LOCALIZE[16101]: $INFO[Window.Property(Movies.UnWatched)][/UPPERCASE]</label>
+        <label>$LOCALIZE[31502]: $INFO[Window.Property(Movies.Count)]   |   $LOCALIZE[16102]: $INFO[Window.Property(Movies.Watched)]   |   $LOCALIZE[16101]: $INFO[Window.Property(Movies.UnWatched)]</label>
         <visible>Container(9000).HasFocus(10)</visible>
       </control>
       <control type="label" id="71">
         <posx>5</posx>
         <posy>-2</posy>
         <width>460</width>
-        <font>Font_Info</font>
+        <font>Font_Reg17</font>
         <height>28</height>
-        <textcolor>dcFFFFFF</textcolor>
+        <textcolor>white2</textcolor>
         <scroll>true</scroll>
         <aligny>center</aligny>
-        <label>[UPPERCASE]$LOCALIZE[20343]: $INFO[Window.Property(TVShows.Count)]   |   $LOCALIZE[20360]: $INFO[Window.Property(Episodes.Count)]   |   $LOCALIZE[16101]: $INFO[Window.Property(Episodes.UnWatched)][/UPPERCASE]</label>
+        <label>$LOCALIZE[31503]: $INFO[Window.Property(TVShows.Count)]   |   $LOCALIZE[20360]: $INFO[Window.Property(Episodes.Count)]   |   $LOCALIZE[16101]: $INFO[Window.Property(Episodes.UnWatched)]</label>
         <visible>Container(9000).HasFocus(11)</visible>
       </control>
       <control type="label" id="71">
         <posx>10</posx>
         <posy>-2</posy>
-        <width>400</width>
+        <width>460</width>
         <height>28</height>
-        <font>Font_Info</font>
-        <textcolor>dcFFFFFF</textcolor>
+        <font>Font_Reg17</font>
+        <textcolor>white2</textcolor>
         <scroll>true</scroll>
         <aligny>center</aligny>
-        <label>[UPPERCASE]$LOCALIZE[132]: $INFO[Window.Property(Music.AlbumsCount)]   |   $LOCALIZE[134]: $INFO[Window.Property(Music.SongsCount)]   |   $LOCALIZE[133]: $INFO[Window.Property(Music.ArtistsCount)][/UPPERCASE]</label>
+        <label>$LOCALIZE[132]: $INFO[Window.Property(Music.AlbumsCount)]   |   $LOCALIZE[134]: $INFO[Window.Property(Music.SongsCount)]   |   $LOCALIZE[133]: $INFO[Window.Property(Music.ArtistsCount)]</label>
         <visible>Container(9000).HasFocus(3)</visible>
       </control>
     </control>
@@ -761,7 +761,7 @@
   <include name="weathericon">
     <control type="image">
       <description>Weather image</description>
-      <posx>30</posx>
+      <posx>11</posx>
       <posy>1</posy>
       <width>25</width>
       <height>25</height>
@@ -773,7 +773,7 @@
   <include name="animatedweathericon">
     <control type="multiimage">
       <description>Weather image</description>
-      <posx>30</posx>
+      <posx>11</posx>
       <posy>1</posy>
       <width>25</width>
       <height>25</height>
@@ -794,9 +794,9 @@
       <animation effect="slide" start="420,0" end="0,0" delay="2500" time="600" condition="Window.Previous(startup)">WindowOpen</animation>
       <control type="image">
         <description>time background</description>
-        <posx>-140</posx>
+        <posx>-161</posx>
         <posy>0</posy>
-        <width>471</width>
+        <width>490</width>
         <height>27</height>
         <texture>home/timepanel_mid.png</texture>
         <animation effect="slide" start="0,0" end="140,0" delay="0" time="300" condition="Skin.HasSetting(homepageWeatherinfo)">conditional</animation>
@@ -804,15 +804,15 @@
       <control type="label">
         <description>time label</description>
         <posx>320</posx>
-        <posy>-2</posy>
+        <posy>-3</posy>
         <width>400</width>
         <height>28</height>
         <align>right</align>
         <aligny>center</aligny>
-        <font>Font_Info</font>
-        <textcolor>dcFFFFFF</textcolor>
+        <font>Font_Reg17</font>
+        <textcolor>white2</textcolor>
         <shadowcolor>-</shadowcolor>
-        <label>[UPPERCASE][COLOR FFe5e5e5]$INFO[System.Date]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR][/UPPERCASE]</label>
+        <label>[COLOR white2]$INFO[System.Date,,  |  ][/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
       </control>
       <control type="group">
         <posx>-140</posx>
@@ -821,16 +821,16 @@
         <include condition="Skin.HasSetting(AnimatedWeatherIcons)+Skin.HasSetting(homepageWeatheranimated)">animatedweathericon</include>
         <control type="label">
           <description>time label</description>
-          <posx>60</posx>
-          <posy>-2</posy>
-          <width>100</width>
+          <posx>41</posx>
+          <posy>-3</posy>
+          <width>200</width>
           <height>28</height>
           <align>left</align>
           <aligny>center</aligny>
-          <font>Font_Info</font>
-          <textcolor>white</textcolor>
+          <font>Font_Reg17</font>
+          <textcolor>white2</textcolor>
           <shadowcolor>-</shadowcolor>
-          <label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
+          <label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits] [COLOR FFcdcdcd]$INFO[Window(Weather).Property(Current.Humidity),  |  ][/COLOR]</label>
         </control>
       </control>
     </control>
@@ -844,12 +844,12 @@
       <animation effect="slide" start="420,0" end="0,0" delay="2500" time="600" condition="Window.Previous(startup)">WindowOpen</animation>
       <control type="image">
         <description>time background</description>
-        <posx>-140</posx>
+        <posx>-161</posx>
         <posy>0</posy>
-        <width>471</width>
+        <width>490</width>
         <height>27</height>
         <texture flipy="true">home/timepanel_mid.png</texture>
-        <animation effect="slide" start="0,0" end="140,0" delay="0" time="300" condition="Skin.HasSetting(homepageWeatherinfo)">conditional</animation>
+        <animation effect="slide" start="0,0" end="200,0" delay="0" time="300" condition="Skin.HasSetting(homepageWeatherinfo)">conditional</animation>
       </control>
       <control type="label">
         <description>time label</description>
@@ -859,10 +859,10 @@
         <height>28</height>
         <align>right</align>
         <aligny>center</aligny>
-        <font>Font_Info</font>
+        <font>Font_Reg17</font>
         <textcolor>dcFFFFFF</textcolor>
         <shadowcolor>-</shadowcolor>
-        <label>[UPPERCASE][COLOR FFe5e5e5]$INFO[System.Date]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR][/UPPERCASE]</label>
+        <label>[COLOR white2]$INFO[System.Date]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
       </control>
       <control type="group">
         <posx>-140</posx>
@@ -871,19 +871,18 @@
         <include condition="Skin.HasSetting(AnimatedWeatherIcons)">animatedweathericon</include>
         <control type="label">
           <description>time label</description>
-          <posx>60</posx>
+          <posx>41</posx>
           <posy>-2</posy>
-          <width>100</width>
+          <width>200</width>
           <height>28</height>
           <align>left</align>
           <aligny>center</aligny>
-          <font>Font_Info</font>
-          <textcolor>white</textcolor>
+          <font>Font_Reg17</font>
+          <textcolor>white2</textcolor>
           <shadowcolor>-</shadowcolor>
-          <label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</label>
+          <label>$INFO[Window(weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits] [COLOR FFcdcdcd]$INFO[Window(Weather).Property(Current.Humidity),  |  ][/COLOR]</label>
         </control>
       </control>
-
     </control>
   </include>
   <include name="rssitems">
