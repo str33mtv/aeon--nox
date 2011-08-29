@@ -496,8 +496,8 @@
         <width>380</width>
         <height>546</height>
         <itemgap>0</itemgap>
-        <onleft>9000</onleft>
-        <onright>60</onright>
+        <onleft>60</onleft>
+        <onright>7000</onright>
         <onup>550</onup>
         <ondown>550</ondown>
         <pagecontrol>60</pagecontrol>
@@ -561,7 +561,7 @@
         </focusedlayout>
       </control>
       <control type="scrollbar" id="60">
-        <posx>1200</posx>
+        <posx>10</posx>
         <posy>120</posy>
         <width>25</width>
         <height>530</height>
@@ -570,8 +570,8 @@
         <texturesliderbarfocus>-</texturesliderbarfocus>
         <textureslidernib>views/scrollbarnub-nofocus.png</textureslidernib>
         <textureslidernibfocus>views/scrollbarnub-focus.png</textureslidernibfocus>
-        <onleft>550</onleft>
-        <onright>SetFocus(7000)</onright>
+        <onleft>9000</onleft>
+        <onright>550</onright>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
         <visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
