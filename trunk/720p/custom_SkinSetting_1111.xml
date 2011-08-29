@@ -738,6 +738,12 @@
             <enable>!Skin.HasSetting(homepageMusicinfo)</enable>
             <visible>!Skin.HasSetting(homepageMusicinfo)</visible>
           </control>
+          <control type="radiobutton" id="287">
+            <label>31425</label>
+            <include>Default_SettingRadioButton</include>
+            <onclick>Skin.ToggleSetting(NowPlayingFolderJPG)</onclick>
+            <selected>!Skin.HasSetting(NowPlayingFolderJPG)</selected>
+          </control>
           <control type="radiobutton" id="280">
             <description>enable music info</description>
             <include>Default_SettingRadioButton</include>
