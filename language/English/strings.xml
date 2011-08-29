@@ -358,6 +358,7 @@
   <string id="31397">Ended</string>
   <string id="31398">Style</string>
   <string id="31399">Spacing</string>
+  <string id="31425">Enable folder.jpg for album cover</string>
   <string id="31426">Full</string>
   <string id="31427">Outline</string>
   <string id="31428">SHUTDOWN IN</string>
@@ -365,6 +366,7 @@
   <string id="31450">COLOR SELECTOR</string>
   <string id="31451">Enable watchcount</string>
   <string id="31452">Not rated</string>
+  <string id="31453">Airing</string>
 
   <!-- Home Menu -->
   <string id="31500">PICTURES</string>
