@@ -1,4 +1,20 @@
 <includes>
+  <include name="Button195Pictures">
+    <control type="button" id="195">
+      <include>HiddenObject</include>
+      <onleft>517</onleft>
+      <onright>517</onright>
+      <onup>517</onup>
+      <ondown>517</ondown>
+      <onclick>SlideShow($INFO[ListItem.Path],notrandom)</onclick>
+    </control>
+  </include>
+  <include name="Button195NoPictures">
+    <control type="button" id="195">
+      <include>HiddenObject</include>
+      <onfocus>SetFocus(9000)</onfocus>
+    </control>
+  </include>
 	<include name="PictureInfo">
 		<control type="image">
 			<posx>20</posx>
@@ -329,8 +345,7 @@
         <textureslidernibfocus>views/scrollBarNib.png</textureslidernibfocus>
         <pulseonselect>yes</pulseonselect>
         <onup>517</onup>
-        <ondown condition="Window.IsActive(pictures)">195</ondown>
-        <ondown condition="!Window.IsActive(pictures)">517</ondown>
+        <ondown>195</ondown>
         <showonepage>false</showonepage>
         <orientation>horizontal</orientation>
       </control>
@@ -364,14 +379,8 @@
 				<include condition="Window.IsActive(pictures)+!Skin.HasSetting(StripshowWS)">PictureListContent</include>
 				<include condition="Window.IsActive(videolibrary)|[Window.IsActive(pictures)+Skin.HasSetting(StripshowWS)]">VideoListContent</include>
 			</control>
-      <control type="button" id="195">
-        <include>HiddenObject</include>
-        <onleft>517</onleft>
-				<onright>517</onright>
-				<onup>517</onup>
-				<ondown>517</ondown>
-				<onclick condition="Window.IsActive(pictures)">SlideShow($INFO[ListItem.Path],notrandom)</onclick>
-			</control>
+      <include condition="Window.IsActive(pictures)">Button195Pictures</include>
+      <include condition="!Window.IsActive(pictures)">Button195NoPictures</include>
 		</control>
 	</include>
 </includes>

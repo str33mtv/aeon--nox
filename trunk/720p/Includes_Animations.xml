@@ -246,4 +246,9 @@
   <include name="TopbarPulseAnimationRight">
     <animation effect="fade" start="20" end="100" time="2000" pulse="true" condition="true">Conditional</animation>
   </include>
+  <include name="Animation_HideStripShow">
+    <animation type="Conditional" reversible="true" condition="Control.HasFocus(195)">
+      <effect type="slide" start="0,0" end="0,300" time="400" tween="cubic" easing="in" />
+    </animation>
+  </include>
 </includes>
