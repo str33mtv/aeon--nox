@@ -235,7 +235,7 @@
 	<include name="StripshowTVThumbs">
 		<control type="group">
 			<visible>Container.Content(episodes)|[Window.IsActive(pictures)+Skin.HasSetting(StripshowWS)]</visible>
-      <posx>-13.5</posx>
+      <posx>-50</posx>
 			<control type="image">
 				<include>StripshowTVThumbsVars</include>
 				<texture diffuse="thumbs/multiplex_tvmask.png">DefaultEpisode.png</texture>
@@ -277,9 +277,9 @@
 	<include name="StripshowPosterThumbs">
 		<control type="group">
 			<visible>Container.Content(movies)</visible>
-      <animation effect="slide" start="0,0" end="108,-55" time="0" tween="cubic" easing="in" reversible="true" condition="Container.Content(movies)">Conditional</animation>
+      <animation effect="slide" start="0,0" end="0,-55" time="0" tween="cubic" easing="in" reversible="true" condition="Container.Content(movies)">Conditional</animation>
       <control type="image">
-				<posx>3</posx>
+				<posx>32</posx>
 				<posy>3</posy>
 				<width>97</width>
 				<height>142</height>
@@ -289,7 +289,7 @@
 				<fadetime>500</fadetime>
 			</control>
 			<control type="image">
-				<posx>3</posx>
+				<posx>32</posx>
 				<posy>3</posy>
 				<width>97</width>
 				<height>142</height>
@@ -299,11 +299,11 @@
 		</control>
 	</include>
 	<include name="VideoListContent">
-		<posx>-220</posx>
+		<posx>0</posx>
 		<posy>560</posy>
-		<width>1720</width>
+		<width>1400</width>
 		<height>146</height>
-		<focusposition>5</focusposition>
+		<focusposition>4</focusposition>
 		<visible>Container.Content(episodes)|Container.Content(movies)|[Window.IsActive(pictures)+Skin.HasSetting(StripshowWS)]</visible>
 		<itemlayout width="160" height="150" condition="Container.Content(episodes)|[Window.IsActive(pictures)+Skin.HasSetting(StripshowWS)]">
 			<include>StripshowTVThumbs</include>
@@ -320,8 +320,8 @@
 		</itemlayout>
 		<focusedlayout width="140" height="150" condition="Container.Content(movies)">
 			<control type="group">
-        <animation effect="zoom" center="159,16" start="100" end="155" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
-        <animation effect="zoom" center="159,16" start="155" end="100" time="400" easing="out" tween="cubic" reversible="false">UnFocus</animation>
+        <animation effect="zoom" center="80,16" start="100" end="155" time="400" easing="out" tween="cubic" reversible="false">Focus</animation>
+        <animation effect="zoom" center="80,16" start="155" end="100" time="400" easing="out" tween="cubic" reversible="false">UnFocus</animation>
         <include>StripshowPosterThumbs</include>
 			</control>
 		</focusedlayout>
