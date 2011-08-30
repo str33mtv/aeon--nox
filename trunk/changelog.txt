@@ -21,12 +21,15 @@
 - InfoList is now available for add-on views.
 - Removed CDArt and Covers from small now playing widget.
 - Added viewtype Stripshow for Pictures/Movies/Episodes.
+- Added Dutch language - thx Machine-Sanctum
+- Updated Hungarian language - thx frodo19
+- Updated French language - thx Rififi77
 
 [B]1.5.4[/B]
 - Fixed Networksetup.
 - Fixed numeric dialog pop up when enering master lock settings.
 - Added Russian language string - thx Heckfy
-- Added hungarian language string - thx frodo19
+- Added Hungarian language string - thx frodo19
 
 [B]1.5.3[/B]
 - Fixed: episode label not visible when the infopanel is deactivated on TV Show level.
