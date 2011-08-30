@@ -386,7 +386,7 @@
       <altlabel>$LOCALIZE[207]: [B]$LOCALIZE[31427][/B]</altlabel>
       <onclick>Skin.ToggleSetting(preferplot)</onclick>
       <usealttexture>!Skin.HasSetting(preferplot)</usealttexture>
-      <visible>[[[Skin.HasSetting(fourthumbs)+Control.IsVisible(501)]|[Skin.HasSetting(fourthumbs503)+Control.IsVisible(503)]|[Skin.HasSetting(fourthumbs504)+Control.IsVisible(504)]]|[[Skin.HasSetting(fanartinfopane)+Control.IsVisible(501)]|[Skin.HasSetting(fanartinfopane503)+Control.IsVisible(503)]|[Skin.HasSetting(fanartinfopane504)+Control.IsVisible(504)]]]+Container.Content(movies)+!Skin.HasSetting(hideoptions)</visible>
+      <visible>[[[Skin.HasSetting(fourthumbs)+Control.IsVisible(501)]|[Skin.HasSetting(fourthumbs503)+Control.IsVisible(503)]|[Skin.HasSetting(fourthumbs504)+Control.IsVisible(504)]]|[[Skin.HasSetting(fanartinfopane)+Control.IsVisible(501)]|[Skin.HasSetting(fanartinfopane503)+Control.IsVisible(503)]|[Skin.HasSetting(fanartinfopane504)+Control.IsVisible(504)]|[Control.IsVisible(510)+Skin.HasSetting(posterslide)]]]+Container.Content(movies)+!Skin.HasSetting(hideoptions)</visible>
     </control>
     <control type="togglebutton" id="1667">
       <description>Toggle Overlay</description>
@@ -969,7 +969,7 @@
             <label>31387</label>
             <onclick>Skin.ToggleSetting(darkinfopanemusic)</onclick>
             <selected>Skin.HasSetting(darkinfopanemusic)</selected>
-            <visible>[Control.IsVisible(509)|Control.IsVisible(513)]+[Container.Content(albums)|Container.Content(artists)]+!Skin.HasSetting(hideoptions)</visible>
+            <visible>[Control.IsVisible(509)|Control.IsVisible(513)|Control.IsVisible(501)|Control.IsVisible(504)]+[Container.Content(albums)|Container.Content(artists)|[Window.IsActive(1)+Substring(Container.FolderPath,advanced.launcher)]]+!Skin.HasSetting(hideoptions)</visible>
           </control>
           <control type="radiobutton" id="1654">
             <description>Toggle Dark</description>
