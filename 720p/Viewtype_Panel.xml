@@ -561,9 +561,9 @@
         </focusedlayout>
       </control>
       <control type="scrollbar" id="60">
-        <posx>10</posx>
+        <posx>-10</posx>
         <posy>120</posy>
-        <width>25</width>
+        <width>65</width>
         <height>530</height>
         <texturesliderbackground>views/scrollbarbacklist.png</texturesliderbackground>
         <texturesliderbar>-</texturesliderbar>
@@ -574,7 +574,7 @@
         <onright>550</onright>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
-        <visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
+        <!--<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>-->
       </control>
       <control type="image">
         <posx>331</posx>
