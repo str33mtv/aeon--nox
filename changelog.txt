@@ -25,6 +25,7 @@
 - Updated Hungarian language - thx frodo19
 - Updated French language - thx Rififi77
 - Added support for random movie script (if installed there is a new sub menu item "Random" under Movies)
+- Added option "BannerList" to InfoList view for TV Shows.
 
 [B]1.5.4[/B]
 - Fixed Networksetup.
