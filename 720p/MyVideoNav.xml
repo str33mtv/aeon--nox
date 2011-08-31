@@ -312,7 +312,7 @@
       <control type="button" id="7000">
         <include>HiddenObject</include>
         <onfocus>SetFocus(9000)</onfocus>
-        <visible>[Container.Content(tvshows)|Container.Content(seasons)|Container.Content(episodes)|Container.Content(genres)]+[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)|Control.IsVisible(508)]</visible>
+        <visible>[Container.Content(tvshows)|Container.Content(seasons)|Container.Content(episodes)|Container.Content(genres)]+[Control.IsVisible(501)|Control.IsVisible(504)|Control.IsVisible(503)|Control.IsVisible(508)|[Control.isVisible(510)+Skin.HasSetting(posterslide)]]</visible>
       </control>
       <control type="button" id="7002">
         <include>HiddenObject</include>
