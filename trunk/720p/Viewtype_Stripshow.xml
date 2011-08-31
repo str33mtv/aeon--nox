@@ -296,7 +296,14 @@
 				<texture background="true">wall/wall_nfoverlay.png</texture>
 				<bordertexture border="-4">wall/wall_movie_nfborder.png</bordertexture>
 			</control>
-		</control>
+      <control type="image">
+        <posx>99</posx>
+        <posy>3</posy>
+        <width>30</width>
+        <height>30</height>
+        <include>OverlayVisibility0</include>
+      </control>
+    </control>
 	</include>
 	<include name="VideoListContent">
 		<posx>0</posx>

@@ -7,7 +7,7 @@
     <height>350</height>
     <onleft>509</onleft>
     <onright>509</onright>
-    <onup>SetFocus(7000)</onup>
+    <onup>7000</onup>
     <ondown>60</ondown>
     <viewtype label="31029">bigwrap</viewtype>
     <pagecontrol>60</pagecontrol>
