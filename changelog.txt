@@ -1,3 +1,12 @@
+[B]1.6.1[/B]
+- Hungarian language updated - thx frodo19
+- Fixed scrolling MPAA Rating label in LowList "show info" mode.
+- Fixed "New" flag in Stripshow episode view.
+- Fixed wrong fallback label in Song Info.
+- "Episode" view had no watched/new toggle.
+- When TV Show Logo are active icons in Landscape view, TV Show title is replaced with watchcount.
+- Show "New" status option only enabled if recently added items are enabled.
+
 [B]1.6.0[/B]
 - New seekbar.
 - New LowList layout.
