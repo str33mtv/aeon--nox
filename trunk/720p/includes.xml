@@ -116,7 +116,7 @@
       <include condition="Skin.HasSetting(animatedbg)">Animation_CommonFade</include>
       <include>CommonFanartVars</include>
       <imagepath fallback="special://skin/backgrounds/music.jpg" background="true">$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</imagepath>
-      <visible>Skin.HasSetting(MusicLibraryFanart)</visible>
+      <visible>Skin.HasSetting(MusicLibraryFanart)|Window.IsActive(musicfiles)</visible>
       <animation effect="fade" start="0" end="100" time="1000">Visible</animation>
     </control>
   </include>
