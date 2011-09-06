@@ -6,6 +6,7 @@
 - "Episode" view had no watched/new toggle.
 - When TV Show Logo are active icons in Landscape view, TV Show title is replaced with watchcount.
 - Show "New" status option only enabled if recently added items are enabled.
+- Wall view selectable again in videofiles section.
 
 [B]1.6.0[/B]
 - New seekbar.
