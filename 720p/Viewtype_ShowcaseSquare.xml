@@ -33,7 +33,7 @@
         </control>
         <control type="image">
           <description>Glass overlay</description>
-          <include>MusicShowcaseGlassOverlayAngled</include>
+          <include>MusicShowcaseGlassOverlay</include>
         </control>
         <include condition="Window.IsActive(pictures)">MusicShowcaseBlackReflection</include>
         <control type="image">
