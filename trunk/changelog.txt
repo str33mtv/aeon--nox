@@ -8,6 +8,7 @@
 - Show "New" status option only enabled if recently added items are enabled.
 - Wall view selectable again in videofiles section.
 - Fixed no background in Music files mode.
+- Fixed: missing dolby digital plus codec flag.
 
 [B]1.6.0[/B]
 - New seekbar.
