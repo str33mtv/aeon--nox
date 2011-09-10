@@ -6,6 +6,7 @@
 - "Episode" view had no watched/new toggle.
 - When TV Show Logo are active icons in Landscape view, TV Show title is replaced with watchcount.
 - Show "New" status option only enabled if recently added items are enabled.
+- Added Polish language strings - thx biggiesmallz
 - Wall view selectable again in videofiles section.
 - Fixed no background in Music files mode.
 - Fixed: missing dolby digital plus codec flag.

@@ -375,7 +375,7 @@
 			<include condition="Window.isActive(videolibrary)">StripshowVideoInfo</include>
 			<include condition="Window.IsActive(pictures)">PictureInfo</include>
 			<control type="wraplist" id="517">
-				<viewtype label="Stripshow">bigwrap</viewtype>
+				<viewtype label="31380">bigwrap</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<onleft>517</onleft>
