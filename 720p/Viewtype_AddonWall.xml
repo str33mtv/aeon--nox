@@ -773,7 +773,7 @@
             <width>350</width>
             <height>459</height>
             <font>Font_Reg18</font>
-            <label fallback="312577">$INFO[ListItem.Property(Artist_Description)]</label>
+            <label fallback="547">$INFO[ListItem.Property(Artist_Description)]</label>
             <textcolor>d0FFFFFF</textcolor>
             <shadowcolor>black</shadowcolor>
             <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
@@ -785,7 +785,7 @@
             <width>350</width>
             <height>230</height>
             <font>Font_Reg18</font>
-            <label fallback="312577">$INFO[ListItem.Property(Artist_Description)]</label>
+            <label fallback="547">$INFO[ListItem.Property(Artist_Description)]</label>
             <textcolor>d0FFFFFF</textcolor>
             <shadowcolor>black</shadowcolor>
             <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>
