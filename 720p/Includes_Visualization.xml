@@ -277,16 +277,16 @@
         <effect type="slide" time="400" start="0,0" end="0,151" easing="in" tween="cubic"/>
       </animation>
       <control type="image">
-        <posx>500</posx>
+        <posx>469</posx>
         <posy>-569</posy>
-        <width>280</width>
-        <height>28</height>
-        <texture flipy="true">osd/osd_button_paused.png</texture>
-        <visible>Player.Paused</visible>
+        <width>342</width>
+        <height>58</height>
+        <texture flipy="true">osd/osd_top_bar.png</texture>
         <animation effect="slide" start="0,-65" end="0,0" time="100">WindowOpen</animation>
         <animation effect="slide" start="0,0" end="0,-65" time="100">WindowClose</animation>
         <animation effect="slide" start="0,-65" end="0,0" time="100">Visible</animation>
         <animation effect="slide" start="0,0" end="0,-65" time="100">Hidden</animation>
+        <visible>Player.Paused</visible>
       </control>
       <control type="label">
         <description>Paused Label</description>
