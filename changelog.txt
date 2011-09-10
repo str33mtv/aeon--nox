@@ -10,7 +10,7 @@
 - Wall view selectable again in videofiles section.
 - Fixed no background in Music files mode.
 - Fixed: missing dolby digital plus codec flag.
-
+- Fixed: Linked tv show movies now show correct metadata in season and episode level.
 [B]1.6.0[/B]
 - New seekbar.
 - New LowList layout.
