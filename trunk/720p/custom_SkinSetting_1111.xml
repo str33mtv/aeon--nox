@@ -3729,7 +3729,7 @@
             <selected>!Skin.HasSetting(DisableCarouselVL)</selected>
           </control>
           <control type="radiobutton" id="520">
-            <label>$LOCALIZE[24022] Stripshow</label>
+            <label>$LOCALIZE[24022] $LOCALIZE[31380]</label>
             <include>Default_SettingRadioButton</include>
             <onclick>Skin.ToggleSetting(DisableStripshowVL)</onclick>
             <selected>!Skin.HasSetting(DisableStripshowVL)</selected>
