@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <!--Translator: Frodo-->
-<!--Date of translation: 02/09/2011-->
-<!--Verzió:1.6-->
+<!--Date of translation: 10/09/2011-->
+<!--Verzió:1.6.1-->
 <!--Based on English-->
 <strings>
 	<!-- Vegyes feliratok -->
@@ -225,8 +225,8 @@
 	<string id="31189">Előző rész</string>
 	<string id="31190">Következő rész</string>
 	<string id="31191">Sötétebb Fanart</string>
-	<string id="31192">TV Show Minikép</string>
-	<string id="31193">TV Show Logo</string>
+	<string id="31192">Sorozat Minikép</string>
+	<string id="31193">Sorozat Logo</string>
 	<string id="31194">Fókusz eltolás beállítása a Főmenüben (érték -2 től 14-ig)</string>
 	<string id="31195">Kedvencek hozzáadása a Főmenühöz</string>
 	<string id="31196">Kedvencek helye</string>
@@ -301,9 +301,9 @@
 	<string id="31277">Borító Lista</string>
 	<string id="31278">Rögzített Lista</string>
 	<string id="31279">Bemutatók teljes képernyőn minden nézetben</string>
-	<string id="31280">Media jelölések</string>
+	<string id="31280">Média jelölések</string>
 	<string id="31281">Film Info mutatása "Pillanat állj" -nál</string>
-	<string id="31282">Tiszta borítók</string>
+	<string id="31282">Átlátszó borítók</string>
 	<string id="31283">InfoHáttér</string>
 	<string id="31284">Mozi</string>
 	<string id="31285">Rész száma.</string>
@@ -335,6 +335,7 @@
 	<string id="31377">CDArt</string>
 	<string id="31378">Zene könyvtár helye</string>
 	<string id="31379">- Csak főablakban</string>
+	<string id="31380">Képbemutató</string>
 	<string id="31383">Háttér</string>
 	<string id="31384">Elrejt</string>
 	<string id="31385">Infopanel: Ki </string>
@@ -362,7 +363,7 @@
 	<string id="31500">Képek</string>
 	<string id="31501">Zenék</string>
 	<string id="31502">Filmek</string>
-	<string id="31503">TV Shows</string>
+	<string id="31503">Sorozatok</string>
 	<string id="31504">Videók</string>
 	<string id="31505">Programok</string>
 	<string id="31506">Beállítás</string>
