@@ -636,15 +636,178 @@
 				<posx>1150</posx>
 				<posy>658</posy>
 				<visible>Control.HasFocus(7002)</visible>
-				<control type="image">
-					<width>90</width>
-					<height>59</height>
-					<colordiffuse>FFe1e1e1</colordiffuse>
-					<fadetime>IconCrossfadeTime2</fadetime>
-					<include>Animation_CommonFade</include>
-					<texture>$INFO[ListItem.FileExtension,flags/audio/,.png]</texture>
-				</control>
-				<control type="image">
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/aac.png</texture>
+          <visible>substring(ListItem.filename,.aac)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/ac3.png</texture>
+          <visible>substring(ListItem.filename,.ac3)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/aif.png</texture>
+          <visible>substring(ListItem.filename,.aif) + ![substring(ListItem.filename,.aifc)  | substring(ListItem.filename,.aiff) ]</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/aifc.png</texture>
+          <visible>substring(ListItem.filename,.aifc)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/aiff.png</texture>
+          <visible>substring(ListItem.filename,.aiff)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/ape.png</texture>
+          <visible>substring(ListItem.filename,.ape)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/cdda.png</texture>
+          <visible>substring(ListItem.filename,.cdda)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/dts.png</texture>
+          <visible>substring(ListItem.filename,.dts)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/flac.png</texture>
+          <visible>substring(ListItem.filename,.flac)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/m4a.png</texture>
+          <visible>substring(ListItem.filename,.m4a)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/mlp.png</texture>
+          <visible>substring(ListItem.filename,.mlp)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/mp2.png</texture>
+          <visible>substring(ListItem.filename,.mp2)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/mp3.png</texture>
+          <visible>substring(ListItem.filename,.mp3)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/mpc.png</texture>
+          <visible>substring(ListItem.filename,.mpc)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/vorbis.png</texture>
+          <visible>substring(ListItem.filename,.ogg)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/RA.png</texture>
+          <visible>substring(ListItem.filename,.ra)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/wav.png</texture>
+          <visible>substring(ListItem.filename,.wav)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/wma.png</texture>
+          <visible>substring(ListItem.filename,.wma)</visible>
+        </control>
+        <control type="image">
+          <width>90</width>
+          <height>59</height>
+          <colordiffuse>FFe1e1e1</colordiffuse>
+          <fadetime>IconCrossfadeTime2</fadetime>
+          <include>Animation_CommonFade</include>
+          <texture>flags/audio/wavpack.png</texture>
+          <visible>substring(ListItem.filename,.wv)</visible>
+        </control>
+        <control type="image">
 					<width>90</width>
 					<height>59</height>
 					<colordiffuse>FFe1e1e1</colordiffuse>
