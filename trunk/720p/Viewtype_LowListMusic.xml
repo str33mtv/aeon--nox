@@ -192,7 +192,7 @@
 					<posy>360</posy>
 					<height>40</height>
 					<width>960</width>
-					<font>Font_Bold28</font>
+					<font>Font_Bold28_Caps</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>abFFFFFF</textcolor>
@@ -204,7 +204,7 @@
 					<posy>360</posy>
 					<height>40</height>
 					<width>960</width>
-					<font>Font_Bold28</font>
+					<font>Font_Bold28_Caps</font>
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>abFFFFFF</textcolor>
@@ -216,7 +216,7 @@
 					<posy>650</posy>
 					<height>70</height>
 					<width>828</width>
-					<font>Font_OSDTitle2</font>
+					<font>Font_OSDTitle2_Caps</font>
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>abFFFFFF</textcolor>
@@ -859,7 +859,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<include>listcolornofocus</include>
-						<font>Font_Bold16</font>
+						<font>Font_Bold16_Caps</font>
 						<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
             <visible>!Container.Content(songs)</visible>
 					</control>
@@ -871,7 +871,7 @@
             <align>left</align>
             <aligny>center</aligny>
             <include>listcolornofocus</include>
-            <font>Font_Bold16</font>
+            <font>Font_Bold16_Caps</font>
             <label>[UPPERCASE]$INFO[ListItem.Title][/UPPERCASE]</label>
             <visible>Container.Content(songs)</visible>
           </control>
@@ -883,7 +883,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<include>listcolornofocus</include>
-						<font>Font_Bold16</font>
+						<font>Font_Bold16_Caps</font>
 						<label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label>
 						<visible>Container.Content(albums)</visible>
 					</control>
@@ -895,7 +895,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<include>listcolornofocus</include>
-						<font>Font_Bold16</font>
+						<font>Font_Bold16_Caps</font>
 						<label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label>
 						<visible>!Container.Content(albums)</visible>
 					</control>
@@ -907,7 +907,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<include>listcolornofocus</include>
-						<font>Font_Bold16</font>
+						<font>Font_Bold16_Caps</font>
 						<label>[UPPERCASE]$INFO[ListItem.Year][/UPPERCASE]</label>
 						<visible>Container.Content(albums)</visible>
 					</control>
@@ -948,7 +948,7 @@
             <align>left</align>
             <aligny>center</aligny>
             <include>listcolorfocus</include>
-            <font>Font_Bold16</font>
+            <font>Font_Bold16_Caps</font>
             <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
             <visible>!Container.Content(songs)</visible>
           </control>
@@ -960,7 +960,7 @@
             <align>left</align>
             <aligny>center</aligny>
             <include>listcolorfocus</include>
-            <font>Font_Bold16</font>
+            <font>Font_Bold16_Caps</font>
             <label>[UPPERCASE]$INFO[ListItem.Title][/UPPERCASE]</label>
             <visible>Container.Content(songs)</visible>
           </control>
@@ -972,7 +972,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<include>listcolorfocus</include>
-						<font>Font_Bold16</font>
+						<font>Font_Bold16_Caps</font>
 						<label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label>
 						<visible>Container.Content(albums)</visible>
 					</control>
@@ -984,7 +984,7 @@
             <align>right</align>
             <aligny>center</aligny>
             <include>listcolorfocus</include>
-            <font>Font_Bold16</font>
+            <font>Font_Bold16_Caps</font>
             <label>[UPPERCASE]$INFO[ListItem.Property(Artist_Genre)][/UPPERCASE]</label>
             <visible>Container.Content(artists)</visible>
           </control>
@@ -1008,7 +1008,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<include>listcolorfocus</include>
-						<font>Font_Bold16</font>
+						<font>Font_Bold16_Caps</font>
 						<label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label>
 						<visible>!Container.Content(albums)</visible>
 					</control>
