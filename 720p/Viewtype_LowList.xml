@@ -176,7 +176,7 @@
           <posy>360</posy>
           <height>40</height>
           <width>960</width>
-          <font>Font_Bold28</font>
+          <font>Font_Bold28_Caps</font>
           <align>center</align>
           <aligny>center</aligny>
           <textcolor>abFFFFFF</textcolor>
@@ -187,7 +187,7 @@
           <posy>650</posy>
           <height>70</height>
           <width>545</width>
-          <font>Font_OSDTitle2</font>
+          <font>Font_OSDTitle2_Caps</font>
           <align>left</align>
           <aligny>center</aligny>
           <textcolor>abFFFFFF</textcolor>
@@ -358,7 +358,7 @@
           <posy>360</posy>
           <height>40</height>
           <width>960</width>
-          <font>Font_Bold28</font>
+          <font>Font_Bold28_Caps</font>
           <align>center</align>
           <aligny>center</aligny>
           <textcolor>abFFFFFF</textcolor>
@@ -369,7 +369,7 @@
           <posy>650</posy>
           <height>70</height>
           <width>545</width>
-          <font>Font_OSDTitle2</font>
+          <font>Font_OSDTitle2_Caps</font>
           <align>left</align>
           <aligny>center</aligny>
           <textcolor>abFFFFFF</textcolor>
@@ -1158,7 +1158,7 @@
             <align>left</align>
             <aligny>center</aligny>
             <include>listcolornofocus</include>
-            <font>Font_Bold16</font>
+            <font>Font_Bold16_Caps</font>
             <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
           </control>
           <control type="label">
@@ -1206,7 +1206,7 @@
             <align>left</align>
             <aligny>center</aligny>
             <include>listcolorfocus</include>
-            <font>Font_Bold16</font>
+            <font>Font_Bold16_Caps</font>
             <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
           </control>
           <control type="label">

@@ -1479,7 +1479,7 @@
           <align>center</align>
           <aligny>center</aligny>
           <include>Animation_CommonFade</include>
-          <font>Font_Info</font>
+          <font>Font_Info_Caps</font>
           <textcolor>floor</textcolor>
           <shadowcolor>floorshadow</shadowcolor>
           <label>[UPPERCASE]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[12391]]$INFO[ListItem.RatingAndVotes, • ][/UPPERCASE]</label>
@@ -1492,7 +1492,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <include>Animation_CommonFade</include>
-        <font>Font_Info</font>
+        <font>Font_Info_Caps</font>
         <textcolor>floor</textcolor>
         <shadowcolor>floorshadow</shadowcolor>
         <label>[UPPERCASE]$INFO[ListItem.Label2]$INFO[ListItem.Property(UnWatchedEpisodes), ($LOCALIZE[16101]: ,)][/UPPERCASE]</label>
@@ -1505,7 +1505,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <include>Animation_CommonFade</include>
-        <font>Font_Info</font>
+        <font>Font_Info_Caps</font>
         <textcolor>floor</textcolor>
         <shadowcolor>floorshadow</shadowcolor>
         <label>[UPPERCASE]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20360]]$INFO[ListItem.Property(UnWatchedEpisodes), ($LOCALIZE[16101]: ,)][/UPPERCASE]</label>
@@ -1518,7 +1518,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <include>Animation_CommonFade</include>
-        <font>Font_Info</font>
+        <font>Font_Info_Caps</font>
         <textcolor>floor</textcolor>
         <shadowcolor>floorshadow</shadowcolor>
         <label>[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
@@ -1531,7 +1531,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <include>Animation_CommonFade</include>
-        <font>Font_Info</font>
+        <font>Font_Info_Caps</font>
         <textcolor>floor</textcolor>
         <shadowcolor>floorshadow</shadowcolor>
         <label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label>
@@ -1544,7 +1544,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <include>Animation_CommonFade</include>
-        <font>Font_Info</font>
+        <font>Font_Info_Caps</font>
         <textcolor>floor</textcolor>
         <shadowcolor>floorshadow</shadowcolor>
         <label>[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
@@ -1560,7 +1560,7 @@
       <align>center</align>
       <aligny>center</aligny>
       <include>Animation_CommonFade</include>
-      <font>Font_ShowcaseMainLabel2</font>
+      <font>Font_ShowcaseMainLabel2_Caps</font>
       <scroll>true</scroll>
       <textcolor>floor</textcolor>
       <shadowcolor>floorshadow</shadowcolor>
@@ -1574,7 +1574,7 @@
       <align>center</align>
       <aligny>center</aligny>
       <include>Animation_CommonFade</include>
-      <font>Font_ShowcaseMainLabel2</font>
+      <font>Font_ShowcaseMainLabel2_Caps</font>
       <textcolor>floor</textcolor>
       <shadowcolor>floorshadow</shadowcolor>
       <label>[UPPERCASE]$INFO[Container.NumItems] $LOCALIZE[31025] | $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/UPPERCASE]</label>
