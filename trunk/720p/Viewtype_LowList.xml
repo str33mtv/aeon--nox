@@ -1159,7 +1159,7 @@
             <aligny>center</aligny>
             <include>listcolornofocus</include>
             <font>Font_Bold16_Caps</font>
-            <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+            <label>[UPPERCASE]$INFO[ListItem.Label][COLOR grey2]$INFO[ListItem.Property(WatchedEpisodes), (,/]$INFO[ListItem.Property(TotalEpisodes),,)][/COLOR][/UPPERCASE]</label>
           </control>
           <control type="label">
             <posx>473</posx>
@@ -1207,7 +1207,7 @@
             <aligny>center</aligny>
             <include>listcolorfocus</include>
             <font>Font_Bold16_Caps</font>
-            <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+            <label>[UPPERCASE]$INFO[ListItem.Label][COLOR 982e2e2e]$INFO[ListItem.Property(WatchedEpisodes), (,/]$INFO[ListItem.Property(TotalEpisodes),,)][/COLOR][/UPPERCASE]</label>
           </control>
           <control type="label">
             <posx>20</posx>
