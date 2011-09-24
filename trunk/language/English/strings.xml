@@ -217,10 +217,10 @@
   <string id="31172">Extra Info</string>
   <string id="31173">Get Logo</string>
   <string id="31174">Enable TvTunes</string>
-  <string id="31175">Add Video Playlist Button to Movies Submenu</string>
-  <string id="31176">Enable Playlist Button</string>
-  <string id="31177">Add Music Playlist Button to Music Submenu</string>
-  <string id="31178">Add Video Playlist Button to TV Shows Submenu</string>
+  <string id="31175">Main menu Movies submenu</string>
+  <string id="31176">Enable smart playlist button</string>
+  <string id="31177">Main menu Music submenu</string>
+  <string id="31178">Main menu TV Shows submenu</string>
   <string id="31179">Enable Kiosk Mode (Disables Media Menu)</string>
   <string id="31180">Enable Alternative Kiosk Mode (Hides Options in Media Menu)</string>
   <string id="31181">Add Video Playlist to Home Menu</string>
