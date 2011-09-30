@@ -1522,7 +1522,7 @@
         <textcolor>floor</textcolor>
         <shadowcolor>floorshadow</shadowcolor>
         <label>[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</label>
-        <visible>[Skin.HasSetting(wallgenre)+Container.Content(movies)]|[Skin.HasSetting(wallgenretv)+[Container.Content(tvshows)|Container.Content(seasons)]]</visible>
+        <visible>[Skin.HasSetting(wallgenre)+Container.Content(movies)]|[Skin.HasSetting(wallgenretv)+[Container.Content(tvshows)|Container.Content(seasons)]+!IsEmpty(ListItem.TVShowTitle)]</visible>
       </control>
       <control type="label">
         <posx>340</posx>
