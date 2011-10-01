@@ -1052,7 +1052,17 @@
             <fadetime>IconCrossfadeTime</fadetime>
             <aspectratio scalediffuse="false">scale</aspectratio>
             <texture background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
-            <visible>Container.Content(movies)|Container.Content(tvshows)|Container.Content(episodes)|Container.Content(artists)|[Window.IsActive(programs)+Substring(Container.FolderPath,advanced.launcher)]</visible>
+            <visible>Container.Content(movies)|Container.Content(tvshows)|Container.Content(episodes)|[Window.IsActive(programs)+Substring(Container.FolderPath,advanced.launcher)]</visible>
+          </control>
+          <control type="image">
+            <posx>35</posx>
+            <posy>471</posy>
+            <width>390</width>
+            <height>215</height>
+            <fadetime>IconCrossfadeTime</fadetime>
+            <aspectratio scalediffuse="false">scale</aspectratio>
+            <texture background="true" fallback="special://skin/backgrounds/music.jpg">$INFO[Listitem.Property(Fanart_Image)]</texture>
+            <visible>Container.Content(artists)</visible>
           </control>
           <control type="image">
             <posx>35</posx>
